@@ -20,77 +20,78 @@
   --accent-2:#2ea8e0;
   --navy:#0b2545;
   --shadow:0 22px 50px rgba(11,37,69,.12);
+  --maxw:980px;
 }
 *{box-sizing:border-box}
-html,body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font-family:Roboto,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
-body{overflow:hidden}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Roboto,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
 button,input{font:inherit}
 :focus-visible{outline:2px solid var(--accent-2);outline-offset:2px}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
-.app{height:100vh;display:grid;grid-template-columns:minmax(340px,36%) minmax(0,64%);position:relative}
-.visual{
-  min-width:0;padding:26px 24px 22px;overflow:hidden;
-  background:linear-gradient(155deg,var(--navy),#123a63);color:#fff;
-  --ink:#ffffff;--muted:#c3d3e8;--faint:#8fa5c2;
-  --line:rgba(255,255,255,.16);--line-strong:rgba(255,255,255,.32);
-  display:flex;flex-direction:column;height:100%
-}
-.visual-head{flex:0 0 auto;max-width:520px}
-.eyebrow{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);font-weight:500}
-.visual h1,.directory h2,.drawer h2{font-family:Roboto,sans-serif;font-weight:700}
-.visual h1{font-size:32px;line-height:1.08;margin:8px 0 12px}
-.visual-intro{font-size:13px;line-height:1.55;color:var(--muted);max-width:460px;margin:0}
-.tag-cloud{
-  flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;margin-top:18px;
-  display:flex;flex-wrap:wrap;align-content:flex-start;gap:9px 10px;padding-right:4px
-}
-.tag-pill{
-  border:1px solid var(--line-strong);border-radius:999px;background:rgba(255,255,255,.06);
-  color:var(--ink);line-height:1.3;padding:8px 13px;cursor:pointer;max-width:100%;
-  font-family:inherit;animation:tagIn .22s ease both;animation-delay:calc(var(--d,0) * 14ms);
-  transition:opacity .15s ease,transform .12s ease,background .15s ease,border-color .15s ease
-}
-.tag-pill:hover{background:rgba(255,255,255,.12);border-color:var(--accent-2);transform:translateY(-1px)}
-.tag-pill:active{transform:translateY(0)}
-.tag-pill.dim{opacity:.35}
-.tag-pill.active{background:var(--accent);border-color:var(--accent);color:#2a1400}
-.tag-count{opacity:.65;font-size:.82em;margin-left:5px}
-@keyframes tagIn{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:scale(1)}}
-.visual-foot{
-  flex:0 0 auto;display:flex;justify-content:space-between;gap:16px;margin-top:14px;
-  font-size:11px;color:var(--faint);border-top:1px solid var(--line);padding-top:12px
-}
-.visual-foot b{color:#fff;font-weight:700}
 
-.directory{min-width:0;height:100vh;display:flex;flex-direction:column;background:var(--surface)}
-.directory-head{padding:24px 26px 16px;border-bottom:1px solid var(--line);position:relative;z-index:5}
-.topline{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}
-.directory h2{font-size:27px;line-height:1.1;margin:0;color:var(--navy)}
-.subtitle{font-size:13px;color:var(--muted);margin-top:7px;line-height:1.45}
+.topbar{background:var(--navy);color:#fff;padding:14px 24px}
+.topbar-inner{max-width:var(--maxw);margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.brand{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:#cddaeb}
 .info-wrap{position:relative}
 .info-btn{
-  width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:var(--surface-2);
-  color:var(--navy);cursor:pointer;font-weight:700
+  width:32px;height:32px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);
+  color:#fff;cursor:pointer;font-weight:700
 }
 .info-pop{
-  position:absolute;right:0;top:44px;width:290px;padding:13px 14px;border-radius:14px;background:#fff;
+  position:absolute;right:0;top:40px;width:280px;padding:13px 14px;border-radius:14px;background:#fff;
   border:1px solid var(--line-strong);font-size:12px;line-height:1.5;color:var(--muted);box-shadow:var(--shadow);display:none;z-index:30
 }
 .info-pop b{color:var(--navy)}
+
+.page{max-width:var(--maxw);margin:0 auto;padding:28px 24px 60px}
+.page-head h1{font-family:Roboto,sans-serif;font-weight:700;font-size:28px;line-height:1.15;margin:0 0 8px;color:var(--navy)}
+.subtitle{font-size:13px;color:var(--muted);line-height:1.5;max-width:640px;margin:0}
+
+.interests-panel{margin-top:26px;border:1px solid var(--line);border-radius:18px;background:var(--surface);padding:18px 20px}
+.interests-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.section-label{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.counts{font-size:12px;color:var(--faint)}
+.counts b{color:var(--navy)}
+.tag-cloud{
+  display:flex;flex-wrap:wrap;gap:9px 10px;max-height:168px;overflow-y:auto;overflow-x:hidden;padding-right:4px
+}
+.tag-pill{
+  border:1px solid var(--line);border-radius:999px;background:var(--surface-2);
+  color:var(--ink);line-height:1.3;padding:8px 13px;cursor:pointer;max-width:100%;
+  font-family:inherit;animation:tagIn .22s ease both;animation-delay:calc(var(--d,0) * 10ms);
+  transition:opacity .15s ease,transform .12s ease,background .15s ease,border-color .15s ease
+}
+.tag-pill:hover{background:var(--surface-3);border-color:var(--accent-2);transform:translateY(-1px)}
+.tag-pill:active{transform:translateY(0)}
+.tag-pill.active{background:var(--accent);border-color:var(--accent);color:#2a1400}
+.tag-pill.dim{opacity:.35}
+.tag-count{opacity:.6;font-size:.82em;margin-left:5px}
+@keyframes tagIn{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:scale(1)}}
+
 .search{
-  margin-top:18px;display:flex;gap:10px;align-items:center;padding:13px 14px;border-radius:16px;
-  background:var(--surface-2);border:1px solid var(--line-strong)
+  margin-top:22px;display:flex;gap:10px;align-items:center;padding:13px 14px;border-radius:16px;
+  background:var(--surface);border:1px solid var(--line-strong)
 }
 .search input{flex:1;border:0;outline:0;background:transparent;color:var(--ink);font-size:15px;min-width:0}
 .search input::placeholder{color:var(--faint)}
 .clear-btn{border:0;background:transparent;color:var(--muted);cursor:pointer;padding:2px 4px;visibility:hidden}
-.stats-line{display:flex;justify-content:space-between;gap:10px;margin-top:12px;color:var(--faint);font-size:11px}
-.directory-body{min-height:0;overflow:auto;padding:16px 20px 28px}
+.filter-chip{display:none;flex-wrap:wrap;gap:7px;margin-top:12px}
+.filter-chip.show{display:flex}
+.filter-chip .chip{
+  display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#a85200;font-weight:500;
+  border:1px solid rgba(245,130,31,.35);background:rgba(245,130,31,.1);border-radius:999px;
+  padding:6px 8px 6px 12px;animation:tagIn .18s ease both
+}
+.filter-chip .chip button{border:0;background:transparent;color:inherit;cursor:pointer;font-size:15px;line-height:1;padding:2px}
+.stats-line{display:flex;justify-content:space-between;gap:10px;margin-top:14px;color:var(--faint);font-size:11px}
+
+.directory-body{margin-top:14px}
 .list{display:flex;flex-direction:column;gap:10px}
+@keyframes riseIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
 .person{
   border:1px solid var(--line);background:var(--surface);border-radius:18px;padding:14px 15px;
   display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:12px;align-items:center;cursor:pointer;
-  transition:border-color .16s ease,transform .16s ease,background .16s ease;box-shadow:0 1px 2px rgba(11,37,69,.05)
+  transition:border-color .16s ease,transform .16s ease,background .16s ease;box-shadow:0 1px 2px rgba(11,37,69,.05);
+  animation:riseIn .18s ease both
 }
 .person:hover{transform:translateY(-1px);border-color:var(--accent-2);background:var(--surface-2)}
 .avatar{width:48px;height:48px;border-radius:15px;object-fit:cover;border:1px solid var(--line);background:var(--surface-3)}
@@ -101,19 +102,15 @@ button,input{font:inherit}
 .person-name{font-size:14px;font-weight:700;line-height:1.25;color:var(--navy)}
 .person-meta{font-size:12px;color:var(--muted);line-height:1.35;margin-top:3px}
 .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
-.tag{font-size:10px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:4px 7px;background:var(--surface-2)}
+.tag{
+  font-size:10px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:4px 7px;
+  background:var(--surface-2);font-family:inherit;cursor:pointer;transition:border-color .15s ease,background .15s ease
+}
+.tag:hover{border-color:var(--accent-2);color:var(--navy)}
+.tag.active{border-color:var(--accent);background:rgba(245,130,31,.14);color:#a85200;font-weight:500}
 .arrow{color:var(--faint);font-size:18px;padding-left:4px}
 .empty{border:1px dashed var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted);font-size:13px;line-height:1.5}
-.filter-chip{display:none;flex-wrap:wrap;gap:7px;margin-top:12px}
-.filter-chip.show{display:flex}
-.filter-chip .chip{
-  display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#a85200;font-weight:500;
-  border:1px solid rgba(245,130,31,.35);background:rgba(245,130,31,.1);border-radius:999px;
-  padding:6px 8px 6px 12px;animation:tagIn .18s ease both
-}
-.filter-chip .chip button{border:0;background:transparent;color:inherit;cursor:pointer;font-size:15px;line-height:1;padding:2px}
-@keyframes riseIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
-.person{animation:riseIn .18s ease both}
+.state-msg{padding:40px 20px;text-align:center;color:var(--muted);font-size:13px;line-height:1.6}
 
 .drawer-backdrop{position:fixed;inset:0;background:rgba(11,37,69,.35);backdrop-filter:blur(3px);z-index:60;display:none;opacity:0;transition:opacity .18s ease}
 .drawer-backdrop.show{opacity:1}
@@ -124,91 +121,80 @@ button,input{font:inherit}
 }
 .drawer.open{transform:translateX(0)}
 .drawer-head{padding:20px 20px 16px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
-.drawer-head h2{font-size:28px;line-height:1.1;margin:0;color:var(--navy)}
+.drawer-head h2{font-family:Roboto,sans-serif;font-weight:700;font-size:26px;line-height:1.1;margin:0;color:var(--navy)}
 .close-btn{border:1px solid var(--line);background:var(--surface-3);color:var(--navy);width:38px;height:38px;border-radius:12px;cursor:pointer}
 .drawer-body{overflow:auto;padding:18px 20px 30px}
+.eyebrow{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);font-weight:500}
 .profile-top{display:grid;grid-template-columns:82px minmax(0,1fr);gap:15px;align-items:start}
 .profile-top .avatar,.profile-top .avatar-fallback{width:82px;height:82px;border-radius:24px;font-size:24px}
 .role{font-size:13px;color:var(--muted);line-height:1.45}
 .profile-tags{display:flex;flex-wrap:wrap;gap:7px;margin:17px 0}
-.profile-tag{font-size:11px;border-radius:999px;padding:6px 9px;border:1px solid rgba(46,168,224,.35);background:rgba(46,168,224,.1);color:#0c5f82}
+.profile-tag{
+  font-size:11px;border-radius:999px;padding:6px 9px;border:1px solid rgba(46,168,224,.35);
+  background:rgba(46,168,224,.1);color:#0c5f82;font-family:inherit;cursor:pointer;
+  transition:border-color .15s ease,background .15s ease
+}
+.profile-tag:hover{border-color:var(--accent-2)}
+.profile-tag.active{border-color:var(--accent);background:rgba(245,130,31,.14);color:#a85200;font-weight:500}
 .summary{font-size:13px;line-height:1.62;color:var(--muted)}
 .section{border-top:1px solid var(--line);margin-top:20px;padding-top:18px}
 .section-title{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
-.connection{
-  padding:12px 13px;border-radius:15px;border:1px solid var(--line);background:var(--surface-2);cursor:pointer;margin-bottom:9px
-}
+.connection{padding:12px 13px;border-radius:15px;border:1px solid var(--line);background:var(--surface-2);cursor:pointer;margin-bottom:9px}
 .connection:hover{border-color:var(--accent-2);background:var(--surface-3)}
 .connection-name{font-size:13px;font-weight:700;color:var(--navy)}
 .connection-meta{font-size:11px;color:var(--muted);margin-top:3px;line-height:1.4}
 .shared{margin-top:7px;font-size:10px;color:#a85200;font-weight:500}
 .note{font-size:11px;color:var(--faint);line-height:1.45;margin-top:10px}
-.state-msg{padding:40px 20px;text-align:center;color:var(--muted);font-size:13px;line-height:1.6}
 
-@media(max-width:900px){
-  body{overflow:auto}
-  .app{height:auto;min-height:100vh;grid-template-columns:1fr;grid-template-rows:430px minmax(650px,auto)}
-  .visual{border-right:0;border-bottom:1px solid var(--line)}
-  .directory{height:auto;min-height:650px}
-}
-@media(max-width:560px){
-  .app{grid-template-rows:360px auto}
-  .visual{padding:20px 16px}
-  .visual h1{font-size:28px}
-  .visual-intro{font-size:12px}
-  .directory-head{padding:20px 16px 14px}
-  .directory-body{padding:14px 12px 24px}
+@media(max-width:640px){
+  .page{padding:20px 16px 48px}
+  .page-head h1{font-size:24px}
+  .interests-panel{padding:16px}
   .person{grid-template-columns:42px minmax(0,1fr) auto;padding:12px}
   .avatar,.avatar-fallback{width:42px;height:42px;border-radius:13px}
 }
 </style>
 </head>
 <body>
-<div class="app">
-  <section class="visual" aria-label="Mapa visual de intereses">
-    <div class="visual-head">
-      <div class="eyebrow">EduIA Conf 2026</div>
-      <h1>Un ecosistema de intereses</h1>
-      <p class="visual-intro">El tamaño de cada etiqueta representa cuántas personas comparten ese interés. Tocá una para filtrar el directorio por ese tema.</p>
+<header class="topbar">
+  <div class="topbar-inner">
+    <span class="brand">EduIA Conf 2026 · Networking</span>
+    <div class="info-wrap">
+      <button class="info-btn" id="infoBtn" aria-haspopup="true" aria-expanded="false" aria-label="Información sobre los perfiles">i</button>
+      <div class="info-pop" id="infoPop" role="note"><b>Sobre esta información</b><br>Los perfiles, intereses y sugerencias de afinidad fueron generados con apoyo de IA a partir de fuentes públicas y datos del evento. Pueden existir errores, omisiones o simplificaciones.</div>
     </div>
-    <div class="tag-cloud" id="tagCloud" aria-label="Filtrar participantes por interés"></div>
-    <div class="visual-foot">
-      <span><b id="areaCount">–</b> áreas de interés</span>
-      <span><b id="confirmedCount">–</b> asistentes confirmados</span>
+  </div>
+</header>
+
+<main class="page">
+  <div class="page-head">
+    <h1>Encontrá con quién conversar</h1>
+    <p class="subtitle">Buscá por nombre, institución o tema. Seleccioná una persona para conocer su perfil y descubrir afinidades.</p>
+  </div>
+
+  <section class="interests-panel" aria-label="Filtrar por interés">
+    <div class="interests-head">
+      <span class="section-label">Explorá por interés</span>
+      <span class="counts"><b id="areaCount">–</b> áreas · <b id="confirmedCount">–</b> asistentes confirmados</span>
     </div>
+    <div class="tag-cloud" id="tagCloud"></div>
   </section>
 
-  <main class="directory">
-    <header class="directory-head">
-      <div class="topline">
-        <div>
-          <div class="eyebrow">Networking</div>
-          <h2>Encontrá con quién conversar</h2>
-          <div class="subtitle">Buscá por nombre, institución o tema. Seleccioná una persona para conocer su perfil y descubrir afinidades.</div>
-        </div>
-        <div class="info-wrap">
-          <button class="info-btn" id="infoBtn" aria-haspopup="true" aria-expanded="false" aria-label="Información sobre los perfiles">i</button>
-          <div class="info-pop" id="infoPop" role="note"><b>Sobre esta información</b><br>Los perfiles, intereses y sugerencias de afinidad fueron generados con apoyo de IA a partir de fuentes públicas y datos del evento. Pueden existir errores, omisiones o simplificaciones.</div>
-        </div>
-      </div>
+  <div class="search">
+    <span style="color:var(--faint)">Buscar</span>
+    <input id="searchInput" type="text" placeholder="Nombre, institución o interés..." autocomplete="off" aria-label="Buscar por nombre, institución o interés" disabled>
+    <button class="clear-btn" id="clearBtn">Limpiar</button>
+  </div>
+  <div class="filter-chip" id="filterChip" aria-live="polite"></div>
+  <div class="stats-line">
+    <span id="resultCount" aria-live="polite">Cargando…</span>
+    <span>Seleccioná un nombre para ver conexiones sugeridas</span>
+  </div>
 
-      <div class="search">
-        <span style="color:var(--faint)">Buscar</span>
-        <input id="searchInput" type="text" placeholder="Nombre, institución o interés..." autocomplete="off" aria-label="Buscar por nombre, institución o interés" disabled>
-        <button class="clear-btn" id="clearBtn">Limpiar</button>
-      </div>
-      <div class="filter-chip" id="filterChip" aria-live="polite"></div>
-      <div class="stats-line">
-        <span id="resultCount" aria-live="polite">Cargando…</span>
-        <span>Seleccioná un nombre para ver conexiones sugeridas</span>
-      </div>
-    </header>
-
-    <div class="directory-body">
-      <div class="list" id="peopleList"><div class="state-msg">Cargando participantes…</div></div>
-    </div>
-  </main>
-</div>
+  <div class="directory-body">
+    <div class="list" id="peopleList"><div class="state-msg">Cargando participantes…</div></div>
+  </div>
+</main>
 
 <div class="drawer-backdrop" id="backdrop"></div>
 <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerName" aria-label="Perfil seleccionado">
@@ -297,7 +283,7 @@ function renderList(query = '') {
       <div>
         <div class="person-name">${esc(p.name)}</div>
         <div class="person-meta">${esc(p.role || '')}${p.role && p.institution ? '<br>' : ''}${esc(p.institution || '')}</div>
-        <div class="tags">${p.interests.slice(0, 3).map(x => `<span class="tag">${esc(x)}</span>`).join('')}${p.interests.length > 3 ? `<span class="tag">+${p.interests.length - 3}</span>` : ''}</div>
+        <div class="tags">${p.interests.slice(0, 3).map(x => `<button type="button" class="tag${selectedInterests.has(x) ? ' active' : ''}" data-area="${esc(x)}">${esc(x)}</button>`).join('')}${p.interests.length > 3 ? `<span class="tag" style="cursor:default">+${p.interests.length - 3}</span>` : ''}</div>
       </div>
       <div class="arrow">›</div>
     </article>`).join('');
@@ -319,7 +305,7 @@ function openProfile(id) {
       ${avatarHTML(p)}
       <div class="role">${esc(p.role || '')}${p.role && p.institution ? '<br>' : ''}<b style="color:var(--ink);font-weight:600">${esc(p.institution || '')}</b>${p.country ? '<br>' + esc(p.country) : ''}</div>
     </div>
-    <div class="profile-tags">${p.interests.map(x => `<span class="profile-tag">${esc(x)}</span>`).join('')}</div>
+    <div class="profile-tags">${p.interests.map(x => `<button type="button" class="profile-tag${selectedInterests.has(x) ? ' active' : ''}" data-area="${esc(x)}">${esc(x)}</button>`).join('')}</div>
     <div class="summary">${esc(p.summary || 'No hay un resumen disponible para este perfil.')}</div>
     ${p.detail ? `<div class="section"><div class="section-title">Intereses en detalle</div><div class="summary">${esc(p.detail)}</div></div>` : ''}
     <div class="section">
@@ -376,24 +362,29 @@ function renderTagCloud() {
 
 // Delegación de eventos: un solo listener por contenedor en vez de
 // engancharlos de nuevo en cada render de la lista o del perfil.
-document.getElementById('peopleList').addEventListener('click', e => {
-  const card = e.target.closest('.person');
-  if (card) openProfile(card.dataset.id);
-});
-document.getElementById('peopleList').addEventListener('keydown', e => {
-  if (e.key !== 'Enter' && e.key !== ' ') return;
-  const card = e.target.closest('.person');
-  if (card) { e.preventDefault(); openProfile(card.dataset.id); }
-});
-document.getElementById('drawerBody').addEventListener('click', e => {
-  const el = e.target.closest('[data-related-id]');
-  if (el) openProfile(el.dataset.relatedId);
-});
 function toggleInterest(area) {
   selectedInterests.has(area) ? selectedInterests.delete(area) : selectedInterests.add(area);
   renderTagCloud();
   renderList(document.getElementById('searchInput').value);
 }
+document.getElementById('peopleList').addEventListener('click', e => {
+  const tag = e.target.closest('.tag');
+  if (tag) { toggleInterest(tag.dataset.area); return; }
+  const card = e.target.closest('.person');
+  if (card) openProfile(card.dataset.id);
+});
+document.getElementById('peopleList').addEventListener('keydown', e => {
+  if (e.key !== 'Enter' && e.key !== ' ') return;
+  if (e.target.closest('.tag')) return;
+  const card = e.target.closest('.person');
+  if (card) { e.preventDefault(); openProfile(card.dataset.id); }
+});
+document.getElementById('drawerBody').addEventListener('click', e => {
+  const profileTag = e.target.closest('.profile-tag');
+  if (profileTag) { toggleInterest(profileTag.dataset.area); return; }
+  const el = e.target.closest('[data-related-id]');
+  if (el) openProfile(el.dataset.relatedId);
+});
 document.getElementById('tagCloud').addEventListener('click', e => {
   const pill = e.target.closest('.tag-pill');
   if (pill) toggleInterest(pill.dataset.area);
@@ -412,6 +403,17 @@ document.addEventListener('error', e => {
 
 const search = document.getElementById('searchInput');
 search.addEventListener('input', () => { renderList(search.value); renderTagCloud(); });
+search.addEventListener('keydown', e => {
+  if (e.key !== 'Enter') return;
+  const q = norm(search.value);
+  if (!q) return;
+  const matches = AREAS.filter(a => norm(a).includes(q));
+  if (!matches.length) return;
+  selectedInterests = new Set([...selectedInterests, ...matches]);
+  search.value = '';
+  renderTagCloud();
+  renderList('');
+});
 document.getElementById('clearBtn').addEventListener('click', () => { search.value = ''; renderList(''); renderTagCloud(); search.focus(); });
 document.getElementById('closeDrawer').addEventListener('click', closeProfile);
 document.getElementById('backdrop').addEventListener('click', closeProfile);
