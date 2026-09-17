@@ -48,8 +48,17 @@ button,input{font:inherit}
 .section-label{font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:500}
 .counts{font-size:.75rem;color:var(--faint)}
 .counts b{color:var(--navy)}
+.tag-cloud-wrap{position:relative}
 .tag-cloud{
-  display:flex;flex-wrap:wrap;gap:9px 10px;max-height:168px;overflow-y:auto;overflow-x:hidden;padding-right:4px
+  display:flex;flex-wrap:wrap;gap:9px 10px;max-height:168px;overflow-y:auto;overflow-x:hidden;padding-right:4px;
+  scrollbar-width:thin;scrollbar-color:var(--accent-2) var(--surface-2)
+}
+.tag-cloud::-webkit-scrollbar{width:8px}
+.tag-cloud::-webkit-scrollbar-track{background:var(--surface-2);border-radius:8px}
+.tag-cloud::-webkit-scrollbar-thumb{background:var(--accent-2);border-radius:8px}
+.tag-cloud-fade{
+  position:absolute;left:0;right:10px;bottom:0;height:28px;pointer-events:none;border-radius:0 0 12px 12px;
+  background:linear-gradient(to bottom,rgba(255,255,255,0),var(--surface) 85%)
 }
 .tag-pill{
   border:1px solid var(--line);border-radius:999px;background:var(--surface-2);
@@ -111,18 +120,20 @@ button,input{font:inherit}
 .empty{border:1px dashed var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted);font-size:.875rem;line-height:1.55}
 .state-msg{padding:40px 20px;text-align:center;color:var(--muted);font-size:.875rem;line-height:1.6}
 
-.drawer-backdrop{position:fixed;inset:0;background:rgba(11,37,69,.35);backdrop-filter:blur(3px);z-index:60;display:none;opacity:0;transition:opacity .18s ease}
+.drawer-backdrop{position:fixed;inset:0;background:rgba(11,37,69,.45);backdrop-filter:blur(3px);z-index:60;display:none;opacity:0;transition:opacity .18s ease}
 .drawer-backdrop.show{opacity:1}
 .drawer{
-  position:fixed;right:0;top:0;bottom:0;width:min(560px,94vw);z-index:70;background:var(--surface);
-  border-left:1px solid var(--line-strong);box-shadow:-28px 0 60px rgba(11,37,69,.18);transform:translateX(102%);transition:transform .22s ease;
-  display:flex;flex-direction:column
+  position:fixed;left:50%;top:50%;z-index:70;background:var(--surface);
+  width:min(720px,92vw);max-height:88vh;border-radius:20px;
+  box-shadow:0 30px 80px rgba(11,37,69,.28);
+  transform:translate(-50%,-50%) scale(.96);opacity:0;transition:transform .18s ease,opacity .18s ease;
+  display:flex;flex-direction:column;pointer-events:none
 }
-.drawer.open{transform:translateX(0)}
-.drawer-head{padding:20px 20px 16px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.drawer.open{transform:translate(-50%,-50%) scale(1);opacity:1;pointer-events:auto}
+.drawer-head{padding:20px 24px 16px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex:0 0 auto}
 .drawer-head h2{font-family:Roboto,sans-serif;font-weight:700;font-size:1.625rem;line-height:1.15;margin:0;color:var(--navy)}
-.close-btn{border:1px solid var(--line);background:var(--surface-3);color:var(--navy);width:38px;height:38px;border-radius:12px;cursor:pointer;font-size:1rem}
-.drawer-body{overflow:auto;padding:18px 20px 30px}
+.close-btn{border:1px solid var(--line);background:var(--surface-3);color:var(--navy);width:38px;height:38px;border-radius:12px;cursor:pointer;font-size:1rem;flex:0 0 auto}
+.drawer-body{overflow:auto;padding:18px 24px 30px;flex:1 1 auto;min-height:0}
 .eyebrow{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);font-weight:500}
 .profile-top{display:grid;grid-template-columns:82px minmax(0,1fr);gap:15px;align-items:start}
 .profile-top .avatar,.profile-top .avatar-fallback{width:82px;height:82px;border-radius:24px;font-size:1.5rem}
@@ -186,7 +197,10 @@ button,input{font:inherit}
       <span class="section-label" id="exploreLabel">Explorá por interés</span>
       <span class="counts"><b id="areaCount">–</b> <span id="areasWord">áreas</span> · <b id="confirmedCount">–</b> <span id="confirmedWord">asistentes confirmados</span></span>
     </div>
-    <div class="tag-cloud" id="tagCloud"></div>
+    <div class="tag-cloud-wrap">
+      <div class="tag-cloud" id="tagCloud"></div>
+      <div class="tag-cloud-fade" aria-hidden="true"></div>
+    </div>
   </section>
 
   <div class="search">
