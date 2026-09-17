@@ -1,0 +1,28 @@
+/*
+ * EduIA Conf 2026 · Networking — colores institucionales
+ * Para cambiar la paleta, solo hay que editar los valores hex de acá abajo.
+ * No hace falta tocar index.html para nada relacionado a color.
+ *
+ * --navy      color principal (barra superior, títulos, texto fuerte)
+ * --accent    color de acento primario (naranja: filtros activos, estado seleccionado)
+ * --accent-2  color de acento secundario (celeste: hover, bordes destacados)
+ * El resto son neutros derivados (fondos, líneas, texto secundario) — normalmente
+ * no hace falta tocarlos al cambiar de paleta institucional.
+ */
+:root{
+  --navy:#0b2545;
+  --accent:#f5821f;
+  --accent-2:#2ea8e0;
+
+  --bg:#f3f6fa;
+  --surface:#ffffff;
+  --surface-2:#eef2f8;
+  --surface-3:#e3eaf3;
+  --ink:#0b2545;
+  --muted:#4a5a72;
+  --faint:#7c8aa0;
+  --line:rgba(11,37,69,.12);
+  --line-strong:rgba(11,37,69,.24);
+  --shadow:0 22px 50px rgba(11,37,69,.12);
+  --maxw:980px;
+}
