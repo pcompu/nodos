@@ -4,31 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>EduIA Conf 2026 · Networking</title>
+<link rel="stylesheet" href="theme.css">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-:root{
-  --bg:#f3f6fa;
-  --surface:#ffffff;
-  --surface-2:#eef2f8;
-  --surface-3:#e3eaf3;
-  --ink:#0b2545;
-  --muted:#4a5a72;
-  --faint:#7c8aa0;
-  --line:rgba(11,37,69,.12);
-  --line-strong:rgba(11,37,69,.24);
-  --accent:#f5821f;
-  --accent-2:#2ea8e0;
-  --navy:#0b2545;
-  --shadow:0 22px 50px rgba(11,37,69,.12);
-  --maxw:980px;
-}
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Roboto,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
 button,input{font:inherit}
 :focus-visible{outline:2px solid var(--accent-2);outline-offset:2px}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 
-.topbar{background:var(--navy);color:#fff;padding:14px 24px}
+.topbar{background:var(--navy);color:#fff;padding:14px 24px;box-shadow:0 2px 14px rgba(11,37,69,.18);position:relative;z-index:40}
 .topbar-inner{max-width:var(--maxw);margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:16px}
 .brand{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:#cddaeb}
 .info-wrap{position:relative}
@@ -41,12 +26,19 @@ button,input{font:inherit}
   border:1px solid var(--line-strong);font-size:12px;line-height:1.5;color:var(--muted);box-shadow:var(--shadow);display:none;z-index:30
 }
 .info-pop b{color:var(--navy)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.topbar-actions{display:flex;align-items:center;gap:10px}
+.lang-switch select{
+  background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.32);
+  border-radius:8px;padding:6px 9px;font-size:12px;cursor:pointer;font-family:inherit
+}
+.lang-switch select option{color:#000}
 
 .page{max-width:var(--maxw);margin:0 auto;padding:28px 24px 60px}
 .page-head h1{font-family:Roboto,sans-serif;font-weight:700;font-size:28px;line-height:1.15;margin:0 0 8px;color:var(--navy)}
 .subtitle{font-size:13px;color:var(--muted);line-height:1.5;max-width:640px;margin:0}
 
-.interests-panel{margin-top:26px;border:1px solid var(--line);border-radius:18px;background:var(--surface);padding:18px 20px}
+.interests-panel{margin-top:26px;border:1px solid var(--line);border-radius:18px;background:var(--surface);padding:18px 20px;box-shadow:0 6px 20px rgba(11,37,69,.06)}
 .interests-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:14px}
 .section-label{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:500}
 .counts{font-size:12px;color:var(--faint)}
@@ -69,8 +61,10 @@ button,input{font:inherit}
 
 .search{
   margin-top:22px;display:flex;gap:10px;align-items:center;padding:13px 14px;border-radius:16px;
-  background:var(--surface);border:1px solid var(--line-strong)
+  background:var(--surface);border:1px solid var(--line-strong);box-shadow:0 4px 14px rgba(11,37,69,.05);
+  transition:box-shadow .15s ease,border-color .15s ease
 }
+.search:focus-within{border-color:var(--accent-2);box-shadow:0 6px 20px rgba(11,37,69,.09)}
 .search input{flex:1;border:0;outline:0;background:transparent;color:var(--ink);font-size:15px;min-width:0}
 .search input::placeholder{color:var(--faint)}
 .clear-btn{border:0;background:transparent;color:var(--muted);cursor:pointer;padding:2px 4px;visibility:hidden}
@@ -90,10 +84,10 @@ button,input{font:inherit}
 .person{
   border:1px solid var(--line);background:var(--surface);border-radius:18px;padding:14px 15px;
   display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:12px;align-items:center;cursor:pointer;
-  transition:border-color .16s ease,transform .16s ease,background .16s ease;box-shadow:0 1px 2px rgba(11,37,69,.05);
+  transition:border-color .16s ease,transform .16s ease,background .16s ease,box-shadow .16s ease;box-shadow:0 2px 6px rgba(11,37,69,.06);
   animation:riseIn .18s ease both
 }
-.person:hover{transform:translateY(-1px);border-color:var(--accent-2);background:var(--surface-2)}
+.person:hover{transform:translateY(-2px);border-color:var(--accent-2);background:var(--surface-2);box-shadow:0 10px 24px rgba(11,37,69,.12)}
 .avatar{width:48px;height:48px;border-radius:15px;object-fit:cover;border:1px solid var(--line);background:var(--surface-3)}
 .avatar-fallback{
   width:48px;height:48px;border-radius:15px;display:grid;place-items:center;border:1px solid var(--line);
@@ -159,36 +153,46 @@ button,input{font:inherit}
 <header class="topbar">
   <div class="topbar-inner">
     <span class="brand">EduIA Conf 2026 · Networking</span>
-    <div class="info-wrap">
-      <button class="info-btn" id="infoBtn" aria-haspopup="true" aria-expanded="false" aria-label="Información sobre los perfiles">i</button>
-      <div class="info-pop" id="infoPop" role="note"><b>Sobre esta información</b><br>Los perfiles, intereses y sugerencias de afinidad fueron generados con apoyo de IA a partir de fuentes públicas y datos del evento. Pueden existir errores, omisiones o simplificaciones.</div>
+    <div class="topbar-actions">
+      <div class="lang-switch">
+        <label for="langSelect" class="sr-only" id="langSelectLabel">Idioma</label>
+        <select id="langSelect">
+          <option value="es">Español</option>
+          <option value="en">English</option>
+          <option value="pt">Português</option>
+        </select>
+      </div>
+      <div class="info-wrap">
+        <button class="info-btn" id="infoBtn" aria-haspopup="true" aria-expanded="false" aria-label="Información sobre los perfiles">i</button>
+        <div class="info-pop" id="infoPop" role="note"><b>Sobre esta información</b><br>Los perfiles, intereses y sugerencias de afinidad fueron generados con apoyo de IA a partir de fuentes públicas y datos del evento. Pueden existir errores, omisiones o simplificaciones.</div>
+      </div>
     </div>
   </div>
 </header>
 
 <main class="page">
   <div class="page-head">
-    <h1>Encontrá con quién conversar</h1>
-    <p class="subtitle">Buscá por nombre, institución o tema. Seleccioná una persona para conocer su perfil y descubrir afinidades.</p>
+    <h1 id="pageHeading">Encontrá con quién conversar</h1>
+    <p class="subtitle" id="pageSubtitle">Buscá por nombre, institución o tema. Seleccioná una persona para conocer su perfil y descubrir afinidades.</p>
   </div>
 
   <section class="interests-panel" aria-label="Filtrar por interés">
     <div class="interests-head">
-      <span class="section-label">Explorá por interés</span>
-      <span class="counts"><b id="areaCount">–</b> áreas · <b id="confirmedCount">–</b> asistentes confirmados</span>
+      <span class="section-label" id="exploreLabel">Explorá por interés</span>
+      <span class="counts"><b id="areaCount">–</b> <span id="areasWord">áreas</span> · <b id="confirmedCount">–</b> <span id="confirmedWord">asistentes confirmados</span></span>
     </div>
     <div class="tag-cloud" id="tagCloud"></div>
   </section>
 
   <div class="search">
-    <span style="color:var(--faint)">Buscar</span>
+    <span style="color:var(--faint)" id="searchLabel">Buscar</span>
     <input id="searchInput" type="text" placeholder="Nombre, institución o interés..." autocomplete="off" aria-label="Buscar por nombre, institución o interés" disabled>
     <button class="clear-btn" id="clearBtn">Limpiar</button>
   </div>
   <div class="filter-chip" id="filterChip" aria-live="polite"></div>
   <div class="stats-line">
     <span id="resultCount" aria-live="polite">Cargando…</span>
-    <span>Seleccioná un nombre para ver conexiones sugeridas</span>
+    <span id="hintText">Seleccioná un nombre para ver conexiones sugeridas</span>
   </div>
 
   <div class="directory-body">
@@ -200,7 +204,7 @@ button,input{font:inherit}
 <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerName" aria-label="Perfil seleccionado">
   <div class="drawer-head">
     <div>
-      <div class="eyebrow">Perfil</div>
+      <div class="eyebrow" id="drawerEyebrow">Perfil</div>
       <h2 id="drawerName"></h2>
     </div>
     <button class="close-btn" id="closeDrawer" aria-label="Cerrar">×</button>
@@ -212,6 +216,135 @@ button,input{font:inherit}
 // ---- Datos: se traen de data.json (lo actualiza una GitHub Action cada
 // 5 min a partir de un Apps Script de solo lectura). Acá solo se calculan
 // las áreas, los conteos y las afinidades entre personas. ----
+
+// ---- Idioma de la interfaz. Traduce el texto fijo de la página (títulos,
+// botones, mensajes); NO traduce los datos de cada persona (nombre,
+// institución, resumen, intereses), que vienen tal cual están en la Sheet. ----
+const I18N = {
+  es: {
+    infoBtnLabel: 'Información sobre los perfiles',
+    infoTitle: 'Sobre esta información',
+    infoBody: 'Los perfiles, intereses y sugerencias de afinidad fueron generados con apoyo de IA a partir de fuentes públicas y datos del evento. Pueden existir errores, omisiones o simplificaciones.',
+    heading: 'Encontrá con quién conversar',
+    subtitle: 'Buscá por nombre, institución o tema. Seleccioná una persona para conocer su perfil y descubrir afinidades.',
+    exploreLabel: 'Explorá por interés',
+    areasWord: 'áreas',
+    confirmedWord: 'asistentes confirmados',
+    searchLabel: 'Buscar',
+    searchPlaceholder: 'Nombre, institución o interés...',
+    clear: 'Limpiar',
+    hint: 'Seleccioná un nombre para ver conexiones sugeridas',
+    loadingPeople: 'Cargando participantes…',
+    loading: 'Cargando…',
+    results: n => `${n} resultado${n === 1 ? '' : 's'}`,
+    participants: n => `${n} participante${n === 1 ? '' : 's'}`,
+    empty: 'No encontramos personas con esa búsqueda. Probá con un apellido, institución o un tema más general.',
+    profileEyebrow: 'Perfil',
+    close: 'Cerrar',
+    noSummary: 'No hay un resumen disponible para este perfil.',
+    detailTitle: 'Intereses en detalle',
+    similarTitle: 'Personas con intereses similares',
+    shared: n => `${n} interés compartido${n === 1 ? '' : 's'}`,
+    noAffinity: 'No encontramos afinidades suficientes con los datos disponibles.',
+    note: 'Las sugerencias priorizan coincidencias temáticas y dan algo más de peso a intereses menos frecuentes.',
+    loadError: 'No pudimos cargar los datos de networking. Probá recargar la página en unos minutos.',
+    removeFilter: area => `Quitar filtro ${area}`,
+    langLabel: 'Idioma'
+  },
+  en: {
+    infoBtnLabel: 'Information about the profiles',
+    infoTitle: 'About this information',
+    infoBody: 'Profiles, interests and affinity suggestions were generated with AI support from public sources and event data. Errors, omissions or simplifications may exist.',
+    heading: 'Find someone to talk to',
+    subtitle: 'Search by name, institution or topic. Select a person to see their profile and discover shared interests.',
+    exploreLabel: 'Explore by interest',
+    areasWord: 'areas',
+    confirmedWord: 'confirmed attendees',
+    searchLabel: 'Search',
+    searchPlaceholder: 'Name, institution or interest...',
+    clear: 'Clear',
+    hint: 'Select a name to see suggested connections',
+    loadingPeople: 'Loading attendees…',
+    loading: 'Loading…',
+    results: n => `${n} result${n === 1 ? '' : 's'}`,
+    participants: n => `${n} attendee${n === 1 ? '' : 's'}`,
+    empty: 'We couldn\u2019t find anyone matching that search. Try a last name, institution, or a broader topic.',
+    profileEyebrow: 'Profile',
+    close: 'Close',
+    noSummary: 'No summary available for this profile.',
+    detailTitle: 'Interests in detail',
+    similarTitle: 'People with similar interests',
+    shared: n => `${n} shared interest${n === 1 ? '' : 's'}`,
+    noAffinity: 'We couldn\u2019t find enough affinity with the available data.',
+    note: 'Suggestions prioritize topic matches and weigh less common interests a bit more.',
+    loadError: 'We couldn\u2019t load the networking data. Try reloading the page in a few minutes.',
+    removeFilter: area => `Remove filter ${area}`,
+    langLabel: 'Language'
+  },
+  pt: {
+    infoBtnLabel: 'Informações sobre os perfis',
+    infoTitle: 'Sobre esta informação',
+    infoBody: 'Os perfis, interesses e sugestões de afinidade foram gerados com apoio de IA a partir de fontes públicas e dados do evento. Podem existir erros, omissões ou simplificações.',
+    heading: 'Encontre com quem conversar',
+    subtitle: 'Busque por nome, instituição ou tema. Selecione uma pessoa para conhecer seu perfil e descobrir afinidades.',
+    exploreLabel: 'Explore por interesse',
+    areasWord: 'áreas',
+    confirmedWord: 'participantes confirmados',
+    searchLabel: 'Buscar',
+    searchPlaceholder: 'Nome, instituição ou interesse...',
+    clear: 'Limpar',
+    hint: 'Selecione um nome para ver conexões sugeridas',
+    loadingPeople: 'Carregando participantes…',
+    loading: 'Carregando…',
+    results: n => `${n} resultado${n === 1 ? '' : 's'}`,
+    participants: n => `${n} participante${n === 1 ? '' : 's'}`,
+    empty: 'Não encontramos ninguém com essa busca. Tente um sobrenome, instituição ou um tema mais geral.',
+    profileEyebrow: 'Perfil',
+    close: 'Fechar',
+    noSummary: 'Não há um resumo disponível para este perfil.',
+    detailTitle: 'Interesses em detalhe',
+    similarTitle: 'Pessoas com interesses semelhantes',
+    shared: n => `${n} interesse${n === 1 ? '' : 's'} em comum`,
+    noAffinity: 'Não encontramos afinidades suficientes com os dados disponíveis.',
+    note: 'As sugestões priorizam coincidências temáticas e dão um pouco mais de peso a interesses menos frequentes.',
+    loadError: 'Não foi possível carregar os dados de networking. Tente recarregar a página em alguns minutos.',
+    removeFilter: area => `Remover filtro ${area}`,
+    langLabel: 'Idioma'
+  }
+};
+let LANG = 'es';
+let T = I18N[LANG];
+
+function applyLanguage(lang, opts = {}) {
+  LANG = I18N[lang] ? lang : 'es';
+  T = I18N[LANG];
+  document.documentElement.lang = LANG;
+  try { localStorage.setItem('eduia_lang', LANG); } catch {}
+
+  document.getElementById('langSelect').value = LANG;
+  document.getElementById('langSelectLabel').textContent = T.langLabel;
+  document.getElementById('infoBtn').setAttribute('aria-label', T.infoBtnLabel);
+  document.getElementById('infoPop').innerHTML = `<b>${esc(T.infoTitle)}</b><br>${esc(T.infoBody)}`;
+  document.getElementById('pageHeading').textContent = T.heading;
+  document.getElementById('pageSubtitle').textContent = T.subtitle;
+  document.getElementById('exploreLabel').textContent = T.exploreLabel;
+  document.getElementById('areasWord').textContent = T.areasWord;
+  document.getElementById('confirmedWord').textContent = T.confirmedWord;
+  document.getElementById('searchLabel').textContent = T.searchLabel;
+  document.getElementById('searchInput').placeholder = T.searchPlaceholder;
+  document.getElementById('searchInput').setAttribute('aria-label', T.searchPlaceholder);
+  document.getElementById('clearBtn').textContent = T.clear;
+  document.getElementById('hintText').textContent = T.hint;
+  document.getElementById('drawerEyebrow').textContent = T.profileEyebrow;
+  document.getElementById('closeDrawer').setAttribute('aria-label', T.close);
+  document.getElementById('resultCount').textContent = T.loading;
+  document.getElementById('peopleList').innerHTML = `<div class="state-msg">${esc(T.loadingPeople)}</div>`;
+
+  if (opts.refresh) {
+    renderTagCloud();
+    renderList(document.getElementById('searchInput').value);
+  }
+}
 
 const norm = s => (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ').trim();
 const initials = name => (name || '').split(/\s+/).filter(Boolean).slice(0, 2).map(x => x[0]).join('').toUpperCase();
@@ -265,15 +398,15 @@ function renderList(query = '') {
   const chip = document.getElementById('filterChip');
   chip.classList.toggle('show', selectedInterests.size > 0);
   chip.innerHTML = [...selectedInterests].map(area => `
-    <span class="chip" data-area="${esc(area)}">${esc(area)}<button type="button" aria-label="Quitar filtro ${esc(area)}">×</button></span>
+    <span class="chip" data-area="${esc(area)}">${esc(area)}<button type="button" aria-label="${esc(T.removeFilter(area))}">×</button></span>
   `).join('');
 
-  document.getElementById('resultCount').textContent = q ? `${rows.length} resultados` : `${rows.length} participantes`;
+  document.getElementById('resultCount').textContent = q ? T.results(rows.length) : T.participants(rows.length);
   document.getElementById('clearBtn').style.visibility = q ? 'visible' : 'hidden';
 
   const root = document.getElementById('peopleList');
   if (!rows.length) {
-    root.innerHTML = '<div class="empty">No encontramos personas con esa búsqueda. Probá con un apellido, institución o un tema más general.</div>';
+    root.innerHTML = `<div class="empty">${esc(T.empty)}</div>`;
     return;
   }
 
@@ -306,17 +439,17 @@ function openProfile(id) {
       <div class="role">${esc(p.role || '')}${p.role && p.institution ? '<br>' : ''}<b style="color:var(--ink);font-weight:600">${esc(p.institution || '')}</b>${p.country ? '<br>' + esc(p.country) : ''}</div>
     </div>
     <div class="profile-tags">${p.interests.map(x => `<button type="button" class="profile-tag${selectedInterests.has(x) ? ' active' : ''}" data-area="${esc(x)}">${esc(x)}</button>`).join('')}</div>
-    <div class="summary">${esc(p.summary || 'No hay un resumen disponible para este perfil.')}</div>
-    ${p.detail ? `<div class="section"><div class="section-title">Intereses en detalle</div><div class="summary">${esc(p.detail)}</div></div>` : ''}
+    <div class="summary">${esc(p.summary || T.noSummary)}</div>
+    ${p.detail ? `<div class="section"><div class="section-title">${esc(T.detailTitle)}</div><div class="summary">${esc(p.detail)}</div></div>` : ''}
     <div class="section">
-      <div class="section-title">Personas con intereses similares</div>
+      <div class="section-title">${esc(T.similarTitle)}</div>
       ${related.length ? related.map(r => `
         <div class="connection" data-related-id="${r.person.id}">
           <div class="connection-name">${esc(r.person.name)}</div>
           <div class="connection-meta">${esc(r.person.institution || '')}</div>
-          <div class="shared">${r.shared.length} ${r.shared.length === 1 ? 'interés compartido' : 'intereses compartidos'} · ${r.shared.map(esc).join(' · ')}</div>
-        </div>`).join('') : '<div class="empty">No encontramos afinidades suficientes con los datos disponibles.</div>'}
-      <div class="note">Las sugerencias priorizan coincidencias temáticas y dan algo más de peso a intereses menos frecuentes.</div>
+          <div class="shared">${T.shared(r.shared.length)} · ${r.shared.map(esc).join(' · ')}</div>
+        </div>`).join('') : `<div class="empty">${esc(T.noAffinity)}</div>`}
+      <div class="note">${esc(T.note)}</div>
     </div>`;
 
   const backdrop = document.getElementById('backdrop');
@@ -414,7 +547,13 @@ search.addEventListener('keydown', e => {
   renderTagCloud();
   renderList('');
 });
-document.getElementById('clearBtn').addEventListener('click', () => { search.value = ''; renderList(''); renderTagCloud(); search.focus(); });
+document.getElementById('clearBtn').addEventListener('click', () => {
+  search.value = '';
+  selectedInterests = new Set();
+  renderTagCloud();
+  renderList('');
+  search.focus();
+});
 document.getElementById('closeDrawer').addEventListener('click', closeProfile);
 document.getElementById('backdrop').addEventListener('click', closeProfile);
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeProfile(); });
@@ -434,7 +573,13 @@ document.addEventListener('click', e => {
   }
 });
 
+document.getElementById('langSelect').addEventListener('change', e => applyLanguage(e.target.value, { refresh: true }));
+
 async function init() {
+  let savedLang = 'es';
+  try { savedLang = localStorage.getItem('eduia_lang') || 'es'; } catch {}
+  applyLanguage(savedLang);
+
   let people;
   try {
     const res = await fetch('./data.json', { cache: 'no-store' });
@@ -443,7 +588,7 @@ async function init() {
     people = data.people || [];
   } catch (err) {
     document.getElementById('peopleList').innerHTML =
-      '<div class="state-msg">No pudimos cargar los datos de networking. Probá recargar la página en unos minutos.</div>';
+      `<div class="state-msg">${esc(T.loadError)}</div>`;
     document.getElementById('resultCount').textContent = '';
     return;
   }
