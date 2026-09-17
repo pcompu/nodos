@@ -521,6 +521,8 @@ function openProfile(id) {
       <div class="note">${esc(T.note)}</div>
     </div>`;
 
+  document.getElementById('drawerBody').scrollTop = 0;
+
   const backdrop = document.getElementById('backdrop');
   backdrop.style.display = 'block';
   requestAnimationFrame(() => {
