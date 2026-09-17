@@ -59,8 +59,10 @@ button,input{font:inherit}
 .tag-cloud-fade{
   position:absolute;left:0;right:10px;bottom:0;height:52px;pointer-events:none;border-radius:0 0 12px 12px;
   background:linear-gradient(to bottom,rgba(255,255,255,0),var(--surface) 78%);
-  display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px
+  display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px;
+  opacity:1;transition:opacity .15s ease
 }
+.tag-cloud-fade.hide{opacity:0}
 .tag-cloud-fade span{
   display:inline-flex;align-items:center;gap:5px;font-size:.75rem;font-weight:700;color:#2a1400;
   background:var(--accent);border-radius:999px;padding:5px 12px;box-shadow:0 4px 10px rgba(245,130,31,.4)
@@ -129,7 +131,7 @@ button,input{font:inherit}
 .drawer-backdrop.show{opacity:1}
 .drawer{
   position:fixed;left:50%;top:50%;z-index:70;background:var(--surface);
-  width:min(800px,92vw);max-height:88vh;border-radius:20px;
+  width:min(880px,92vw);max-height:88vh;border-radius:20px;
   box-shadow:0 30px 80px rgba(11,37,69,.28);
   transform:translate(-50%,-50%) scale(.96);opacity:0;transition:transform .18s ease,opacity .18s ease;
   display:flex;flex-direction:column;pointer-events:none
@@ -151,7 +153,7 @@ button,input{font:inherit}
 }
 .profile-tag:hover{border-color:var(--accent-2)}
 .profile-tag.active{border-color:var(--accent);background:rgba(245,130,31,.14);color:#a85200;font-weight:500}
-.summary{font-size:.875rem;line-height:1.65;color:var(--muted)}
+.summary{font-size:.9375rem;line-height:1.7;color:var(--muted);max-width:62ch}
 .section{border-top:1px solid var(--line);margin-top:20px;padding-top:18px}
 .section-title{font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:500;margin:0 0 10px}
 .connection{padding:12px 13px;border-radius:15px;border:1px solid var(--line);background:var(--surface-2);cursor:pointer;margin-bottom:9px}
@@ -204,7 +206,7 @@ button,input{font:inherit}
     </div>
     <div class="tag-cloud-wrap">
       <div class="tag-cloud" id="tagCloud"></div>
-      <div class="tag-cloud-fade" aria-hidden="true"><span>Desplazate para ver más ↓</span></div>
+      <div class="tag-cloud-fade" id="tagCloudFade" aria-hidden="true"><span id="tagCloudFadeText"></span></div>
     </div>
   </section>
 
@@ -273,7 +275,8 @@ const I18N = {
     note: 'Las sugerencias priorizan coincidencias temáticas y dan algo más de peso a intereses menos frecuentes.',
     loadError: 'No pudimos cargar los datos de networking. Probá recargar la página en unos minutos.',
     removeFilter: area => `Quitar filtro ${area}`,
-    langLabel: 'Idioma'
+    langLabel: 'Idioma',
+    scrollHint: 'Desplazate para ver más ↓'
   },
   en: {
     infoBtnLabel: 'Information about the profiles',
@@ -303,7 +306,8 @@ const I18N = {
     note: 'Suggestions prioritize topic matches and weigh less common interests a bit more.',
     loadError: 'We couldn\u2019t load the networking data. Try reloading the page in a few minutes.',
     removeFilter: area => `Remove filter ${area}`,
-    langLabel: 'Language'
+    langLabel: 'Language',
+    scrollHint: 'Scroll to see more ↓'
   },
   pt: {
     infoBtnLabel: 'Informações sobre os perfis',
@@ -333,7 +337,8 @@ const I18N = {
     note: 'As sugestões priorizam coincidências temáticas e dão um pouco mais de peso a interesses menos frequentes.',
     loadError: 'Não foi possível carregar os dados de networking. Tente recarregar a página em alguns minutos.',
     removeFilter: area => `Remover filtro ${area}`,
-    langLabel: 'Idioma'
+    langLabel: 'Idioma',
+    scrollHint: 'Role para ver mais ↓'
   }
 };
 let LANG = 'es';
@@ -420,6 +425,7 @@ function applyLanguage(lang, opts = {}) {
   document.getElementById('clearBtn').textContent = T.clear;
   document.getElementById('hintText').textContent = T.hint;
   document.getElementById('drawerEyebrow').textContent = T.profileEyebrow;
+  document.getElementById('tagCloudFadeText').textContent = T.scrollHint;
   document.getElementById('closeDrawer').setAttribute('aria-label', T.close);
   document.getElementById('resultCount').textContent = T.loading;
   document.getElementById('peopleList').innerHTML = `<div class="state-msg">${esc(T.loadingPeople)}</div>`;
@@ -582,6 +588,18 @@ function renderTagCloud() {
     const dim = q && !active && !norm(area).includes(q);
     return `<button type="button" class="tag-pill${active ? ' active' : ''}${dim ? ' dim' : ''}" data-area="${esc(area)}" style="font-size:${remSize}rem;--d:${i}" aria-pressed="${active}">${esc(translateArea(area))}<span class="tag-count">${COUNTS[area]}</span></button>`;
   }).join('');
+
+  updateTagCloudFade();
+}
+
+// El aviso "Desplazate para ver más" solo tiene sentido si efectivamente
+// queda contenido debajo del recorte visible — se oculta apenas se llega
+// al final del scroll (o si todo entra sin necesidad de scrollear).
+function updateTagCloudFade() {
+  const cloud = document.getElementById('tagCloud');
+  const fade = document.getElementById('tagCloudFade');
+  const restante = cloud.scrollHeight - cloud.scrollTop - cloud.clientHeight;
+  fade.classList.toggle('hide', restante < 8);
 }
 
 // Delegación de eventos: un solo listener por contenedor en vez de
@@ -613,6 +631,8 @@ document.getElementById('tagCloud').addEventListener('click', e => {
   const pill = e.target.closest('.tag-pill');
   if (pill) toggleInterest(pill.dataset.area);
 });
+document.getElementById('tagCloud').addEventListener('scroll', updateTagCloudFade);
+window.addEventListener('resize', updateTagCloudFade);
 document.getElementById('filterChip').addEventListener('click', e => {
   const chip = e.target.closest('.chip');
   if (chip) toggleInterest(chip.dataset.area);
