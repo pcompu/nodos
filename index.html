@@ -127,6 +127,16 @@ button,input{font:inherit}
 .empty{border:1px dashed var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted);font-size:.875rem;line-height:1.55}
 .state-msg{padding:40px 20px;text-align:center;color:var(--muted);font-size:.875rem;line-height:1.6}
 
+.scroll-top-btn{
+  position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:50%;
+  border:1px solid var(--line-strong);background:var(--navy);color:#fff;font-size:1.25rem;
+  cursor:pointer;box-shadow:0 8px 22px rgba(11,37,69,.28);z-index:50;
+  opacity:0;pointer-events:none;transform:translateY(8px);
+  transition:opacity .18s ease,transform .18s ease
+}
+.scroll-top-btn.show{opacity:1;pointer-events:auto;transform:translateY(0)}
+.scroll-top-btn:hover{background:#123a63}
+
 .drawer-backdrop{position:fixed;inset:0;background:rgba(11,37,69,.45);backdrop-filter:blur(3px);z-index:60;display:none;opacity:0;transition:opacity .18s ease}
 .drawer-backdrop.show{opacity:1}
 .drawer{
@@ -140,6 +150,11 @@ button,input{font:inherit}
 .drawer-head{padding:20px 24px 16px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex:0 0 auto}
 .drawer-head h2{font-family:Roboto,sans-serif;font-weight:700;font-size:1.625rem;line-height:1.15;margin:0;color:var(--navy)}
 .close-btn{border:1px solid var(--line);background:var(--surface-3);color:var(--navy);width:38px;height:38px;border-radius:12px;cursor:pointer;font-size:1rem;flex:0 0 auto}
+.back-btn{
+  display:inline-flex;align-items:center;gap:5px;border:0;background:transparent;color:var(--accent-2);
+  font-size:.8125rem;font-weight:500;cursor:pointer;padding:4px 0 9px;margin:0;font-family:inherit
+}
+.back-btn:hover{text-decoration:underline}
 .drawer-body{overflow:auto;padding:18px 24px 30px;flex:1 1 auto;min-height:0}
 .eyebrow{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);font-weight:500}
 .profile-top{display:grid;grid-template-columns:82px minmax(0,1fr);gap:15px;align-items:start}
@@ -226,10 +241,13 @@ button,input{font:inherit}
   </div>
 </main>
 
+<button type="button" id="scrollTopBtn" class="scroll-top-btn" aria-label="Volver al buscador">↑</button>
+
 <div class="drawer-backdrop" id="backdrop"></div>
 <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerName" aria-label="Perfil seleccionado">
   <div class="drawer-head">
     <div>
+      <button type="button" id="backProfile" class="back-btn" style="display:none"></button>
       <div class="eyebrow" id="drawerEyebrow">Perfil</div>
       <h2 id="drawerName"></h2>
     </div>
@@ -276,7 +294,9 @@ const I18N = {
     loadError: 'No pudimos cargar los datos de networking. Probá recargar la página en unos minutos.',
     removeFilter: area => `Quitar filtro ${area}`,
     langLabel: 'Idioma',
-    scrollHint: 'Desplazate para ver más ↓'
+    scrollHint: 'Desplazate para ver más ↓',
+    backTo: name => `Volver a ${name}`,
+    scrollTopLabel: 'Volver al buscador'
   },
   en: {
     infoBtnLabel: 'Information about the profiles',
@@ -307,7 +327,9 @@ const I18N = {
     loadError: 'We couldn\u2019t load the networking data. Try reloading the page in a few minutes.',
     removeFilter: area => `Remove filter ${area}`,
     langLabel: 'Language',
-    scrollHint: 'Scroll to see more ↓'
+    scrollHint: 'Scroll to see more ↓',
+    backTo: name => `Back to ${name}`,
+    scrollTopLabel: 'Back to search'
   },
   pt: {
     infoBtnLabel: 'Informações sobre os perfis',
@@ -338,7 +360,9 @@ const I18N = {
     loadError: 'Não foi possível carregar os dados de networking. Tente recarregar a página em alguns minutos.',
     removeFilter: area => `Remover filtro ${area}`,
     langLabel: 'Idioma',
-    scrollHint: 'Role para ver mais ↓'
+    scrollHint: 'Role para ver mais ↓',
+    backTo: name => `Voltar a ${name}`,
+    scrollTopLabel: 'Voltar à busca'
   }
 };
 let LANG = 'es';
@@ -426,6 +450,7 @@ function applyLanguage(lang, opts = {}) {
   document.getElementById('hintText').textContent = T.hint;
   document.getElementById('drawerEyebrow').textContent = T.profileEyebrow;
   document.getElementById('tagCloudFadeText').textContent = T.scrollHint;
+  document.getElementById('scrollTopBtn').setAttribute('aria-label', T.scrollTopLabel);
   document.getElementById('closeDrawer').setAttribute('aria-label', T.close);
   document.getElementById('resultCount').textContent = T.loading;
   document.getElementById('peopleList').innerHTML = `<div class="state-msg">${esc(T.loadingPeople)}</div>`;
@@ -514,11 +539,23 @@ function renderList(query = '') {
 }
 
 let currentProfileId = null;
+let profileHistory = [];
 
-function openProfile(id) {
+function openProfile(id, { push = false, reset = false } = {}) {
   const p = byId[id];
   if (!p) return;
+  if (reset) profileHistory = [];
+  else if (push && currentProfileId && currentProfileId !== id) profileHistory.push(currentProfileId);
   currentProfileId = id;
+
+  const backBtn = document.getElementById('backProfile');
+  if (profileHistory.length) {
+    const prevName = byId[profileHistory[profileHistory.length - 1]].name;
+    backBtn.textContent = `← ${T.backTo(prevName)}`;
+    backBtn.style.display = 'inline-flex';
+  } else {
+    backBtn.style.display = 'none';
+  }
 
   document.getElementById('drawerName').textContent = p.name;
 
@@ -559,9 +596,15 @@ function openProfile(id) {
 
 function closeProfile() {
   currentProfileId = null;
+  profileHistory = [];
   document.getElementById('drawer').classList.remove('open');
   document.getElementById('backdrop').classList.remove('show');
   setTimeout(() => { document.getElementById('backdrop').style.display = 'none'; }, 180);
+}
+
+function goBackProfile() {
+  if (!profileHistory.length) return;
+  openProfile(profileHistory.pop());
 }
 
 // Nube de etiquetas: tamaño proporcional a la cantidad de personas con
@@ -613,19 +656,20 @@ document.getElementById('peopleList').addEventListener('click', e => {
   const tag = e.target.closest('.tag');
   if (tag) { toggleInterest(tag.dataset.area); return; }
   const card = e.target.closest('.person');
-  if (card) openProfile(card.dataset.id);
+  if (card) openProfile(card.dataset.id, { reset: true });
 });
 document.getElementById('peopleList').addEventListener('keydown', e => {
   if (e.key !== 'Enter' && e.key !== ' ') return;
   if (e.target.closest('.tag')) return;
   const card = e.target.closest('.person');
-  if (card) { e.preventDefault(); openProfile(card.dataset.id); }
+  if (card) { e.preventDefault(); openProfile(card.dataset.id, { reset: true }); }
 });
+document.getElementById('backProfile').addEventListener('click', goBackProfile);
 document.getElementById('drawerBody').addEventListener('click', e => {
   const profileTag = e.target.closest('.profile-tag');
   if (profileTag) { toggleInterest(profileTag.dataset.area); return; }
   const el = e.target.closest('[data-related-id]');
-  if (el) openProfile(el.dataset.relatedId);
+  if (el) openProfile(el.dataset.relatedId, { push: true });
 });
 document.getElementById('tagCloud').addEventListener('click', e => {
   const pill = e.target.closest('.tag-pill');
@@ -633,6 +677,20 @@ document.getElementById('tagCloud').addEventListener('click', e => {
 });
 document.getElementById('tagCloud').addEventListener('scroll', updateTagCloudFade);
 window.addEventListener('resize', updateTagCloudFade);
+
+// Botón flotante "volver al buscador": aparece una vez que el buscador
+// queda arriba, fuera de la pantalla.
+const searchBarEl = document.querySelector('.search');
+const scrollTopBtn = document.getElementById('scrollTopBtn');
+function updateScrollTopBtn() {
+  scrollTopBtn.classList.toggle('show', searchBarEl.getBoundingClientRect().bottom < 0);
+}
+window.addEventListener('scroll', updateScrollTopBtn, { passive: true });
+window.addEventListener('resize', updateScrollTopBtn);
+scrollTopBtn.addEventListener('click', () => {
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  searchBarEl.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+});
 document.getElementById('filterChip').addEventListener('click', e => {
   const chip = e.target.closest('.chip');
   if (chip) toggleInterest(chip.dataset.area);
