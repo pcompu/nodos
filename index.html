@@ -7,6 +7,11 @@
 <link rel="stylesheet" href="theme.css">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+/* Tamaños en rem (relativos a la fuente base del navegador, normalmente
+   16px): así, si alguien sube el tamaño de fuente predeterminado del
+   navegador o del sistema operativo, esta página escala con eso — no solo
+   con el zoom de página. Ningún tamaño baja de 0.75rem (12px). */
+html{font-size:100%}
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Roboto,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
 button,input{font:inherit}
@@ -15,48 +20,48 @@ button,input{font:inherit}
 
 .topbar{background:var(--navy);color:#fff;padding:14px 24px;box-shadow:0 2px 14px rgba(11,37,69,.18);position:relative;z-index:40}
 .topbar-inner{max-width:var(--maxw);margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:16px}
-.brand{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:#cddaeb}
+.brand{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:#cddaeb}
 .info-wrap{position:relative}
 .info-btn{
   width:32px;height:32px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);
-  color:#fff;cursor:pointer;font-weight:700
+  color:#fff;cursor:pointer;font-weight:700;font-size:.875rem
 }
 .info-pop{
   position:absolute;right:0;top:40px;width:280px;padding:13px 14px;border-radius:14px;background:#fff;
-  border:1px solid var(--line-strong);font-size:12px;line-height:1.5;color:var(--muted);box-shadow:var(--shadow);display:none;z-index:30
+  border:1px solid var(--line-strong);font-size:.75rem;line-height:1.5;color:var(--muted);box-shadow:var(--shadow);display:none;z-index:30
 }
 .info-pop b{color:var(--navy)}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .topbar-actions{display:flex;align-items:center;gap:10px}
 .lang-switch select{
   background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.32);
-  border-radius:8px;padding:6px 9px;font-size:12px;cursor:pointer;font-family:inherit
+  border-radius:8px;padding:7px 9px;font-size:.75rem;cursor:pointer;font-family:inherit;min-height:24px
 }
 .lang-switch select option{color:#000}
 
 .page{max-width:var(--maxw);margin:0 auto;padding:28px 24px 60px}
-.page-head h1{font-family:Roboto,sans-serif;font-weight:700;font-size:28px;line-height:1.15;margin:0 0 8px;color:var(--navy)}
-.subtitle{font-size:13px;color:var(--muted);line-height:1.5;max-width:640px;margin:0}
+.page-head h1{font-family:Roboto,sans-serif;font-weight:700;font-size:1.75rem;line-height:1.15;margin:0 0 8px;color:var(--navy)}
+.subtitle{font-size:.875rem;color:var(--muted);line-height:1.55;max-width:640px;margin:0}
 
 .interests-panel{margin-top:26px;border:1px solid var(--line);border-radius:18px;background:var(--surface);padding:18px 20px;box-shadow:0 6px 20px rgba(11,37,69,.06)}
 .interests-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:14px}
-.section-label{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:500}
-.counts{font-size:12px;color:var(--faint)}
+.section-label{font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.counts{font-size:.75rem;color:var(--faint)}
 .counts b{color:var(--navy)}
 .tag-cloud{
   display:flex;flex-wrap:wrap;gap:9px 10px;max-height:168px;overflow-y:auto;overflow-x:hidden;padding-right:4px
 }
 .tag-pill{
   border:1px solid var(--line);border-radius:999px;background:var(--surface-2);
-  color:var(--ink);line-height:1.3;padding:8px 13px;cursor:pointer;max-width:100%;
+  color:var(--ink);line-height:1.3;padding:8px 13px;cursor:pointer;max-width:100%;min-height:24px;
   font-family:inherit;animation:tagIn .22s ease both;animation-delay:calc(var(--d,0) * 10ms);
   transition:opacity .15s ease,transform .12s ease,background .15s ease,border-color .15s ease
 }
 .tag-pill:hover{background:var(--surface-3);border-color:var(--accent-2);transform:translateY(-1px)}
 .tag-pill:active{transform:translateY(0)}
 .tag-pill.active{background:var(--accent);border-color:var(--accent);color:#2a1400}
-.tag-pill.dim{opacity:.35}
-.tag-count{opacity:.6;font-size:.82em;margin-left:5px}
+.tag-pill.dim{opacity:.4}
+.tag-count{opacity:.68;font-size:.82em;margin-left:5px}
 @keyframes tagIn{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:scale(1)}}
 
 .search{
@@ -65,18 +70,18 @@ button,input{font:inherit}
   transition:box-shadow .15s ease,border-color .15s ease
 }
 .search:focus-within{border-color:var(--accent-2);box-shadow:0 6px 20px rgba(11,37,69,.09)}
-.search input{flex:1;border:0;outline:0;background:transparent;color:var(--ink);font-size:15px;min-width:0}
+.search input{flex:1;border:0;outline:0;background:transparent;color:var(--ink);font-size:1rem;min-width:0}
 .search input::placeholder{color:var(--faint)}
-.clear-btn{border:0;background:transparent;color:var(--muted);cursor:pointer;padding:2px 4px;visibility:hidden}
+.clear-btn{border:0;background:transparent;color:var(--muted);cursor:pointer;padding:6px 8px;min-height:24px;font-size:.875rem;visibility:hidden}
 .filter-chip{display:none;flex-wrap:wrap;gap:7px;margin-top:12px}
 .filter-chip.show{display:flex}
 .filter-chip .chip{
-  display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#a85200;font-weight:500;
+  display:inline-flex;align-items:center;gap:4px;font-size:.75rem;color:#a85200;font-weight:500;
   border:1px solid rgba(245,130,31,.35);background:rgba(245,130,31,.1);border-radius:999px;
-  padding:6px 8px 6px 12px;animation:tagIn .18s ease both
+  padding:6px 4px 6px 12px;animation:tagIn .18s ease both
 }
-.filter-chip .chip button{border:0;background:transparent;color:inherit;cursor:pointer;font-size:15px;line-height:1;padding:2px}
-.stats-line{display:flex;justify-content:space-between;gap:10px;margin-top:14px;color:var(--faint);font-size:11px}
+.filter-chip .chip button{border:0;background:transparent;color:inherit;cursor:pointer;font-size:1rem;line-height:1;padding:5px;min-width:24px;min-height:24px}
+.stats-line{display:flex;justify-content:space-between;gap:10px;margin-top:14px;color:var(--faint);font-size:.75rem}
 
 .directory-body{margin-top:14px}
 .list{display:flex;flex-direction:column;gap:10px}
@@ -91,20 +96,20 @@ button,input{font:inherit}
 .avatar{width:48px;height:48px;border-radius:15px;object-fit:cover;border:1px solid var(--line);background:var(--surface-3)}
 .avatar-fallback{
   width:48px;height:48px;border-radius:15px;display:grid;place-items:center;border:1px solid var(--line);
-  background:linear-gradient(135deg,var(--navy),#1a4a7a);font-family:Roboto,sans-serif;font-weight:700;font-size:16px;color:#fff
+  background:linear-gradient(135deg,var(--navy),#1a4a7a);font-family:Roboto,sans-serif;font-weight:700;font-size:1rem;color:#fff
 }
-.person-name{font-size:14px;font-weight:700;line-height:1.25;color:var(--navy)}
-.person-meta{font-size:12px;color:var(--muted);line-height:1.35;margin-top:3px}
+.person-name{font-size:.9375rem;font-weight:700;line-height:1.3;color:var(--navy)}
+.person-meta{font-size:.8125rem;color:var(--muted);line-height:1.4;margin-top:3px}
 .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
 .tag{
-  font-size:10px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:4px 7px;
+  font-size:.75rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:5px 8px;min-height:24px;
   background:var(--surface-2);font-family:inherit;cursor:pointer;transition:border-color .15s ease,background .15s ease
 }
 .tag:hover{border-color:var(--accent-2);color:var(--navy)}
 .tag.active{border-color:var(--accent);background:rgba(245,130,31,.14);color:#a85200;font-weight:500}
-.arrow{color:var(--faint);font-size:18px;padding-left:4px}
-.empty{border:1px dashed var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted);font-size:13px;line-height:1.5}
-.state-msg{padding:40px 20px;text-align:center;color:var(--muted);font-size:13px;line-height:1.6}
+.arrow{color:var(--faint);font-size:1.125rem;padding-left:4px}
+.empty{border:1px dashed var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted);font-size:.875rem;line-height:1.55}
+.state-msg{padding:40px 20px;text-align:center;color:var(--muted);font-size:.875rem;line-height:1.6}
 
 .drawer-backdrop{position:fixed;inset:0;background:rgba(11,37,69,.35);backdrop-filter:blur(3px);z-index:60;display:none;opacity:0;transition:opacity .18s ease}
 .drawer-backdrop.show{opacity:1}
@@ -115,34 +120,34 @@ button,input{font:inherit}
 }
 .drawer.open{transform:translateX(0)}
 .drawer-head{padding:20px 20px 16px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
-.drawer-head h2{font-family:Roboto,sans-serif;font-weight:700;font-size:26px;line-height:1.1;margin:0;color:var(--navy)}
-.close-btn{border:1px solid var(--line);background:var(--surface-3);color:var(--navy);width:38px;height:38px;border-radius:12px;cursor:pointer}
+.drawer-head h2{font-family:Roboto,sans-serif;font-weight:700;font-size:1.625rem;line-height:1.15;margin:0;color:var(--navy)}
+.close-btn{border:1px solid var(--line);background:var(--surface-3);color:var(--navy);width:38px;height:38px;border-radius:12px;cursor:pointer;font-size:1rem}
 .drawer-body{overflow:auto;padding:18px 20px 30px}
-.eyebrow{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.eyebrow{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);font-weight:500}
 .profile-top{display:grid;grid-template-columns:82px minmax(0,1fr);gap:15px;align-items:start}
-.profile-top .avatar,.profile-top .avatar-fallback{width:82px;height:82px;border-radius:24px;font-size:24px}
-.role{font-size:13px;color:var(--muted);line-height:1.45}
+.profile-top .avatar,.profile-top .avatar-fallback{width:82px;height:82px;border-radius:24px;font-size:1.5rem}
+.role{font-size:.875rem;color:var(--muted);line-height:1.5}
 .profile-tags{display:flex;flex-wrap:wrap;gap:7px;margin:17px 0}
 .profile-tag{
-  font-size:11px;border-radius:999px;padding:6px 9px;border:1px solid rgba(46,168,224,.35);
+  font-size:.75rem;border-radius:999px;padding:6px 9px;min-height:24px;border:1px solid rgba(46,168,224,.4);
   background:rgba(46,168,224,.1);color:#0c5f82;font-family:inherit;cursor:pointer;
   transition:border-color .15s ease,background .15s ease
 }
 .profile-tag:hover{border-color:var(--accent-2)}
 .profile-tag.active{border-color:var(--accent);background:rgba(245,130,31,.14);color:#a85200;font-weight:500}
-.summary{font-size:13px;line-height:1.62;color:var(--muted)}
+.summary{font-size:.875rem;line-height:1.65;color:var(--muted)}
 .section{border-top:1px solid var(--line);margin-top:20px;padding-top:18px}
-.section-title{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.section-title{font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:500;margin:0 0 10px}
 .connection{padding:12px 13px;border-radius:15px;border:1px solid var(--line);background:var(--surface-2);cursor:pointer;margin-bottom:9px}
 .connection:hover{border-color:var(--accent-2);background:var(--surface-3)}
-.connection-name{font-size:13px;font-weight:700;color:var(--navy)}
-.connection-meta{font-size:11px;color:var(--muted);margin-top:3px;line-height:1.4}
-.shared{margin-top:7px;font-size:10px;color:#a85200;font-weight:500}
-.note{font-size:11px;color:var(--faint);line-height:1.45;margin-top:10px}
+.connection-name{font-size:.875rem;font-weight:700;color:var(--navy)}
+.connection-meta{font-size:.75rem;color:var(--muted);margin-top:3px;line-height:1.4}
+.shared{margin-top:7px;font-size:.75rem;color:#a85200;font-weight:500}
+.note{font-size:.75rem;color:var(--faint);line-height:1.5;margin-top:10px}
 
 @media(max-width:640px){
   .page{padding:20px 16px 48px}
-  .page-head h1{font-size:24px}
+  .page-head h1{font-size:1.5rem}
   .interests-panel{padding:16px}
   .person{grid-template-columns:42px minmax(0,1fr) auto;padding:12px}
   .avatar,.avatar-fallback{width:42px;height:42px;border-radius:13px}
@@ -315,6 +320,66 @@ const I18N = {
 let LANG = 'es';
 let T = I18N[LANG];
 
+// Traducción de las categorías de interés (vocabulario fijo, a diferencia de
+// nombres/resúmenes que son texto libre y no se traducen). Si una categoría
+// no está acá, se muestra tal cual viene de la Sheet (en español) — para
+// agregar una nueva, sumarla con su clave exacta en español.
+const AREA_TRANSLATIONS = {
+  'Política educativa y reforma de sistemas': { en: 'Education policy & system reform', pt: 'Política educacional e reforma de sistemas' },
+  'Formación y desarrollo profesional docente': { en: 'Teacher training & professional development', pt: 'Formação e desenvolvimento profissional docente' },
+  'Alianzas público-privadas y financiamiento': { en: 'Public-private partnerships & funding', pt: 'Parcerias público-privadas e financiamento' },
+  'Equidad educativa y brecha digital': { en: 'Educational equity & digital divide', pt: 'Equidade educacional e exclusão digital' },
+  'Escalamiento de innovaciones educativas': { en: 'Scaling educational innovations', pt: 'Escalonamento de inovações educacionais' },
+  'Cooperación internacional y multilateral': { en: 'International & multilateral cooperation', pt: 'Cooperação internacional e multilateral' },
+  'Educación superior': { en: 'Higher education', pt: 'Educação superior' },
+  'Alfabetización en IA': { en: 'AI literacy', pt: 'Alfabetização em IA' },
+  'Gobernanza de datos y ciberseguridad': { en: 'Data governance & cybersecurity', pt: 'Governança de dados e cibersegurança' },
+  'Conectividad y dispositivos': { en: 'Connectivity & devices', pt: 'Conectividade e dispositivos' },
+  'Ética y regulación de la IA': { en: 'AI ethics & regulation', pt: 'Ética e regulação da IA' },
+  'Pensamiento computacional y programación': { en: 'Computational thinking & programming', pt: 'Pensamento computacional e programação' },
+  'Divulgación y comunicación pública': { en: 'Public outreach & communication', pt: 'Divulgação e comunicação pública' },
+  'Analítica de datos educativos': { en: 'Educational data analytics', pt: 'Analítica de dados educacionais' },
+  'IA generativa en el aula': { en: 'Generative AI in the classroom', pt: 'IA generativa em sala de aula' },
+  'Equidad de género en STEM': { en: 'Gender equity in STEM', pt: 'Equidade de gênero em STEM' },
+  'Evaluación de aprendizajes e integridad académica': { en: 'Learning assessment & academic integrity', pt: 'Avaliação da aprendizagem e integridade acadêmica' },
+  'Primera infancia y aprendizajes fundacionales': { en: 'Early childhood & foundational learning', pt: 'Primeira infância e aprendizagens fundamentais' },
+  'Ciencias cognitivas y del comportamiento': { en: 'Cognitive & behavioral science', pt: 'Ciências cognitivas e comportamentais' },
+  'Alfabetización mediática y desinformación': { en: 'Media literacy & disinformation', pt: 'Letramento midiático e desinformação' },
+  'Educación inclusiva y discapacidad': { en: 'Inclusive education & disability', pt: 'Educação inclusiva e deficiência' },
+  'Educación técnico-profesional': { en: 'Technical & vocational education', pt: 'Educação técnico-profissional' },
+  'Enseñanza de inglés': { en: 'English language teaching', pt: 'Ensino de inglês' },
+  'Diseño curricular': { en: 'Curriculum design', pt: 'Design curricular' },
+  'Educación STEM y científica': { en: 'STEM & scientific education', pt: 'Educação STEM e científica' }
+};
+const translateArea = area => (AREA_TRANSLATIONS[area] && AREA_TRANSLATIONS[area][LANG]) || area;
+
+// País: vocabulario fijo también (lista acotada de países), se traduce
+// igual que las áreas de interés, sin necesidad de traducción automática.
+const COUNTRY_TRANSLATIONS = {
+  'Uruguay': { en: 'Uruguay', pt: 'Uruguai' },
+  'Argentina': { en: 'Argentina', pt: 'Argentina' },
+  'Brasil': { en: 'Brazil', pt: 'Brasil' },
+  'Chile': { en: 'Chile', pt: 'Chile' },
+  'México': { en: 'Mexico', pt: 'México' },
+  'Colombia': { en: 'Colombia', pt: 'Colômbia' },
+  'Paraguay': { en: 'Paraguay', pt: 'Paraguai' },
+  'Perú': { en: 'Peru', pt: 'Peru' },
+  'Bolivia': { en: 'Bolivia', pt: 'Bolívia' },
+  'Ecuador': { en: 'Ecuador', pt: 'Equador' },
+  'España': { en: 'Spain', pt: 'Espanha' },
+  'Estados Unidos': { en: 'United States', pt: 'Estados Unidos' },
+  'Costa Rica': { en: 'Costa Rica', pt: 'Costa Rica' },
+  'Panamá': { en: 'Panama', pt: 'Panamá' },
+  'República Dominicana': { en: 'Dominican Republic', pt: 'República Dominicana' }
+};
+const translateCountry = country => (COUNTRY_TRANSLATIONS[country] && COUNTRY_TRANSLATIONS[country][LANG]) || country;
+
+// Rol, resumen y detalle SÍ son texto libre por persona (no un vocabulario
+// fijo), así que se traducen en el momento de generar data.json (ver
+// AppsScript_generar_json.gs) y llegan ya resueltos como role_en/role_pt,
+// summary_en/summary_pt, detail_en/detail_pt. Acá solo se elige cuál mostrar.
+const localizedField = (p, field) => (LANG === 'es' ? p[field] : p[`${field}_${LANG}`]) || p[field] || '';
+
 function applyLanguage(lang, opts = {}) {
   LANG = I18N[lang] ? lang : 'es';
   T = I18N[LANG];
@@ -343,6 +408,7 @@ function applyLanguage(lang, opts = {}) {
   if (opts.refresh) {
     renderTagCloud();
     renderList(document.getElementById('searchInput').value);
+    if (currentProfileId) openProfile(currentProfileId);
   }
 }
 
@@ -398,7 +464,7 @@ function renderList(query = '') {
   const chip = document.getElementById('filterChip');
   chip.classList.toggle('show', selectedInterests.size > 0);
   chip.innerHTML = [...selectedInterests].map(area => `
-    <span class="chip" data-area="${esc(area)}">${esc(area)}<button type="button" aria-label="${esc(T.removeFilter(area))}">×</button></span>
+    <span class="chip" data-area="${esc(area)}">${esc(translateArea(area))}<button type="button" aria-label="${esc(T.removeFilter(translateArea(area)))}">×</button></span>
   `).join('');
 
   document.getElementById('resultCount').textContent = q ? T.results(rows.length) : T.participants(rows.length);
@@ -415,16 +481,19 @@ function renderList(query = '') {
       ${avatarHTML(p)}
       <div>
         <div class="person-name">${esc(p.name)}</div>
-        <div class="person-meta">${esc(p.role || '')}${p.role && p.institution ? '<br>' : ''}${esc(p.institution || '')}</div>
-        <div class="tags">${p.interests.slice(0, 3).map(x => `<button type="button" class="tag${selectedInterests.has(x) ? ' active' : ''}" data-area="${esc(x)}">${esc(x)}</button>`).join('')}${p.interests.length > 3 ? `<span class="tag" style="cursor:default">+${p.interests.length - 3}</span>` : ''}</div>
+        <div class="person-meta">${esc(localizedField(p, 'role'))}${p.role && p.institution ? '<br>' : ''}${esc(p.institution || '')}</div>
+        <div class="tags">${p.interests.slice(0, 3).map(x => `<button type="button" class="tag${selectedInterests.has(x) ? ' active' : ''}" data-area="${esc(x)}">${esc(translateArea(x))}</button>`).join('')}${p.interests.length > 3 ? `<span class="tag" style="cursor:default">+${p.interests.length - 3}</span>` : ''}</div>
       </div>
       <div class="arrow">›</div>
     </article>`).join('');
 }
 
+let currentProfileId = null;
+
 function openProfile(id) {
   const p = byId[id];
   if (!p) return;
+  currentProfileId = id;
 
   document.getElementById('drawerName').textContent = p.name;
 
@@ -436,18 +505,18 @@ function openProfile(id) {
   document.getElementById('drawerBody').innerHTML = `
     <div class="profile-top">
       ${avatarHTML(p)}
-      <div class="role">${esc(p.role || '')}${p.role && p.institution ? '<br>' : ''}<b style="color:var(--ink);font-weight:600">${esc(p.institution || '')}</b>${p.country ? '<br>' + esc(p.country) : ''}</div>
+      <div class="role">${esc(localizedField(p, 'role'))}${p.role && p.institution ? '<br>' : ''}<b style="color:var(--ink);font-weight:600">${esc(p.institution || '')}</b>${p.country ? '<br>' + esc(translateCountry(p.country)) : ''}</div>
     </div>
-    <div class="profile-tags">${p.interests.map(x => `<button type="button" class="profile-tag${selectedInterests.has(x) ? ' active' : ''}" data-area="${esc(x)}">${esc(x)}</button>`).join('')}</div>
-    <div class="summary">${esc(p.summary || T.noSummary)}</div>
-    ${p.detail ? `<div class="section"><div class="section-title">${esc(T.detailTitle)}</div><div class="summary">${esc(p.detail)}</div></div>` : ''}
+    <div class="profile-tags">${p.interests.map(x => `<button type="button" class="profile-tag${selectedInterests.has(x) ? ' active' : ''}" data-area="${esc(x)}">${esc(translateArea(x))}</button>`).join('')}</div>
+    <div class="summary">${esc(localizedField(p, 'summary') || T.noSummary)}</div>
+    ${p.detail ? `<div class="section"><h3 class="section-title">${esc(T.detailTitle)}</h3><div class="summary">${esc(localizedField(p, 'detail'))}</div></div>` : ''}
     <div class="section">
-      <div class="section-title">${esc(T.similarTitle)}</div>
+      <h3 class="section-title">${esc(T.similarTitle)}</h3>
       ${related.length ? related.map(r => `
         <div class="connection" data-related-id="${r.person.id}">
           <div class="connection-name">${esc(r.person.name)}</div>
           <div class="connection-meta">${esc(r.person.institution || '')}</div>
-          <div class="shared">${T.shared(r.shared.length)} · ${r.shared.map(esc).join(' · ')}</div>
+          <div class="shared">${T.shared(r.shared.length)} · ${r.shared.map(x => esc(translateArea(x))).join(' · ')}</div>
         </div>`).join('') : `<div class="empty">${esc(T.noAffinity)}</div>`}
       <div class="note">${esc(T.note)}</div>
     </div>`;
@@ -462,6 +531,7 @@ function openProfile(id) {
 }
 
 function closeProfile() {
+  currentProfileId = null;
   document.getElementById('drawer').classList.remove('open');
   document.getElementById('backdrop').classList.remove('show');
   setTimeout(() => { document.getElementById('backdrop').style.display = 'none'; }, 180);
@@ -486,10 +556,10 @@ function renderTagCloud() {
 
   cloud.innerHTML = sorted.map((area, i) => {
     const t = (Math.sqrt(COUNTS[area]) - Math.sqrt(minCount)) / range;
-    const size = Math.round(12 + t * 13);
+    const remSize = (0.75 + t * 0.8125).toFixed(3); // 12px a 25px, en rem sobre una base de 16px
     const active = selectedInterests.has(area);
     const dim = q && !active && !norm(area).includes(q);
-    return `<button type="button" class="tag-pill${active ? ' active' : ''}${dim ? ' dim' : ''}" data-area="${esc(area)}" style="font-size:${size}px;--d:${i}" aria-pressed="${active}">${esc(area)}<span class="tag-count">${COUNTS[area]}</span></button>`;
+    return `<button type="button" class="tag-pill${active ? ' active' : ''}${dim ? ' dim' : ''}" data-area="${esc(area)}" style="font-size:${remSize}rem;--d:${i}" aria-pressed="${active}">${esc(translateArea(area))}<span class="tag-count">${COUNTS[area]}</span></button>`;
   }).join('');
 }
 
