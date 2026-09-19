@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>EduIA Conf 2026 · Networking</title>
 <link rel="stylesheet" href="theme.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 /* Tamaños en rem (relativos a la fuente base del navegador, normalmente
    16px): así, si alguien sube el tamaño de fuente predeterminado del
    navegador o del sistema operativo, esta página escala con eso — no solo
@@ -109,7 +111,9 @@ button,input{font:inherit}
   animation:riseIn .18s ease both
 }
 .person:hover{transform:translateY(-2px);border-color:var(--accent-2);background:var(--surface-2);box-shadow:0 10px 24px rgba(11,37,69,.12)}
-.avatar{width:48px;height:48px;border-radius:15px;object-fit:cover;border:1px solid var(--line);background:var(--surface-3)}
+.person:active{transform:translateY(0) scale(.99)}
+.avatar{width:48px;height:48px;border-radius:15px;object-fit:cover;border:1px solid var(--line);background:var(--surface-3);opacity:0;transition:opacity .3s ease}
+.avatar.loaded{opacity:1}
 .avatar-fallback{
   width:48px;height:48px;border-radius:15px;display:grid;place-items:center;border:1px solid var(--line);
   background:linear-gradient(135deg,var(--navy),#1a4a7a);font-family:Roboto,sans-serif;font-weight:700;font-size:1rem;color:#fff
@@ -126,6 +130,17 @@ button,input{font:inherit}
 .arrow{color:var(--faint);font-size:1.125rem;padding-left:4px}
 .empty{border:1px dashed var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted);font-size:.875rem;line-height:1.55}
 .state-msg{padding:40px 20px;text-align:center;color:var(--muted);font-size:.875rem;line-height:1.6}
+
+.skeleton-card{
+  border:1px solid var(--line);background:var(--surface);border-radius:18px;padding:14px 15px;
+  display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:12px;align-items:center
+}
+.skeleton-avatar{width:48px;height:48px;border-radius:15px;background:var(--surface-3)}
+.skeleton-line{height:12px;border-radius:6px;background:var(--surface-3)}
+.skeleton-line.medium{width:55%;margin-bottom:8px}
+.skeleton-line.short{width:35%}
+.skeleton-card,.skeleton-avatar,.skeleton-line{animation:shimmer 1.4s ease-in-out infinite}
+@keyframes shimmer{0%,100%{opacity:.6}50%{opacity:1}}
 
 .scroll-top-btn{
   position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:50%;
@@ -171,8 +186,9 @@ button,input{font:inherit}
 .summary{font-size:.9375rem;line-height:1.7;color:var(--muted);max-width:62ch}
 .section{border-top:1px solid var(--line);margin-top:20px;padding-top:18px}
 .section-title{font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:500;margin:0 0 10px}
-.connection{padding:12px 13px;border-radius:15px;border:1px solid var(--line);background:var(--surface-2);cursor:pointer;margin-bottom:9px}
+.connection{padding:12px 13px;border-radius:15px;border:1px solid var(--line);background:var(--surface-2);cursor:pointer;margin-bottom:9px;transition:border-color .15s ease,background .15s ease,transform .1s ease;animation:riseIn .18s ease both}
 .connection:hover{border-color:var(--accent-2);background:var(--surface-3)}
+.connection:active{transform:scale(.99)}
 .connection-name{font-size:.875rem;font-weight:700;color:var(--navy)}
 .connection-meta{font-size:.75rem;color:var(--muted);margin-top:3px;line-height:1.4}
 .shared{margin-top:7px;font-size:.75rem;color:#a85200;font-weight:500}
@@ -237,7 +253,7 @@ button,input{font:inherit}
   </div>
 
   <div class="directory-body">
-    <div class="list" id="peopleList"><div class="state-msg">Cargando participantes…</div></div>
+    <div class="list" id="peopleList"></div>
   </div>
 </main>
 
@@ -458,7 +474,7 @@ function applyLanguage(lang, opts = {}) {
   document.getElementById('scrollTopBtn').setAttribute('aria-label', T.scrollTopLabel);
   document.getElementById('closeDrawer').setAttribute('aria-label', T.close);
   document.getElementById('resultCount').textContent = T.loading;
-  document.getElementById('peopleList').innerHTML = `<div class="state-msg">${esc(T.loadingPeople)}</div>`;
+  document.getElementById('peopleList').innerHTML = skeletonHTML(T.loadingPeople);
 
   if (opts.refresh) {
     renderTagCloud();
@@ -508,6 +524,11 @@ function avatarHTML(p) {
   return `<div class="avatar-fallback">${esc(initials(p.name))}</div>`;
 }
 
+function skeletonHTML(loadingLabel, count = 5) {
+  const card = '<div class="skeleton-card"><div class="skeleton-avatar"></div><div><div class="skeleton-line medium"></div><div class="skeleton-line short"></div></div></div>';
+  return `<span class="sr-only">${esc(loadingLabel)}</span>` + Array.from({ length: count }, () => card).join('');
+}
+
 function renderList(query = '') {
   const q = norm(query);
   const terms = q.split(' ').filter(Boolean);
@@ -531,8 +552,8 @@ function renderList(query = '') {
     return;
   }
 
-  root.innerHTML = rows.map(p => `
-    <article class="person" data-id="${p.id}" role="button" tabindex="0">
+  root.innerHTML = rows.map((p, i) => `
+    <article class="person" data-id="${p.id}" role="button" tabindex="0" style="animation-delay:${Math.min(i, 14) * 22}ms">
       ${avatarHTML(p)}
       <div>
         <div class="person-name">${esc(p.name)}</div>
@@ -579,8 +600,8 @@ function openProfile(id, { push = false, reset = false } = {}) {
     ${p.detail ? `<div class="section"><h3 class="section-title">${esc(T.detailTitle)}</h3><div class="summary">${esc(localizedField(p, 'detail'))}</div></div>` : ''}
     <div class="section">
       <h3 class="section-title">${esc(T.similarTitle)}</h3>
-      ${related.length ? related.map(r => `
-        <div class="connection" data-related-id="${r.person.id}">
+      ${related.length ? related.map((r, i) => `
+        <div class="connection" data-related-id="${r.person.id}" style="animation-delay:${i * 25}ms">
           <div class="connection-name">${esc(r.person.name)}</div>
           <div class="connection-meta">${esc(r.person.institution || '')}</div>
           <div class="shared">${T.shared(r.shared.length)} · ${r.shared.map(x => esc(translateArea(x))).join(' · ')}</div>
@@ -706,6 +727,9 @@ document.addEventListener('error', e => {
   fallback.className = 'avatar-fallback';
   fallback.textContent = initials(e.target.alt);
   e.target.replaceWith(fallback);
+}, true);
+document.addEventListener('load', e => {
+  if (e.target.matches?.('img.avatar')) e.target.classList.add('loaded');
 }, true);
 
 const search = document.getElementById('searchInput');
