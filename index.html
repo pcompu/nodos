@@ -397,7 +397,12 @@ const AREA_TRANSLATIONS = {
   'Educación técnico-profesional': { en: 'Technical & vocational education', pt: 'Educação técnico-profissional' },
   'Enseñanza de inglés': { en: 'English language teaching', pt: 'Ensino de inglês' },
   'Diseño curricular': { en: 'Curriculum design', pt: 'Design curricular' },
-  'Educación STEM y científica': { en: 'STEM & scientific education', pt: 'Educação STEM e científica' }
+  'Educación STEM y científica': { en: 'STEM & scientific education', pt: 'Educação STEM e científica' },
+  'Ciudadanía digital y bienestar': { en: 'Digital citizenship & wellbeing', pt: 'Cidadania digital e bem-estar' },
+  'Educación media y trayectorias educativas': { en: 'Secondary education & school trajectories', pt: 'Ensino médio e trajetórias educacionais' },
+  'Emprendedurismo y ecosistema EdTech': { en: 'Entrepreneurship & the EdTech ecosystem', pt: 'Empreendedorismo e ecossistema EdTech' },
+  'Evaluación de impacto y ensayos aleatorizados': { en: 'Impact evaluation & randomized trials', pt: 'Avaliação de impacto e ensaios randomizados' },
+  'Plataformas y aprendizaje en línea': { en: 'Platforms & online learning', pt: 'Plataformas e aprendizagem on-line' }
 };
 const translateArea = area => (AREA_TRANSLATIONS[area] && AREA_TRANSLATIONS[area][LANG]) || area;
 
@@ -499,7 +504,7 @@ let COUNTS = {};
 let selectedInterests = new Set();
 
 function avatarHTML(p) {
-  if (p.photo) return `<img class="avatar" src="${esc(p.photo)}" alt="${esc(p.name)}">`;
+  if (p.photo) return `<img class="avatar" src="${esc(p.photo)}" alt="${esc(p.name)}" loading="lazy" decoding="async">`;
   return `<div class="avatar-fallback">${esc(initials(p.name))}</div>`;
 }
 
@@ -771,12 +776,30 @@ async function init() {
   AREAS = [...new Set(enriched.flatMap(p => p.interests))];
   COUNTS = buildCounts(enriched);
 
-  document.getElementById('areaCount').textContent = AREAS.length;
-  document.getElementById('confirmedCount').textContent = enriched.length;
+  countUpTo('areaCount', AREAS.length);
+  countUpTo('confirmedCount', enriched.length);
   document.getElementById('searchInput').disabled = false;
 
   renderList();
   renderTagCloud();
+}
+
+// Cuenta ascendente sutil para los números de arriba. Sin animación (número
+// final directo) si el sistema pide reducir el movimiento.
+function countUpTo(elId, target, durationMs = 700) {
+  const el = document.getElementById(elId);
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || target <= 1) {
+    el.textContent = target;
+    return;
+  }
+  const start = performance.now();
+  const paso = now => {
+    const t = Math.min(1, (now - start) / durationMs);
+    const eased = 1 - Math.pow(1 - t, 3);
+    el.textContent = Math.round(eased * target);
+    if (t < 1) requestAnimationFrame(paso);
+  };
+  requestAnimationFrame(paso);
 }
 
 init();
