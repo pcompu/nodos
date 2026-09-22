@@ -356,9 +356,9 @@
       "id": "p-17",
       "name": "Federico Burone",
       "institution": "IDRC Canadá",
-      "role": "Regional Director, Latin America and the Caribbean, IDRC",
-      "role_en": "Regional Director, Latin America and the Caribbean, IDRC",
-      "role_pt": "Diretor Regional para a América Latina e o Caribe, IDRC",
+      "role": "Regional Director, Latin America and the Caribbean, IDRC, con base en Montevideo",
+      "role_en": "Regional Director, Latin America and the Caribbean, IDRC, con base en Montevideo",
+      "role_pt": "Diretor Regional para a América Latina e o Caribe do IDRC, com sede em Montevidéu.",
       "country": "Uruguay",
       "summary": "Doctor en Economía y magíster en Ciencias Ambientales por la Universidad de Valencia. Es director regional para América Latina y el Caribe del IDRC de Canadá; antes dirigió la Secretaría de Gestión Ambiental del organismo y fue vicepresidente interino de Programas y Alianzas y de Estrategia, Regiones y Política. Investigó y enseñó gestión urbana y economía del desarrollo en la Universidad de la República y la Universidad de Valencia. Desde el IDRC financia investigación aplicada sobre transformación digital educativa en la región, incluida la agenda EdTech de Fundación Ceibal y un llamado sobre IA y trayectorias educativas.",
       "summary_en": "He holds a PhD in Economics and a Master's degree in Environmental Sciences from the University of Valencia. He is the Regional Director for Latin America and the Caribbean at the IDRC in Canada; previously, he headed the organization's Environmental Management Secretariat and served as Interim Vice President for Programs and Partnerships and for Strategy, Regions, and Policy. He has researched and taught urban management and development economics at the University of the Republic and the University of Valencia. At the IDRC, he funds applied research on digital transformation in education in the region, including the Ceibal Foundation's EdTech agenda and a call for proposals on AI and educational pathways.",
@@ -377,6 +377,29 @@
     },
     {
       "id": "p-18",
+      "name": "Alvaro Cabana",
+      "institution": "CICEA",
+      "role": "Ciencia de Datos",
+      "role_en": "Data Science",
+      "role_pt": "Ciência de Dados",
+      "country": "Uruguay",
+      "summary": "Licenciado (2005), magíster (2009) y doctor en Ciencias Biológicas (2014) por la Udelar. Es profesor agregado del Instituto de Fundamentos y Métodos en Psicología, donde coordina el área de Ciencia de Datos y Psicometría; investiga en el Centro de Investigación Básica en Psicología e integra el grupo coordinador de CICADA. Estudia las bases neurobiológicas del lenguaje mediante experimentos psicofísicos y ciencia de datos, y dirige el Proyecto Lexicon, que modela el significado de las palabras con aprendizaje automático. Participa en el debate público sobre IA y aprendizaje, advirtiendo sobre el «sedentarismo cognitivo» asociado al uso acrítico de chatbots.",
+      "summary_en": "He holds a Bachelor's degree (2005), a Master's degree (2009), and a PhD in Biological Sciences (2014) from the University of the Republic (Udelar). He is an associate professor at the Institute of Foundations and Methods in Psychology, where he coordinates the Data Science and Psychometrics area; he conducts research at the Center for Basic Research in Psychology and is a member of the CICADA coordinating group. He studies the neurobiological basis of language through psychophysical experiments and data science, and directs the Lexicon Project, which models the meaning of words using machine learning. He participates in the public debate on AI and learning, warning about the \"cognitive stagnation\" associated with the uncritical use of chatbots.",
+      "summary_pt": "Ele possui bacharelado (2005), mestrado (2009) e doutorado em Ciências Biológicas (2014) pela Universidade da República (Udelar). É professor associado do Instituto de Fundamentos e Métodos em Psicologia, onde coordena a área de Ciência de Dados e Psicometria; realiza pesquisas no Centro de Pesquisa Básica em Psicologia e é membro do grupo coordenador do CICADA. Estuda as bases neurobiológicas da linguagem por meio de experimentos psicofísicos e ciência de dados, e dirige o Projeto Léxico, que modela o significado das palavras utilizando aprendizado de máquina. Participa do debate público sobre IA e aprendizado, alertando para a \"estagnação cognitiva\" associada ao uso acrítico de chatbots.",
+      "interests": [
+        "Ciencias cognitivas y del comportamiento",
+        "Analítica de datos educativos",
+        "Alfabetización en IA",
+        "Educación superior",
+        "Divulgación y comunicación pública"
+      ],
+      "detail": "ciencias cognitivas, neurobiología del lenguaje, psicometría y ciencia de datos, aprendizaje automático aplicado a la cognición, efectos cognitivos del uso de IA, salud mental",
+      "detail_en": "cognitive science, neurobiology of language, psychometrics and data science, machine learning applied to cognition, cognitive effects of AI use, mental health",
+      "detail_pt": "ciência cognitiva, neurobiologia da linguagem, psicometria e ciência de dados, aprendizado de máquina aplicado à cognição, efeitos cognitivos do uso de IA, saúde mental",
+      "photo": "https://psico.edu.uy/sites/default/files/styles/foto_docente_grande/public/2026-06/cabana_2025%281%29%20copia.jpg?itok=kJxsr4Ri"
+    },
+    {
+      "id": "p-19",
       "name": "Marcelo Cabral",
       "institution": "Jataí",
       "role": "CoExecutive Director",
@@ -398,7 +421,7 @@
       "photo": "https://cdn.prod.website-files.com/68265029c498e9527c4e0892/689b4a516400efea5cb12cc4_Marcelo-Cabral.png"
     },
     {
-      "id": "p-19",
+      "id": "p-20",
       "name": "Martín Cáceres",
       "institution": "Universidad Católica de Chile",
       "role": "Director de Nodo IA",
@@ -421,7 +444,7 @@
       "photo": "https://revistadeeducacion.cl/wp-content/uploads/2023/11/IMG_8367_02.jpg"
     },
     {
-      "id": "p-20",
+      "id": "p-21",
       "name": "Delfina Campetella",
       "institution": "UBA",
       "role": "PhD researcher / PhD student en la Universitat Autònoma de Barcelona",
@@ -443,7 +466,7 @@
       "photo": "https://geps-uab.cat/wp-content/uploads/2025/03/delfinacampetella-1-retallat.jpg"
     },
     {
-      "id": "p-21",
+      "id": "p-22",
       "name": "María Castelló",
       "institution": "Clemente Estable",
       "role": "Investigadora / Associate Professor of Research en el Instituto de Investigaciones Biológicas Clemente Estable",
@@ -465,7 +488,7 @@
       "photo": ""
     },
     {
-      "id": "p-22",
+      "id": "p-23",
       "name": "Cristieni Castilhos",
       "institution": "MegaEdu",
       "role": "Diretora Executiva, MegaEdu.",
@@ -488,7 +511,7 @@
       "photo": "https://thedialogue.org/wp-content/uploads/2022/08/Cristieni-Castilhos-1.png"
     },
     {
-      "id": "p-23",
+      "id": "p-24",
       "name": "Ignacio Cattivelli",
       "institution": "Urudata",
       "role": "Director de Ingeniería, Urudata",
@@ -509,7 +532,7 @@
       "photo": ""
     },
     {
-      "id": "p-24",
+      "id": "p-25",
       "name": "Raul Chacon",
       "institution": "SUMMA",
       "role": "Director del Centro Regional para el Intercambio de Conocimiento e Innovación para América Latina y el Caribe",
@@ -532,7 +555,7 @@
       "photo": "https://summaedu.org/wp-content/uploads/2026/07/Raul_Chacon_2026_foto_ofiicial26.webp"
     },
     {
-      "id": "p-25",
+      "id": "p-26",
       "name": "Alejandro Cid",
       "institution": "UM",
       "role": "Rector",
@@ -554,7 +577,7 @@
       "photo": "https://www.um.edu.uy/sites/default/files/personas/2024-12/Alejandro%20Cid%20%281%29.png"
     },
     {
-      "id": "p-26",
+      "id": "p-27",
       "name": "Laura Cimarra",
       "institution": "Comunicación ANEP",
       "role": "Dirección",
@@ -575,12 +598,12 @@
       "photo": ""
     },
     {
-      "id": "p-27",
+      "id": "p-28",
       "name": "Ramiro Ciocca",
       "institution": "Maestro Virtual",
       "role": "Desarrollador Edtech",
       "role_en": "Edtech Developer",
-      "role_pt": "Desenvolvedor de Edtech",
+      "role_pt": "Desenvolvedor de tecnologia educacional",
       "country": "Uruguay",
       "summary": "Ingeniero en Sistemas por la Universidad ORT Uruguay. Es CEO y cofundador, junto a Sebastián Peralta, de Maestro Virtual, plataforma web uruguaya que aplica IA para reducir la carga administrativa docente: genera planificaciones alineadas al currículo oficial de ANEP, boletines, carnés y descripciones de evaluación, con opciones de Diseño Universal para el Aprendizaje, aulas multigrado y segundas lenguas, y un equipo docente que mantiene los programas actualizados. El emprendimiento, desarrollado desde 2022 y lanzado comercialmente en 2025, está incubado en el Centro de Innovación y Emprendimientos de ORT y lo usan miles de docentes uruguayos y colegios privados.",
       "summary_en": "A Systems Engineer from ORT University Uruguay, he is the CEO and co-founder, along with Sebastián Peralta, of Maestro Virtual, a Uruguayan web platform that uses AI to reduce teachers' administrative workload. It generates lesson plans aligned with the official ANEP curriculum, report cards, student IDs, and assessment descriptions, with options for Universal Design for Learning, multi-grade classrooms, and second languages, and a team of teachers who keep the programs updated. The venture, developed since 2022 and commercially launched in 2025, is incubated at ORT's Center for Innovation and Entrepreneurship and is used by thousands of Uruguayan teachers and private schools.",
@@ -598,7 +621,7 @@
       "photo": ""
     },
     {
-      "id": "p-28",
+      "id": "p-29",
       "name": "Valeria Colombo",
       "institution": "AGESIC",
       "role": "Gerente de Prácticas de Educación para América Latina y el Caribe",
@@ -615,11 +638,11 @@
       ],
       "detail": "gobierno digital, políticas de ciudadanía digital, gobernanza de datos, educación y tecnología (todos inferidos del ámbito e institución declarados, sin evidencia de la persona)",
       "detail_en": "digital government, digital citizenship policies, data governance, education and technology (all inferred from the stated scope and institution, without evidence of the person)",
-      "detail_pt": "Governo digital, políticas de cidadania digital, governança de dados, educação e tecnologia (tudo inferido do escopo e da instituição declarados, sem evidências da pessoa).",
+      "detail_pt": "governo digital, políticas de cidadania digital, governança de dados, educação e tecnologia (tudo inferido do escopo e da instituição declarados, sem evidências da pessoa).",
       "photo": ""
     },
     {
-      "id": "p-29",
+      "id": "p-30",
       "name": "Analía Conde",
       "institution": "UM",
       "role": "Directora de Profesores",
@@ -641,7 +664,7 @@
       "photo": "https://www.um.edu.uy/sites/default/files/personas/2023-03/Analia%20Conde.png"
     },
     {
-      "id": "p-30",
+      "id": "p-31",
       "name": "Staling Cordero",
       "institution": "MESCyT",
       "role": "Encargado de Innovación y Transferencia del Conocimiento",
@@ -663,7 +686,7 @@
       "photo": "https://knowledgesociety.usal.es/system/files/styles/profile/private/pictures/picture-400-1509961850.jpg?itok=fp7GhrvA"
     },
     {
-      "id": "p-31",
+      "id": "p-32",
       "name": "Tania Da Rosa",
       "institution": "AGESIC",
       "role": "Integrante del equipo de la División Gobierno Abierto",
@@ -685,12 +708,12 @@
       "photo": ""
     },
     {
-      "id": "p-32",
+      "id": "p-33",
       "name": "Ninoschka Dante",
       "institution": "AGESIC",
-      "role": "Gerenta de la División Gobierno Abierto",
-      "role_en": "Manager of the Open Government Division",
-      "role_pt": "Gerente da Divisão de Governo Aberto",
+      "role": "Gerenta de la División Gobierno Abierto y responsable del Programa de Participación Ciudadana Digital",
+      "role_en": "Manager of the Open Government Division and responsible for the Digital Citizen Participation Program",
+      "role_pt": "Gerente da Divisão de Governo Aberto e responsável pelo Programa de Participação Cidadã Digital.",
       "country": "Uruguay",
       "summary": "Analista de sistemas, integra Agesic desde 2009 y es gerenta de la División Gobierno Abierto. Conduce el Programa de Gobierno Abierto de Uruguay desde el ingreso del país a la Alianza para el Gobierno Abierto, la iniciativa de datos abiertos de gobierno (desde 2010) y el programa de participación electrónica. Coordina el Grupo de Trabajo de Gobierno Abierto y presentó la rendición de cuentas del Quinto Plan de Acción Nacional 2021-2024. Expuso en la IV Jornada de Ciudadanía Digital de Agesic y Ceibal. Su relevancia pasa por la apertura y gobernanza de datos públicos y la participación ciudadana.",
       "summary_en": "A systems analyst, she has been with Agesic since 2009 and is the manager of the Open Government Division. She has led Uruguay's Open Government Program since the country joined the Open Government Partnership, the open government data initiative (since 2010), and the e-participation program. She coordinates the Open Government Working Group and presented the accountability report for the Fifth National Action Plan 2021-2024. She spoke at the IV Digital Citizenship Conference organized by Agesic and Ceibal. Her work focuses on the openness and governance of public data and citizen participation.",
@@ -707,7 +730,7 @@
       "photo": ""
     },
     {
-      "id": "p-33",
+      "id": "p-34",
       "name": "Nicolás de León",
       "institution": "Ledefyl",
       "role": "Director Comercial, LEDEFYL",
@@ -728,7 +751,7 @@
       "photo": ""
     },
     {
-      "id": "p-34",
+      "id": "p-35",
       "name": "Pablo de los Campos",
       "institution": "Comunidad docente",
       "role": "Coordinador de Tecnología e Innovación, Escuela Integral.",
@@ -750,7 +773,7 @@
       "photo": ""
     },
     {
-      "id": "p-35",
+      "id": "p-36",
       "name": "Martín De Simone",
       "institution": "BM",
       "role": "Education Specialist, Banco Mundial",
@@ -773,7 +796,7 @@
       "photo": "https://s7d1.scene7.com/is/image/wbcollab/Martin-220x220?qlt=90&fmt=webp&resMode=sharp2"
     },
     {
-      "id": "p-36",
+      "id": "p-37",
       "name": "Paola Andrea Dellepiane",
       "institution": "UCA",
       "role": "Coordinadora de Posgrados del Departamento de Educación de la UCA",
@@ -796,7 +819,7 @@
       "photo": "https://puntoconvergente.uca.edu.ar/wp-content/uploads/2023/07/entrevista-paola-dellepiane-1024x576.jpg"
     },
     {
-      "id": "p-37",
+      "id": "p-38",
       "name": "Victoria Dieste",
       "institution": "Alianza",
       "role": "Coordinadora",
@@ -817,7 +840,7 @@
       "photo": ""
     },
     {
-      "id": "p-38",
+      "id": "p-39",
       "name": "Carolina Duer",
       "institution": "Fundación Ceibal",
       "role": "Coordinadora Académica EdTech Initative",
@@ -839,7 +862,7 @@
       "photo": "https://documentos.ceibal.edu.uy/fundacion/2025/11/Carolina-Duer.png"
     },
     {
-      "id": "p-39",
+      "id": "p-40",
       "name": "Elianne Elbaum",
       "institution": "AI for Good Microsoft",
       "role": "AI4G Lab Manager",
@@ -861,7 +884,7 @@
       "photo": ""
     },
     {
-      "id": "p-40",
+      "id": "p-41",
       "name": "Luis Espinal",
       "institution": "UNICEF",
       "role": "coordinador del Programa Nacional de Transformación Educativa Digital (PNTED)",
@@ -884,7 +907,7 @@
       "photo": ""
     },
     {
-      "id": "p-41",
+      "id": "p-42",
       "name": "Lorena Estefanell",
       "institution": "Universidad Católica",
       "role": "Directora de la Maestría en Psicoterapia Cognitiva",
@@ -906,12 +929,12 @@
       "photo": ""
     },
     {
-      "id": "p-42",
+      "id": "p-43",
       "name": "María Inés Fariello",
-      "institution": "Udelar",
-      "role": "Investigadora y docente (Grado 3) del IMERL, Facultad de Ingeniería, Udelar",
-      "role_en": "Researcher and teacher (Grade 3) at IMERL, Faculty of Engineering, Udelar",
-      "role_pt": "Pesquisador e professor (nível 3) no IMERL, Faculdade de Engenharia, Udelar",
+      "institution": "Universidad De La República",
+      "role": "Profesora Responsable Local / docente responsable de cursos de posgrado en FING y figura como G3 del Instituto de Matemática y Estadística (IMERL/IME",
+      "role_en": "Local Responsible Professor / teacher responsible for postgraduate courses at FING and listed as G3 of the Institute of Mathematics and Statistics (IMERL/IME)",
+      "role_pt": "Professor responsável local / docente responsável por cursos de pós-graduação na FING e listado como G3 pelo Instituto de Matemática e Estatística (IMERL/IME)",
       "country": "Uruguay",
       "summary": "Doctora y docente-investigadora (Grado 3) del Instituto de Matemática y Estadística (IMERL) de la Facultad de Ingeniería de la Udelar, e integrante de CICADA, el centro interdisciplinario en ciencia de datos y aprendizaje automático. Es coautora del método hapFLK para detectar señales de selección en poblaciones jerárquicamente estructuradas (Genetics, 2013), referencia en genómica estadística. Dicta cursos del posgrado en Ciencia de Datos y Aprendizaje Automático de la Udelar y participa en seminarios y escuelas de CICADA, entre ellos predicción genómica con redes neuronales. Ceibal la reseñó institucionalmente y la convocó como expositora de Women in Data Science.",
       "summary_en": "A PhD and tenured professor and researcher (Grade 3) at the Institute of Mathematics and Statistics (IMERL) of the Faculty of Engineering at the University of the Republic (Udelar), she is also a member of CICADA, the interdisciplinary center for data science and machine learning. She is co-author of the hapFLK method for detecting selection signals in hierarchically structured populations (Genetics, 2013), a reference in statistical genomics. She teaches courses in the postgraduate program in Data Science and Machine Learning at Udelar and participates in CICADA seminars and schools, including those focused on genomic prediction with neural networks. Ceibal published an institutional profile of her and invited her to speak at the Women in Data Science event.",
@@ -928,7 +951,7 @@
       "photo": "https://media.elobservador.com.uy/p/4efb78a6f7c6e9ca8cdee196d15f1075/adjuntos/362/imagenes/100/467/0100467576/1000x0/smart/-ine6812-1-jpgwebp.webp"
     },
     {
-      "id": "p-43",
+      "id": "p-44",
       "name": "Ernesto Fernandez",
       "institution": "UNESCO",
       "role": "Director Unesco Uruguay",
@@ -950,7 +973,7 @@
       "photo": "https://www.unesco.org/sites/default/files/styles/paragraph_medium_desktop/public/2024-04/Ernesto%20Fernandez%20Polcuch%20-%20Director%20Montevideo%20-%20Abril%202024.jpeg.webp"
     },
     {
-      "id": "p-44",
+      "id": "p-45",
       "name": "Pablo Fleurquin",
       "institution": "UM",
       "role": "Director de Carrera (Ing. de Datos e IA)",
@@ -972,7 +995,7 @@
       "photo": "https://www.um.edu.uy/sites/default/files/personas/2023-03/Pablo%20Fleurquin.png"
     },
     {
-      "id": "p-45",
+      "id": "p-46",
       "name": "Leandro Folgar",
       "institution": "Investigador",
       "role": "Investigador/a",
@@ -994,7 +1017,7 @@
       "photo": "https://ladiaria.com.uy/media/photologue/photos/cache/fgi20200313_0047_article_main.jpg?r=jIMgi3pTO7CVv0jU"
     },
     {
-      "id": "p-46",
+      "id": "p-47",
       "name": "Catalina Franco",
       "institution": "Norwegian School of Economics",
       "role": "Investigador/a",
@@ -1017,7 +1040,7 @@
       "photo": "https://snf.no/media/seclxqbk/582a6238.jpg?rxy=0.5049977814492418,0.3337170543624895&width=630&height=680&rnd=134268730703770000"
     },
     {
-      "id": "p-47",
+      "id": "p-48",
       "name": "André Fremd",
       "institution": "Fundación Fogel",
       "role": "Director Ejecutivo, Fundación Familia Fogel (Fundación 3F)",
@@ -1039,7 +1062,7 @@
       "photo": ""
     },
     {
-      "id": "p-48",
+      "id": "p-49",
       "name": "Paula Frizzi",
       "institution": "Reaching U",
       "role": "Responsable de Proyectos",
@@ -1061,12 +1084,12 @@
       "photo": "https://reachingu.org/wp-content/uploads/2023/12/paula-frizzi.png"
     },
     {
-      "id": "p-49",
+      "id": "p-50",
       "name": "Helani Galpaya",
       "institution": "LIRNEasia",
-      "role": "CEO de LIRNEasia",
-      "role_en": "CEO of LIRNEasia",
-      "role_pt": "CEO da LIRNEasia",
+      "role": "Program Director",
+      "role_en": "Program Director",
+      "role_pt": "Diretor do Programa",
       "country": "Sri Lanka",
       "summary": "Directora ejecutiva de LIRNEasia, centro de investigación en políticas de infraestructura digital para Asia Pacífico emergente. Es máster en Tecnología y Política por el MIT y licenciada en Ciencias de la Computación por Mount Holyoke College, con experiencia previa en consultoría en Booz & Co, en el sector financiero y en la implementación de gobierno electrónico en la agencia TIC de Sri Lanka. Investiga acceso digital significativo, derechos en línea, efectos de la tecnología sobre el trabajo y gobernanza de plataformas, datos y algoritmos. Integra directorios y comités internacionales sobre datos e información.",
       "summary_en": "Executive Director of LIRNEasia, a research center focused on digital infrastructure policy for emerging Asia Pacific regions. She holds a Master's degree in Technology and Policy from MIT and a Bachelor's degree in Computer Science from Mount Holyoke College. Her previous experience includes consulting at Booz & Co., working in the financial sector, and implementing e-government at Sri Lanka's ICT agency. Her research focuses on meaningful digital access, online rights, the impact of technology on work, and the governance of platforms, data, and algorithms. She serves on international boards and committees on data and information.",
@@ -1083,7 +1106,7 @@
       "photo": "https://lirneasia.net/wp-content/uploads/2018/02/Helani_Galpaya_LIRNEasia_profile-scaled.jpg"
     },
     {
-      "id": "p-50",
+      "id": "p-51",
       "name": "Ignacio García",
       "institution": "Huawei",
       "role": "Senior Enterprise Account Manager / Enterprise Sales & Business Development, Huawei",
@@ -1104,7 +1127,7 @@
       "photo": ""
     },
     {
-      "id": "p-51",
+      "id": "p-52",
       "name": "Juan García",
       "institution": "Universidad Nacional de Quilmes",
       "role": "Secretario de Extensión Universitaria",
@@ -1125,7 +1148,7 @@
       "photo": ""
     },
     {
-      "id": "p-52",
+      "id": "p-53",
       "name": "Pablo Garcia",
       "institution": "Urudata",
       "role": "Director de Innovación / I+D, Urudata",
@@ -1147,7 +1170,7 @@
       "photo": ""
     },
     {
-      "id": "p-53",
+      "id": "p-54",
       "name": "Cate Giddens",
       "institution": "Cambridge University Press",
       "role": "Education Advisor at Cambridge University Press & Assessment",
@@ -1169,7 +1192,7 @@
       "photo": "https://edtechfellowship.cambridge.org/wp-content/uploads/2025/01/Cate.jpg"
     },
     {
-      "id": "p-54",
+      "id": "p-55",
       "name": "Sara Goldberg",
       "institution": "ANII",
       "role": "Directora del Directorio de ANII (delegada del MIEM)",
@@ -1190,7 +1213,7 @@
       "photo": ""
     },
     {
-      "id": "p-55",
+      "id": "p-56",
       "name": "Tamara Gomez",
       "institution": "SecundarIA",
       "role": "Comunidad docente",
@@ -1212,7 +1235,7 @@
       "photo": ""
     },
     {
-      "id": "p-56",
+      "id": "p-57",
       "name": "Sebastián Gómez Abuin",
       "institution": "Fundación Sadosky",
       "role": "Gerente de Programas y Proyectos",
@@ -1235,7 +1258,7 @@
       "photo": ""
     },
     {
-      "id": "p-57",
+      "id": "p-58",
       "name": "Rodrigo Goñi",
       "institution": "Parlamentario",
       "role": "Presidente de la Cámara de Representantes de Uruguay desde el 1 de marzo de 2026;",
@@ -1257,7 +1280,7 @@
       "photo": "https://media.elobservador.com.uy/p/054ca0858e92a5b49307b08ad12bc2e9/adjuntos/362/imagenes/100/720/0100720512/el-diputado-blancorodrigo-goni.jpg"
     },
     {
-      "id": "p-58",
+      "id": "p-59",
       "name": "Javier González",
       "institution": "SUMMA",
       "role": "Founding-Director SUMMA",
@@ -1280,7 +1303,7 @@
       "photo": "https://profuturo.education/wp-content/uploads/2025/05/Javier-Gonzalez.jpg"
     },
     {
-      "id": "p-59",
+      "id": "p-60",
       "name": "Camila Gottlieb",
       "institution": "UNICEF",
       "role": "Consultora de Comunicación",
@@ -1303,7 +1326,30 @@
       "photo": ""
     },
     {
-      "id": "p-60",
+      "id": "p-61",
+      "name": "Soledad Guilera",
+      "institution": "Universidad Torcuato Ditella",
+      "role": "Directora del programa de política pública de IA",
+      "role_en": "Director of the AI ​​Public Policy Program",
+      "role_pt": "Diretor do Programa de Políticas Públicas de IA",
+      "country": "Argentina",
+      "summary": "Magíster por la Universidad de Columbia y becaria Fulbright en la Universidad de Massachusetts. Dirige el programa de formación ejecutiva en Inteligencia Artificial y Políticas Públicas de la Escuela de Gobierno de la UTDT, donde enseña ciudades inteligentes, IA y gobierno. Es consultora de UNESCO en metodologías de evaluación de AI Readiness y colabora con el BID en scorecards de preparación para IA en América Latina; figura entre quienes comentaron el informe del BID «Are We Ready for AI?» (2026). Antes enseñó en la Goldman School de UC Berkeley y lideró la expansión regional de What Works Cities, de Bloomberg.",
+      "summary_en": "She holds a Master's degree from Columbia University and was a Fulbright scholar at the University of Massachusetts. She directs the Executive Education Program in Artificial Intelligence and Public Policy at the UTDT School of Government, where she teaches smart cities, AI, and governance. She is a consultant for UNESCO on AI Readiness assessment methodologies and collaborates with the Inter-American Development Bank (IDB) on AI readiness scorecards for Latin America; she was among those who commented on the IDB report \"Are We Ready for AI?\" (2026). Previously, she taught at the Goldman School of Management at UC Berkeley and led the regional expansion of Bloomberg's What Works Cities.",
+      "summary_pt": "Ela possui mestrado pela Universidade Columbia e foi bolsista Fulbright na Universidade de Massachusetts. Dirige o Programa de Educação Executiva em Inteligência Artificial e Políticas Públicas na Escola de Governo da UTDT, onde leciona sobre cidades inteligentes, IA e governança. É consultora da UNESCO em metodologias de avaliação de prontidão para IA e colabora com o Banco Interamericano de Desenvolvimento (BID) em indicadores de prontidão para IA na América Latina; ela esteve entre os que comentaram o relatório do BID \"Estamos prontos para a IA?\" (2026). Anteriormente, lecionou na Goldman School of Management da UC Berkeley e liderou a expansão regional do programa What Works Cities da Bloomberg.",
+      "interests": [
+        "Ética y regulación de la IA",
+        "Política educativa y reforma de sistemas",
+        "Gobernanza de datos y ciberseguridad",
+        "Alfabetización en IA",
+        "Cooperación internacional y multilateral"
+      ],
+      "detail": "preparación institucional para la IA (AI readiness), políticas públicas de inteligencia artificial, gobernanza de datos, gobierno digital y ciudades inteligentes, formación ejecutiva de servidores públicos, medición y evaluación de políticas",
+      "detail_en": "Institutional readiness for AI, public policies on artificial intelligence, data governance, digital government and smart cities, executive training for public servants, policy measurement and evaluation",
+      "detail_pt": "Preparação institucional para IA, políticas públicas sobre inteligência artificial, governança de dados, governo digital e cidades inteligentes, treinamento executivo para servidores públicos, mensuração e avaliação de políticas.",
+      "photo": "https://www.utdt.edu/imagen/_177695586630967200.png"
+    },
+    {
+      "id": "p-62",
       "name": "Viviana Heguaburu",
       "institution": "UTEC",
       "role": "Encargada de Comunicación",
@@ -1325,7 +1371,7 @@
       "photo": "https://edu.utec.edu.uy/wp-content/uploads/2025/11/Foto-VH-Viviana-Heguaburu-scaled.jpg"
     },
     {
-      "id": "p-61",
+      "id": "p-63",
       "name": "Gabriel Hernandez",
       "institution": "AGESIC",
       "role": "Director de Infraestructura y Operaciones de TI",
@@ -1347,9 +1393,9 @@
       "photo": "https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/sites/agencia-gobierno-electronico-sociedad-informacion-conocimiento/files/styles/300x300/public/catalogo/IMG_1766.jpg?itok=FfeksLla"
     },
     {
-      "id": "p-62",
+      "id": "p-64",
       "name": "Gabriel Inchausti",
-      "institution": "UdelaR – UCU",
+      "institution": "UdelaR-UCU",
       "role": "Investigador en IA y Ciencias Comportamentales",
       "role_en": "Researcher in AI and Behavioral Sciences",
       "role_pt": "Pesquisador em IA e Ciências Comportamentais",
@@ -1369,7 +1415,7 @@
       "photo": ""
     },
     {
-      "id": "p-63",
+      "id": "p-65",
       "name": "Pablo Iturralde",
       "institution": "Uruguay Innovation Hub",
       "role": "Miembro de la Junta Directiva",
@@ -1391,7 +1437,7 @@
       "photo": ""
     },
     {
-      "id": "p-64",
+      "id": "p-66",
       "name": "Verna Lalbeharie",
       "institution": "EdTech Hub",
       "role": "Executive Director, EdTech Hub.",
@@ -1414,7 +1460,7 @@
       "photo": "https://edtechhub.org/wp-content/uploads/2021/07/Lalberharie-Verna.jpg"
     },
     {
-      "id": "p-65",
+      "id": "p-67",
       "name": "Federico Lecumberry",
       "institution": "Facultad de Ingeniería, Universidad de la República",
       "role": "Director del Instituto de Ingeniería Eléctrica (IIE) de FING",
@@ -1431,17 +1477,17 @@
         "Pensamiento computacional y programación"
       ],
       "detail": "procesamiento de señales e imágenes, visión por computadora, aprendizaje automático, criomicroscopía electrónica, reconocimiento de patrones para aplicaciones industriales, formación de ingenieros y posgrados en ciencia de datos",
-      "detail_en": "Signal and image processing, computer vision, machine learning, cryo-electron microscopy, pattern recognition for industrial applications, engineering training and postgraduate studies in data science",
-      "detail_pt": "Processamento de sinais e imagens, visão computacional, aprendizado de máquina, microscopia crioeletrônica, reconhecimento de padrões para aplicações industriais, formação em engenharia e estudos de pós-graduação em ciência de dados.",
+      "detail_en": "Signal and image processing, computer vision, machine learning, cryo-electron microscopy, pattern recognition for industrial applications, training of engineers and postgraduate studies in data science",
+      "detail_pt": "Processamento de sinais e imagens, visão computacional, aprendizado de máquina, microscopia crioeletrônica, reconhecimento de padrões para aplicações industriais, formação de engenheiros e estudos de pós-graduação em ciência de dados.",
       "photo": "https://www.pedeciba.edu.uy/uploads/persona/250x250_7c02ad060fbda6c1ded9b89456aa825d5d368876.jpg"
     },
     {
-      "id": "p-66",
+      "id": "p-68",
       "name": "Macarena Llauradó",
       "institution": "OEI",
-      "role": "Representante Permanente, OEI Uruguay",
-      "role_en": "Permanent Representative, OEI Uruguay",
-      "role_pt": "Representante Permanente, OEI Uruguai",
+      "role": "OEI en Uruguay",
+      "role_en": "OEI in Uruguay",
+      "role_pt": "OEI no Uruguai",
       "country": "Uruguay",
       "summary": "Representante Permanente de la Oficina de la Organización de Estados Iberoamericanos (OEI) en Uruguay, organismo de cooperación iberoamericana en educación, ciencia y cultura. Encabeza la memoria anual 2024 de la oficina, donde destaca los quince años de la OEI en Uruguay cumplidos en 2025 y el lanzamiento global de la Noche Iberoamericana de las Investigadoras e Investigadores en el país. Bajo su conducción la oficina trabaja en tres líneas: educación y productividad (metodologías innovadoras, formación docente, movilidad académica y emprendedurismo), ciencia y género (vocaciones científicas en niñas y adolescentes, «Más Mujer en Ciencia») y cultura y derechos humanos.",
       "summary_en": "Permanent Representative of the Office of the Organization of Ibero-American States (OEI) in Uruguay, the Ibero-American cooperation agency for education, science, and culture. She is the lead author of the office's 2024 annual report, which highlights the OEI's fifteenth anniversary in Uruguay in 2025 and the global launch of the Ibero-American Researchers' Night in the country. Under her leadership, the office works along three lines: education and productivity (innovative methodologies, teacher training, academic mobility, and entrepreneurship), science and gender (promoting scientific vocations among girls and adolescents, \"More Women in Science\"), and culture and human rights.",
@@ -1458,7 +1504,7 @@
       "photo": "https://oei.int/wp-content/uploads/2022/02/directora-oei-2-de-23.jpg"
     },
     {
-      "id": "p-67",
+      "id": "p-69",
       "name": "Agustin Long",
       "institution": "Universidad de la República",
       "role": "",
@@ -1480,7 +1526,7 @@
       "photo": ""
     },
     {
-      "id": "p-68",
+      "id": "p-70",
       "name": "Marian López",
       "institution": "Fundación Kodea",
       "role": "Líder Senior de Iniciativas",
@@ -1503,7 +1549,7 @@
       "photo": ""
     },
     {
-      "id": "p-69",
+      "id": "p-71",
       "name": "Diego López Yse",
       "institution": "UTN Haedo",
       "role": "Investigador/asesor",
@@ -1526,7 +1572,7 @@
       "photo": ""
     },
     {
-      "id": "p-70",
+      "id": "p-72",
       "name": "María Teresa Lugo",
       "institution": "Universidad Nacional de Quilmes",
       "role": "Directora de la Especialización en Docencia Universitaria",
@@ -1549,7 +1595,7 @@
       "photo": "https://agencia.unq.edu.ar/wp-content/uploads/2024/04/Teresa-Lugo.jpg"
     },
     {
-      "id": "p-71",
+      "id": "p-73",
       "name": "Erin Mahon",
       "institution": "University of the West Indies",
       "role": "Educator and researcher",
@@ -1557,7 +1603,7 @@
       "role_pt": "Educador e pesquisador",
       "country": "Barbados",
       "summary": "Investigadora canadiense radicada en Barbados. Es Research Fellow del Caribbean Educational Research Centre de la University of the West Indies (Cave Hill). Tiene un BA honours en Psicología (Trent University, Ontario), una maestría en Psicología del Asesoramiento por la UWI y un doctorado en Educación cuya tesis analizó la participación de las familias en la educación especial en Barbados. Trabajó más de una década como tutora y jefa de los departamentos de Inglés y de apoyo en un centro para estudiantes con necesidades educativas especiales, y dicta Educación Inclusiva y Psicología en la UWI. Presentó en la conferencia RISE Caribbean.",
-      "summary_en": "A Canadian researcher based in Barbados, she is a Research Fellow at the Caribbean Educational Research Centre of the University of the West Indies (Cave Hill). She holds a BA with honors in Psychology (Trent University, Ontario), a Master's degree in Counseling Psychology from UWI, and a PhD in Education, the dissertation of which analyzed family involvement in special education in Barbados. She worked for over a decade as a tutor and head of the English and support departments at a center for students with special educational needs, and teaches Inclusive Education and Psychology at UWI. She presented at the RISE Caribbean conference.",
+      "summary_en": "A Canadian researcher based in Barbados, she is a Research Fellow at the Caribbean Educational Research Centre of the University of the West Indies (Cave Hill). She holds a BA honors in Psychology (Trent University, Ontario), a MA in Counseling Psychology from UWI, and a PhD in Education, the dissertation of which analyzed family involvement in special education in Barbados. She worked for over a decade as a tutor and head of the English and support departments at a center for students with special educational needs and teaches Inclusive Education and Psychology at UWI. She presented at the RISE Caribbean conference.",
       "summary_pt": "Pesquisadora canadense radicada em Barbados, ela é pesquisadora associada do Centro de Pesquisa Educacional Caribenha da Universidade das Índias Ocidentais (Cave Hill). Possui bacharelado com honras em Psicologia (Universidade Trent, Ontário), mestrado em Psicologia Clínica pela UWI e doutorado em Educação, cuja dissertação analisou o envolvimento familiar na educação especial em Barbados. Trabalhou por mais de uma década como tutora e chefe dos departamentos de inglês e apoio em um centro para alunos com necessidades educacionais especiais e leciona Educação Inclusiva e Psicologia na UWI. Apresentou um trabalho na conferência RISE Caribbean.",
       "interests": [
         "Educación inclusiva y discapacidad",
@@ -1570,7 +1616,29 @@
       "photo": "https://www.cavehill.uwi.edu/fhe-cerc/wp-content/uploads/sites/78/About-Us/Who-We-Are/Erin.jpg"
     },
     {
-      "id": "p-72",
+      "id": "p-74",
+      "name": "Eduardo Mangarelli",
+      "institution": "ORT",
+      "role": "Decano de Ingenieria",
+      "role_en": "Dean of Engineering",
+      "role_pt": "Decano de Engenharia",
+      "country": "Uruguay",
+      "summary": "Ingeniero en Sistemas por la Universidad ORT. Trabajó 17 años en Microsoft (2002-2019) como director de Innovación y Nuevas Tecnologías, director de Innovación para América Latina y, desde 2017, director global de Innovación e Ingeniería. Es decano de la Facultad de Ingeniería de ORT y docente y mentor de proyectos en esa universidad desde hace más de dos décadas. Preside Endeavor Uruguay e integra los directorios del LATU, Infocorp y Responsible Education; es socio o director en Tryolabs, Intermedia y MonkeyLearn, empresas de inteligencia artificial y fintech. Conecta formación en ingeniería, ecosistema emprendedor y aplicación industrial de IA.",
+      "summary_en": "A Systems Engineer from ORT University, he worked for 17 years at Microsoft (2002-2019) as Director of Innovation and New Technologies, Director of Innovation for Latin America, and, since 2017, Global Director of Innovation and Engineering. He is Dean of the Faculty of Engineering at ORT and has been a professor and project mentor at the university for over two decades. He chairs Endeavor Uruguay and serves on the boards of LATU, Infocorp, and Responsible Education. He is a partner or director at Tryolabs, Intermedia, and MonkeyLearn, artificial intelligence and fintech companies. He connects engineering education, the entrepreneurial ecosystem, and the industrial application of AI.",
+      "summary_pt": "Engenheiro de Sistemas formado pela Universidade ORT, trabalhou durante 17 anos na Microsoft (2002-2019) como Diretor de Inovação e Novas Tecnologias, Diretor de Inovação para a América Latina e, desde 2017, Diretor Global de Inovação e Engenharia. É Decano da Faculdade de Engenharia da ORT e atua como professor e orientador de projetos na universidade há mais de duas décadas. Preside a Endeavor Uruguai e integra os conselhos da LATU, Infocorp e Responsible Education. É sócio ou diretor da Tryolabs, Intermedia e MonkeyLearn, empresas de inteligência artificial e fintech. Conecta o ensino de engenharia, o ecossistema empreendedor e a aplicação industrial da IA.",
+      "interests": [
+        "Emprendedurismo y ecosistema EdTech",
+        "Educación superior",
+        "Alianzas público-privadas y financiamiento",
+        "Educación STEM y científica"
+      ],
+      "detail": "inteligencia artificial aplicada, innovación tecnológica corporativa, formación en ingeniería, emprendedurismo de alto impacto, vínculo universidad-industria, gobernanza de instituciones tecnológicas",
+      "detail_en": "Applied artificial intelligence, corporate technological innovation, engineering education, high-impact entrepreneurship, university-industry link, governance of technological institutions",
+      "detail_pt": "Inteligência artificial aplicada, inovação tecnológica corporativa, educação em engenharia, empreendedorismo de alto impacto, ligação universidade-indústria, governança de instituições tecnológicas",
+      "photo": "https://www.ort.edu.uy/innovaportal/file/166036/1/eduardo-mangarelli.jpg"
+    },
+    {
+      "id": "p-75",
       "name": "Miguel Mariatti",
       "institution": "Invitado",
       "role": "Consultor en Comunicación, Marketing y Capacitación",
@@ -1591,7 +1659,7 @@
       "photo": ""
     },
     {
-      "id": "p-73",
+      "id": "p-76",
       "name": "Rodrigo Marquez",
       "institution": "Ministerio de Salud Pública",
       "role": "Director Nacional de Salud",
@@ -1612,7 +1680,7 @@
       "photo": ""
     },
     {
-      "id": "p-74",
+      "id": "p-77",
       "name": "Juan Marrero",
       "institution": "UTEC",
       "role": "Investigador/a",
@@ -1634,7 +1702,7 @@
       "photo": "https://utec.edu.uy/uploads/autoridad/Juan_Marrero.png"
     },
     {
-      "id": "p-75",
+      "id": "p-78",
       "name": "Belen Martino",
       "institution": "Fundación Ceibal",
       "role": "Asistente de Investigación EdTech Initiative",
@@ -1656,7 +1724,7 @@
       "photo": "https://documentos.ceibal.edu.uy/fundacion/2025/11/Belen-Martino.png"
     },
     {
-      "id": "p-76",
+      "id": "p-79",
       "name": "Zelmira May",
       "institution": "UNESCO",
       "role": "Especialista Educación UNESCO",
@@ -1679,7 +1747,7 @@
       "photo": ""
     },
     {
-      "id": "p-77",
+      "id": "p-80",
       "name": "Niall McNulty",
       "institution": "Cambridge University Press",
       "role": "Product Lead, Cambridge",
@@ -1702,7 +1770,7 @@
       "photo": "https://miro.medium.com/v2/resize:fill:176:176/1*oY0i8j9xUTrILwvwauqyHg.jpeg"
     },
     {
-      "id": "p-78",
+      "id": "p-81",
       "name": "Giselle Mira Seco",
       "institution": "MEC",
       "role": "Asesora del MEC · Asesoría técnica (Mercosur Educativo)",
@@ -1723,7 +1791,7 @@
       "photo": ""
     },
     {
-      "id": "p-79",
+      "id": "p-82",
       "name": "Edmund Misson",
       "institution": "OCDE",
       "role": "Head of Division, Innovation and Measuring Progress, OECD",
@@ -1746,7 +1814,7 @@
       "photo": "https://cdn.asp.events/CLIENT_Ascentia_4E961A52_5056_B739_54289B84DF34E888/sites/bett-show-uk-2024/media/libraries/speakers/Edmund-Mission.jpg/fit-in/500x500/filters:no_upscale()"
     },
     {
-      "id": "p-80",
+      "id": "p-83",
       "name": "Maria Paz Monge",
       "institution": "J-PAL",
       "role": "Sr. Policy and Communications Manager",
@@ -1769,7 +1837,7 @@
       "photo": "https://www.povertyactionlab.org/sites/default/files/styles/hea/public/images/2022/10/Maria%20Paz%20Monge.jpg"
     },
     {
-      "id": "p-81",
+      "id": "p-84",
       "name": "Paula Mosera",
       "institution": "Reachingu",
       "role": "Directora Ejecutiva",
@@ -1791,7 +1859,7 @@
       "photo": "https://reachingu.org/wp-content/uploads/2024/07/Paula-Mosera-web-Fundacion-ReachingU-BN.jpg"
     },
     {
-      "id": "p-82",
+      "id": "p-85",
       "name": "Mariela Muñoz",
       "institution": "Fundación Ceibal",
       "role": "Jefa de Investigación",
@@ -1813,12 +1881,12 @@
       "photo": "https://documentos.ceibal.edu.uy/fundacion/2025/11/Mariela-Munoz.png"
     },
     {
-      "id": "p-83",
+      "id": "p-86",
       "name": "Domnick Okullo",
       "institution": "ESSA",
-      "role": "Senior Manager, Aprendizajes Fundacionales",
-      "role_en": "Senior Manager, Foundational Learnings",
-      "role_pt": "Gerente Sênior, Aprendizados Fundamentais",
+      "role": "Project Coordinator",
+      "role_en": "Project Coordinator",
+      "role_pt": "Coordenador de Projeto",
       "country": "Kenia",
       "summary": "Doctor en Educación por la Universidad de Cambridge, con maestría en Género, Educación y Desarrollo Internacional (UCL Institute of Education) y grado en Educación de Primera Infancia (Kenyatta University). Es Senior Manager de Aprendizajes Fundacionales en Education Sub Saharan Africa (ESSA). Fue asesor de evaluación del programa de alfabetización primaria de Kenia y trabajó en RTI International (PRIMR, Tusome, Tayari) y en el African Population and Health Research Center. Con el REAL Centre de Cambridge coordina agendas de investigación en lectoescritura y matemática inicial lideradas localmente, y convocatorias de becas de investigación en Kenia y Senegal (2025).",
       "summary_en": "With a PhD in Education from the University of Cambridge, a master's degree in Gender, Education and International Development (UCL Institute of Education), and a degree in Early Childhood Education (Kenyatta University), he is the Senior Manager of Foundational Learning at Education Sub-Saharan Africa (ESSA). He was an evaluation advisor for Kenya's primary literacy program and has worked at RTI International (PRIMR, Tusome, Tayari) and the African Population and Health Research Center. With the REAL Centre at Cambridge, he coordinates locally led research agendas in early literacy and mathematics, and research grant opportunities in Kenya and Senegal (2025).",
@@ -1835,7 +1903,7 @@
       "photo": "https://essa-africa.org/sites/default/files/2025-04/Dr%20Domnick%20Okullo_0.jpg"
     },
     {
-      "id": "p-84",
+      "id": "p-87",
       "name": "Juan Pablo Oliver",
       "institution": "FING",
       "role": "Docente/investigador del IIE; en documentación reciente figura como Grado 5 y responsable o co-docente de cursos de posgrado",
@@ -1857,7 +1925,7 @@
       "photo": ""
     },
     {
-      "id": "p-85",
+      "id": "p-88",
       "name": "Santiago Olivera",
       "institution": "Ceibal",
       "role": "Formador en Pensamiento Computacional e Inteligencia Artificial",
@@ -1879,7 +1947,7 @@
       "photo": ""
     },
     {
-      "id": "p-86",
+      "id": "p-89",
       "name": "Carolina Pallas",
       "institution": "CODICEN",
       "role": "Consejera",
@@ -1901,7 +1969,7 @@
       "photo": "https://www.anep.edu.uy/sites/default/files/images/Institucional/Autoridades/2025/codicen/AutoridadesPallas.jpg"
     },
     {
-      "id": "p-87",
+      "id": "p-90",
       "name": "Alejandro Pazos",
       "institution": "Microsoft",
       "role": "Country Manager Uruguay / Sales Director, Microsoft Spanish South America",
@@ -1923,7 +1991,7 @@
       "photo": "https://statics.forbesuruguay.com/2024/10/670fcbc4f1515.jpg"
     },
     {
-      "id": "p-88",
+      "id": "p-91",
       "name": "Alvaro Pena",
       "institution": "UTEC",
       "role": "Consejero del Consejo Directivo Central",
@@ -1945,7 +2013,7 @@
       "photo": "https://utec.edu.uy/uploads/autoridad/7da9ea833ec0b429da40c56d158a4affbe4baf0e.png"
     },
     {
-      "id": "p-89",
+      "id": "p-92",
       "name": "Darwin Peña",
       "institution": "Comunicación MEC",
       "role": "Director",
@@ -1966,7 +2034,7 @@
       "photo": ""
     },
     {
-      "id": "p-90",
+      "id": "p-93",
       "name": "Nancy Pere",
       "institution": "Udelar",
       "role": "Profesora Adjunta de la Unidad Académica de la CSE-Udelar; además es referente de Innovaciones Educativas",
@@ -1988,7 +2056,7 @@
       "photo": ""
     },
     {
-      "id": "p-91",
+      "id": "p-94",
       "name": "Elbia Pereira",
       "institution": "CODICEN",
       "role": "Consejera",
@@ -2010,7 +2078,7 @@
       "photo": "https://www.anep.edu.uy/sites/default/files/images/Institucional/Autoridades/2025/codicen/AutoridadesElbia.jpg"
     },
     {
-      "id": "p-92",
+      "id": "p-95",
       "name": "Cintia Pettigrew",
       "institution": "Fundación Sadosky",
       "role": "Coordinadora Gral. del equipo Ceibal",
@@ -2032,7 +2100,7 @@
       "photo": ""
     },
     {
-      "id": "p-93",
+      "id": "p-96",
       "name": "Natalia Pignataro",
       "institution": "ANTEL",
       "role": "Gerente de la División Técnica de Desarrollo de ANTEL",
@@ -2053,7 +2121,7 @@
       "photo": ""
     },
     {
-      "id": "p-94",
+      "id": "p-97",
       "name": "Lucía Pin",
       "institution": "Alianza",
       "role": "Coordinadora",
@@ -2074,7 +2142,7 @@
       "photo": ""
     },
     {
-      "id": "p-95",
+      "id": "p-98",
       "name": "Daniel Plaut",
       "institution": "EdTech Hub",
       "role": "Program Director on the Education Team",
@@ -2097,7 +2165,7 @@
       "photo": "https://edtechhub.org/wp-content/uploads/2020/09/Daniel-Headshot-1-e1603291068799-400x400.jpg"
     },
     {
-      "id": "p-96",
+      "id": "p-99",
       "name": "María Podestá",
       "institution": "UNICEF",
       "role": "Oficial de Protección de Niñez",
@@ -2118,7 +2186,7 @@
       "photo": ""
     },
     {
-      "id": "p-97",
+      "id": "p-100",
       "name": "Julia Pomares",
       "institution": "The Global Initiative for Digital Empowerment",
       "role": "Directora para LATAM",
@@ -2140,7 +2208,7 @@
       "photo": "https://www.unesco.org/ethics-ai/sites/default/files/styles/paragraph_medium_desktop/public/structured_data/rei002/2804204_tedpic.png.webp?itok=zmrhVuEo"
     },
     {
-      "id": "p-98",
+      "id": "p-101",
       "name": "Agustín Porres",
       "institution": "Fundación Varkey",
       "role": "Regional Director, Latin America, Varkey Foundation.",
@@ -2162,7 +2230,7 @@
       "photo": "https://static.wixstatic.com/media/4287c7_30fb9b420b724459a625d47525a3598b~mv2.png"
     },
     {
-      "id": "p-99",
+      "id": "p-102",
       "name": "Jesica Pouzo",
       "institution": "Fundación Ceibal",
       "role": "PM EdTech Initiative",
@@ -2184,7 +2252,7 @@
       "photo": "https://documentos.ceibal.edu.uy/fundacion/2025/11/Jesica-Pouzo-Paccosi.png"
     },
     {
-      "id": "p-100",
+      "id": "p-103",
       "name": "Sandra Pullol",
       "institution": "Primaria",
       "role": "equipo técnico de PISA Uruguay",
@@ -2206,7 +2274,7 @@
       "photo": ""
     },
     {
-      "id": "p-101",
+      "id": "p-104",
       "name": "Mariela Questa Torterolo",
       "institution": "ORT",
       "role": "oordinadora académica adjunta del Master en Gestión Educativa y del Master en Formación de Formadores en ORT",
@@ -2228,7 +2296,7 @@
       "photo": "https://ie.ort.edu.uy/innovaportal/file/114267/1/mariela-questa-torterolo-nueva-coordinadora-academica-adjunta-del-master-en-formacion-de-formadores.jpg"
     },
     {
-      "id": "p-102",
+      "id": "p-105",
       "name": "Marcelo Ramos",
       "institution": "Urudata",
       "role": "Rol actual no verificado públicamente",
@@ -2249,7 +2317,7 @@
       "photo": ""
     },
     {
-      "id": "p-103",
+      "id": "p-106",
       "name": "Silvana Ravia",
       "institution": "U+I",
       "role": "Coordinadora técnica, Presidencia de la República",
@@ -2271,7 +2339,7 @@
       "photo": ""
     },
     {
-      "id": "p-104",
+      "id": "p-107",
       "name": "Monica Retamal",
       "institution": "Fundación Kodea",
       "role": "Directora Ejecutiva",
@@ -2294,7 +2362,7 @@
       "photo": "https://paisdigital.org/libroaniversario/wp-content/uploads/2021/11/retamal.jpg"
     },
     {
-      "id": "p-105",
+      "id": "p-108",
       "name": "Alejandro Retamoso",
       "institution": "UNICEF",
       "role": "Oficial de Monitoreo y Datos",
@@ -2316,7 +2384,7 @@
       "photo": ""
     },
     {
-      "id": "p-106",
+      "id": "p-109",
       "name": "Pablo Richeri",
       "institution": "Domus",
       "role": "CTO & Co-founder, Delfos Labs",
@@ -2337,7 +2405,7 @@
       "photo": ""
     },
     {
-      "id": "p-107",
+      "id": "p-110",
       "name": "Inés Roggi",
       "institution": "Fundación Sadosky",
       "role": "Coordinadora de Educación",
@@ -2360,7 +2428,7 @@
       "photo": "https://fundacionsadosky.org.ar/wp-content/uploads/2023/05/Ines-Roggi.jpg"
     },
     {
-      "id": "p-108",
+      "id": "p-111",
       "name": "Graciela Rojas",
       "institution": "Movimiento STEM+",
       "role": "Fundadora y Presidenta, Movimiento STEM+.",
@@ -2383,7 +2451,7 @@
       "photo": "https://movimientostem.org/images/fundadora.jpeg"
     },
     {
-      "id": "p-109",
+      "id": "p-112",
       "name": "Ana Julia Rosales",
       "institution": "British Council",
       "role": "Programme Lead",
@@ -2405,7 +2473,7 @@
       "photo": ""
     },
     {
-      "id": "p-110",
+      "id": "p-113",
       "name": "Gabriela Salsamendi",
       "institution": "DGEIP",
       "role": "Directora",
@@ -2427,7 +2495,7 @@
       "photo": "https://www.anep.edu.uy/sites/default/files/images/Institucional/Autoridades/2025/DGEIP/Gabriela-Salsamendi-directora-primaria.jpg"
     },
     {
-      "id": "p-111",
+      "id": "p-114",
       "name": "Isuru Samaratunga",
       "institution": "LIRNEasia",
       "role": "Program Manager",
@@ -2445,11 +2513,11 @@
       ],
       "detail": "desinformación y desórdenes informativos, alfabetización mediática e informacional en niños, métodos cualitativos y participativos, inclusión digital y discapacidad, privacidad de datos de comunidades marginadas, evaluación de impacto social",
       "detail_en": "disinformation and information disorders, media and information literacy in children, qualitative and participatory methods, digital inclusion and disability, data privacy of marginalized communities, social impact assessment",
-      "detail_pt": "Desinformação e distúrbios de informação, alfabetização midiática e informacional em crianças, métodos qualitativos e participativos, inclusão digital e deficiência, privacidade de dados de comunidades marginalizadas, avaliação de impacto social",
+      "detail_pt": "desinformação e distúrbios de informação, alfabetização midiática e informacional em crianças, métodos qualitativos e participativos, inclusão digital e deficiência, privacidade de dados de comunidades marginalizadas, avaliação de impacto social",
       "photo": "https://lirneasia.net/wp-content/uploads/2019/01/Isuru-Samaratunga-LIRNEasia-scaled.jpg"
     },
     {
-      "id": "p-112",
+      "id": "p-115",
       "name": "Julia Sant'Anna",
       "institution": "CIEB",
       "role": "Directora Ejecutiva",
@@ -2472,7 +2540,7 @@
       "photo": "https://cdn.asp.events/CLIENT_Ascentia_4E961A52_5056_B739_54289B84DF34E888/sites/bettbrasil-24ENG/media/libraries/palestrantes_geral/Julia-Sant-Anna.png"
     },
     {
-      "id": "p-113",
+      "id": "p-116",
       "name": "Fernando Schapachnik",
       "institution": "UBA",
       "role": "Profesor Adjunto del Departamento de Computación, Exactas UBA",
@@ -2495,7 +2563,7 @@
       "photo": "https://fundacionsadosky.org.ar/wp-content/uploads/2021/07/foto-fer-web-480x361-1.jpg"
     },
     {
-      "id": "p-114",
+      "id": "p-117",
       "name": "Jose Scodiero",
       "institution": "Micro:bit",
       "role": "Integrante del equipo de Micro:bit Educational Foundation, responsable de Latin America (Brazil)",
@@ -2517,7 +2585,7 @@
       "photo": "https://cdn.sanity.io/images/ajwvhvgo/production/c5a2bfcafe418f98dcb51348f75919931a27226f-300x300.png"
     },
     {
-      "id": "p-115",
+      "id": "p-118",
       "name": "Tabare Sorribes",
       "institution": "McKinsey",
       "role": "Associate Partner (Product Growth)",
@@ -2539,7 +2607,7 @@
       "photo": ""
     },
     {
-      "id": "p-116",
+      "id": "p-119",
       "name": "Paula Sosa",
       "institution": "Cisco",
       "role": "Inside Account Executive – Uruguay, Paraguay y Chile, Cisco",
@@ -2560,7 +2628,7 @@
       "photo": ""
     },
     {
-      "id": "p-117",
+      "id": "p-120",
       "name": "Gareth Stockdale",
       "institution": "Microbit",
       "role": "CEO de Microbit",
@@ -2583,7 +2651,7 @@
       "photo": "https://openuk.uk/wp-content/uploads/2020/07/Gareth-Stockdale-e1595938765243.png"
     },
     {
-      "id": "p-118",
+      "id": "p-121",
       "name": "Maria Thereza",
       "institution": "Instituto Apis",
       "role": "Gerente de Produto e Avaliação",
@@ -2605,7 +2673,7 @@
       "photo": "https://lemanncenter.stanford.edu/sites/default/files/styles/medium/public/hortencio.jpg?itok=dAgxynhq"
     },
     {
-      "id": "p-119",
+      "id": "p-122",
       "name": "Susana Trabaldo",
       "institution": "Entornos Virtuales SRL",
       "role": "Founder & Director, Net-Learning / Entornos Virtuales",
@@ -2627,7 +2695,7 @@
       "photo": "https://www.net-learning.com.ar/wp-content/uploads/2026/03/strabaldo-png.png"
     },
     {
-      "id": "p-120",
+      "id": "p-123",
       "name": "Denise Vaillant",
       "institution": "ORT",
       "role": "Decana del Instituto de Educación",
@@ -2649,7 +2717,7 @@
       "photo": "https://www.ort.edu.uy/innovaportal/file/109612/1/denise-vaillant.jpg"
     },
     {
-      "id": "p-121",
+      "id": "p-124",
       "name": "Lucía Varela",
       "institution": "UNICEF",
       "role": "Especialista en Comunicación",
@@ -2671,7 +2739,7 @@
       "photo": ""
     },
     {
-      "id": "p-122",
+      "id": "p-125",
       "name": "Cecilia Vásquez",
       "institution": "Ledefyl",
       "role": "Ingeniera de Preventa, LEDEFYL",
@@ -2692,7 +2760,7 @@
       "photo": ""
     },
     {
-      "id": "p-123",
+      "id": "p-126",
       "name": "Nibia Venturino",
       "institution": "SecundarIA",
       "role": "Comunidad docente",
@@ -2714,7 +2782,7 @@
       "photo": ""
     },
     {
-      "id": "p-124",
+      "id": "p-127",
       "name": "Gabriela Verde",
       "institution": "Ministerio de Educación y Cultura",
       "role": "Subsecretaria",
@@ -2737,7 +2805,7 @@
       "photo": "https://www.gub.uy/ministerio-educacion-cultura/sites/ministerio-educacion-cultura/files/styles/300x300/public/catalogo/Gabriela%2520Verde.png?itok=xVmunsYC"
     },
     {
-      "id": "p-125",
+      "id": "p-128",
       "name": "Francisca Villalobos",
       "institution": "Delivery Associates",
       "role": "Project Leader at Delivery Associates",
@@ -2758,7 +2826,7 @@
       "photo": "https://cdn.prod.website-files.com/65ba73ef431286a4d6d14731/689f2c4a59c53534c19ebef1_Francisca%20Villalobos%20Ringeling.webp"
     },
     {
-      "id": "p-126",
+      "id": "p-129",
       "name": "Ivo Wasersztein",
       "institution": "Huawei",
       "role": "Account Manager, Huawei",
@@ -2779,7 +2847,7 @@
       "photo": ""
     },
     {
-      "id": "p-127",
+      "id": "p-130",
       "name": "Nicole Alonso",
       "institution": "Docente",
       "role": "",
@@ -2796,7 +2864,7 @@
       "photo": ""
     },
     {
-      "id": "p-128",
+      "id": "p-131",
       "name": "Javier Barreiro",
       "institution": "Domus",
       "role": "",
@@ -2813,7 +2881,7 @@
       "photo": ""
     },
     {
-      "id": "p-129",
+      "id": "p-132",
       "name": "Tiago Belotte",
       "institution": "Dia LAB",
       "role": "Director Ejecutivo",
@@ -2835,7 +2903,7 @@
       "photo": "https://www.ccbc.org.br/wp-content/uploads/2019/11/Tiago-Belotte-cv.jpg"
     },
     {
-      "id": "p-130",
+      "id": "p-133",
       "name": "Sabrina Bianchi",
       "institution": "Universidad ORT Uruguay",
       "role": "Secretaria docente y fundadora de la Escuela de Postgrados en Comunicación y Diseño, Facultad de Comunicación y Diseño, Universidad ORT Uruguay",
@@ -2857,7 +2925,7 @@
       "photo": "https://www.joinwedo.org/wp-content/uploads/2023/07/SabrinaBianchi-1.png"
     },
     {
-      "id": "p-131",
+      "id": "p-134",
       "name": "Clendon Biscette",
       "institution": "OECS",
       "role": "",
@@ -2874,7 +2942,7 @@
       "photo": ""
     },
     {
-      "id": "p-132",
+      "id": "p-135",
       "name": "Sofía Brugnini",
       "institution": "TUMO Uruguay",
       "role": "",
@@ -2895,7 +2963,7 @@
       "photo": ""
     },
     {
-      "id": "p-133",
+      "id": "p-136",
       "name": "Karla Cantuarias",
       "institution": "Kodea",
       "role": "Gerenta de Sensibilización e Incidencia Pública, Fundación Kodea",
@@ -2917,7 +2985,7 @@
       "photo": "https://kodea.org/wp-content/uploads/2020/05/TeamMemberKarla.png"
     },
     {
-      "id": "p-134",
+      "id": "p-137",
       "name": "Jair Cerna",
       "institution": "TUMO Uruguay",
       "role": "Center Manager, TUMO Uruguay",
@@ -2939,7 +3007,7 @@
       "photo": ""
     },
     {
-      "id": "p-135",
+      "id": "p-138",
       "name": "Beatriz Colombino",
       "institution": "R. Balaguer S.A.",
       "role": "Overseas Business Assistant",
@@ -2956,7 +3024,7 @@
       "photo": ""
     },
     {
-      "id": "p-136",
+      "id": "p-139",
       "name": "Keshawn D Paul",
       "institution": "OECS",
       "role": "",
@@ -2977,7 +3045,7 @@
       "photo": ""
     },
     {
-      "id": "p-137",
+      "id": "p-140",
       "name": "Verónica Díaz",
       "institution": "Banco Mundial",
       "role": "Consultora / Research Analyst, Práctica Global de Desarrollo Humano (educación y protección social), Banco Mundial",
@@ -2999,7 +3067,7 @@
       "photo": "https://s7d1.scene7.com/is/image/wbcollab/Vero-Diaz-2_0?qlt=90&fmt=webp&resMode=sharp2"
     },
     {
-      "id": "p-138",
+      "id": "p-141",
       "name": "Victoria Fuentes",
       "institution": "TUMO Uruguay",
       "role": "",
@@ -3020,7 +3088,7 @@
       "photo": ""
     },
     {
-      "id": "p-139",
+      "id": "p-142",
       "name": "Diego Garagorry",
       "institution": "Instituto Vidart",
       "role": "Director Ejecutivo · Centro Nacional de Inteligencia Artificial de Uruguay",
@@ -3042,7 +3110,7 @@
       "photo": "https://media.elobservador.com.uy/p/797d94f5b3eea1588adbc66e1d36b513/adjuntos/362/imagenes/100/761/0100761881/1000x0/smart/diego-garagorry-1.jpg"
     },
     {
-      "id": "p-140",
+      "id": "p-143",
       "name": "Fernando González Perilli",
       "institution": "CICEA",
       "role": "Responsable de la línea Tecnología y Educación",
@@ -3064,7 +3132,7 @@
       "photo": "https://psico.edu.uy/sites/default/files/styles/foto_docente_grande/public/2017-07/-gonzalez_1.jpg?itok=uluoQ_no"
     },
     {
-      "id": "p-141",
+      "id": "p-144",
       "name": "Nicolás Grossman",
       "institution": "Global Index",
       "role": "Project Director",
@@ -3086,7 +3154,7 @@
       "photo": "https://cdn.sanity.io/images/az62drs6/production/39fa1e2706a3347dcb684d7046267b2fdf132f94-2857x4049.png"
     },
     {
-      "id": "p-142",
+      "id": "p-145",
       "name": "Sissi Hamann",
       "institution": "British Council Peru",
       "role": "Country Director Peru",
@@ -3109,7 +3177,7 @@
       "photo": ""
     },
     {
-      "id": "p-143",
+      "id": "p-146",
       "name": "Sofía Lorelli",
       "institution": "TUMO Uruguay",
       "role": "",
@@ -3130,12 +3198,12 @@
       "photo": ""
     },
     {
-      "id": "p-144",
+      "id": "p-147",
       "name": "Ornella Lotito",
       "institution": "UNESCO Argentina",
-      "role": "Oficial de Educación, UNICEF Argentina",
-      "role_en": "Education Officer, UNICEF Argentina",
-      "role_pt": "Oficial de Educação, UNICEF Argentina",
+      "role": "Lidera el portafolio de la agenda digital de UNESCO Argentina",
+      "role_en": "She leads the UNESCO Argentina digital agenda portfolio",
+      "role_pt": "Ela lidera o portfólio da agenda digital da UNESCO na Argentina.",
       "country": "Argentina",
       "summary": "Ornella Lotito es oficial de Educación en UNICEF Argentina, donde impulsa la agenda de habilidades digitales y transformación educativa del programa de cooperación 2026-2030 del organismo en el país. En agosto de 2026 presentó ese programa en un encuentro de la Red Cimientos centrado en las trayectorias de adolescentes y jóvenes después de la escuela, y participó en la elaboración del informe «Niñas, niños y adolescentes conectados: Kids Online Argentina 2025», sobre mesas de diálogo acerca de la conectividad y el uso de internet por parte de la niñez. Trabaja de forma articulada con organismos de gobierno y organizaciones de la sociedad civil en temas de ciudadanía digital, plataformas educativas y equidad de género en tecnología, y ha participado en iniciativas como la alianza Chicas en Tecnología.",
       "summary_en": "Ornella Lotito is an Education Officer at UNICEF Argentina, where she promotes the digital skills and educational transformation agenda of the organization's 2026-2030 cooperation program in the country. In August 2026, she presented this program at a Cimientos Network meeting focused on the post-school pathways of adolescents and young people, and participated in the development of the report \"Connected Children and Adolescents: Kids Online Argentina 2025,\" based on dialogue sessions about connectivity and internet use by children. She works in collaboration with government agencies and civil society organizations on issues of digital citizenship, educational platforms, and gender equity in technology, and has participated in initiatives such as the Girls in Technology alliance.",
@@ -3152,7 +3220,7 @@
       "photo": ""
     },
     {
-      "id": "p-145",
+      "id": "p-148",
       "name": "Guillermo Marquez",
       "institution": "Huawei Partners",
       "role": "",
@@ -3173,7 +3241,7 @@
       "photo": ""
     },
     {
-      "id": "p-146",
+      "id": "p-149",
       "name": "Federico Martínez",
       "institution": "Ceibal",
       "role": "Coordinador de alfabetización en IA",
@@ -3195,7 +3263,7 @@
       "photo": ""
     },
     {
-      "id": "p-147",
+      "id": "p-150",
       "name": "Matías Michailov",
       "institution": "UTEC",
       "role": "Docente",
@@ -3203,8 +3271,8 @@
       "role_pt": "Ensino",
       "country": "Uruguay",
       "summary": "Docente de UTEC, la Universidad Tecnológica: universidad pública uruguaya especializada en formación técnica y tecnológica de nivel terciario, con sedes distribuidas en el interior del país. El terreno común con Ceibal está en la continuidad entre la educación media y la formación técnica superior, y en cómo llegan a ese tramo las competencias digitales y de programación que se trabajan antes en el aula. Su disciplina específica y sus proyectos no figuran en el sitio institucional de UTEC ni en otras fuentes públicas consultadas.",
-      "summary_en": "A professor at UTEC, the Technological University: a Uruguayan public university specializing in tertiary-level technical and technological training, with campuses throughout the country. The common ground with Ceibal lies in the continuity between secondary education and higher technical training, and in how digital and programming skills, developed earlier in the classroom, are applied at that level. His specific discipline and projects are not listed on UTEC's institutional website or in other public sources consulted.",
-      "summary_pt": "Professor da UTEC, a Universidade Tecnológica: uma universidade pública uruguaia especializada em formação técnica e tecnológica de nível superior, com campi em todo o país. O ponto em comum com Ceibal reside na continuidade entre o ensino secundário e a formação técnica superior, e em como as competências digitais e de programação, desenvolvidas anteriormente em sala de aula, são aplicadas nesse nível. Sua área de atuação e projetos específicos não constam no site institucional da UTEC nem em outras fontes públicas consultadas.",
+      "summary_en": "A professor at UTEC, the Technological University: a Uruguayan public university specializing in tertiary-level technical and technological training, with campuses throughout the country. The common ground with Ceibal lies in the continuity between secondary education and higher technical training, and in how digital and programming skills, developed earlier in the classroom, are applied at that level. Her specific discipline and projects are not listed on UTEC's institutional website or in other public sources consulted.",
+      "summary_pt": "Professora da UTEC, a Universidade Tecnológica: uma universidade pública uruguaia especializada em formação técnica e tecnológica de nível superior, com campi em todo o país. O ponto em comum com Ceibal reside na continuidade entre o ensino secundário e a formação técnica superior, e em como as competências digitais e de programação, desenvolvidas anteriormente em sala de aula, são aplicadas nesse nível. Sua área de atuação e projetos específicos não constam no site institucional da UTEC nem em outras fontes públicas consultadas.",
       "interests": [
         "Educación superior",
         "Educación técnico-profesional",
@@ -3216,7 +3284,7 @@
       "photo": ""
     },
     {
-      "id": "p-148",
+      "id": "p-151",
       "name": "Victor Morales",
       "institution": "Dia LAB",
       "role": "Jefe de Formación y Upskilling",
@@ -3237,7 +3305,7 @@
       "photo": ""
     },
     {
-      "id": "p-149",
+      "id": "p-152",
       "name": "Mirna Parra",
       "institution": "Ceibal",
       "role": "Gerenta de Operaciones",
@@ -3258,7 +3326,7 @@
       "photo": ""
     },
     {
-      "id": "p-150",
+      "id": "p-153",
       "name": "Juana Renj",
       "institution": "China Hainergy New Energy Corp., Ltd.",
       "role": "Gerente comercial",
@@ -3279,7 +3347,7 @@
       "photo": ""
     },
     {
-      "id": "p-151",
+      "id": "p-154",
       "name": "Helena Rovner",
       "institution": "Banco Mundial",
       "role": "Senior Education Specialist, LAC Education Practice",
@@ -3301,7 +3369,7 @@
       "photo": "https://s7d1.scene7.com/is/image/wbcollab/HelenaR?qlt=90&fmt=webp&resMode=sharp2"
     },
     {
-      "id": "p-152",
+      "id": "p-155",
       "name": "Annika Ruocco",
       "institution": "TUMO Uruguay",
       "role": "",
@@ -3322,7 +3390,7 @@
       "photo": ""
     },
     {
-      "id": "p-153",
+      "id": "p-156",
       "name": "Felipe Schipani",
       "institution": "Comisión de Educación y Cultura",
       "role": "Representante Nacional (diputado), Cámara de Representantes de Uruguay; integrante de la Comisión de Educación y Cultura",
@@ -3343,7 +3411,7 @@
       "photo": ""
     },
     {
-      "id": "p-154",
+      "id": "p-157",
       "name": "Peter Schneider",
       "institution": "Amira Learning",
       "role": "Vice President of International",
@@ -3366,7 +3434,7 @@
       "photo": "https://cdn.asp.events/CLIENT_Ascentia_4E961A52_5056_B739_54289B84DF34E888/sites/bett-show-uk-2024/media/libraries/speakers/Peter-Schneider.png"
     },
     {
-      "id": "p-155",
+      "id": "p-158",
       "name": "Andrea Vignolo",
       "institution": "MEC",
       "role": "Directora de Cooperación Internacional y Proyectos",
@@ -3387,7 +3455,7 @@
       "photo": "https://www.gub.uy/ministerio-educacion-cultura/sites/ministerio-educacion-cultura/files/imagenes/noticias/Foto_Andrea%20Vignolo.jpeg"
     },
     {
-      "id": "p-156",
+      "id": "p-159",
       "name": "Florencia Aguirre",
       "institution": "Ceibal",
       "role": "Coordinadora de M&E",
@@ -3408,7 +3476,7 @@
       "photo": ""
     },
     {
-      "id": "p-157",
+      "id": "p-160",
       "name": "Ana Inés Alayon",
       "institution": "Ceibal",
       "role": "Coordinadora de Operaciones",
@@ -3429,7 +3497,7 @@
       "photo": ""
     },
     {
-      "id": "p-158",
+      "id": "p-161",
       "name": "Nicolás Ambrosi",
       "institution": "Ceibal",
       "role": "Articulación institucional",
@@ -3450,7 +3518,7 @@
       "photo": ""
     },
     {
-      "id": "p-159",
+      "id": "p-162",
       "name": "Isabel Amigo",
       "institution": "Ceibal",
       "role": "Gerenta de Gestión de la Innovación",
@@ -3472,7 +3540,7 @@
       "photo": ""
     },
     {
-      "id": "p-160",
+      "id": "p-163",
       "name": "Gustavo Bentancor",
       "institution": "Ceibal",
       "role": "Jefe de Matemática",
@@ -3494,7 +3562,7 @@
       "photo": ""
     },
     {
-      "id": "p-161",
+      "id": "p-164",
       "name": "Valeria Bolla",
       "institution": "Banco Mundial",
       "role": "Oficial de Comunicaciones, oficina del Banco Mundial en Uruguay",
@@ -3515,7 +3583,7 @@
       "photo": ""
     },
     {
-      "id": "p-162",
+      "id": "p-165",
       "name": "Rafael Cabrera",
       "institution": "UNOPS",
       "role": "Senior Programme Manager",
@@ -3536,7 +3604,7 @@
       "photo": ""
     },
     {
-      "id": "p-163",
+      "id": "p-166",
       "name": "Valentina Cancela",
       "institution": "Ceibal",
       "role": "Coordinadora",
@@ -3553,11 +3621,11 @@
       ],
       "detail": "coordinación de programas educativos, implementación de iniciativas de ceibal, seguimiento territorial de proyectos, articulación con centros educativos",
       "detail_en": "Coordination of educational programs, implementation of Ceibal initiatives, territorial monitoring of projects, and collaboration with educational centers",
-      "detail_pt": "Coordenação de programas educacionais, implementação de iniciativas da Ceibal, acompanhamento territorial de projetos e colaboração com centros educacionais.",
+      "detail_pt": "Coordenação de programas educacionais, implementação de iniciativas Ceibal, acompanhamento territorial de projetos e colaboração com centros educacionais.",
       "photo": ""
     },
     {
-      "id": "p-164",
+      "id": "p-167",
       "name": "Nahiara Caram",
       "institution": "Fundación Ceibal",
       "role": "",
@@ -3578,7 +3646,7 @@
       "photo": ""
     },
     {
-      "id": "p-165",
+      "id": "p-168",
       "name": "Emilia Casaravilla",
       "institution": "Ceibal",
       "role": "Coordinadora",
@@ -3595,11 +3663,11 @@
       ],
       "detail": "coordinación de programas educativos, implementación de iniciativas de ceibal, seguimiento territorial de proyectos, articulación con centros educativos",
       "detail_en": "Coordination of educational programs, implementation of Ceibal initiatives, territorial monitoring of projects, and collaboration with educational centers",
-      "detail_pt": "Coordenação de programas educacionais, implementação de iniciativas da Ceibal, acompanhamento territorial de projetos e colaboração com centros educacionais.",
+      "detail_pt": "Coordenação de programas educacionais, implementação de iniciativas Ceibal, acompanhamento territorial de projetos e colaboração com centros educacionais.",
       "photo": ""
     },
     {
-      "id": "p-166",
+      "id": "p-169",
       "name": "Lucía Crivelli",
       "institution": "Ceibal",
       "role": "Pedagógico",
@@ -3620,7 +3688,7 @@
       "photo": ""
     },
     {
-      "id": "p-167",
+      "id": "p-170",
       "name": "Andrés De Armas",
       "institution": "Ceibal",
       "role": "Equipo Estudios Educativos",
@@ -3641,7 +3709,7 @@
       "photo": ""
     },
     {
-      "id": "p-168",
+      "id": "p-171",
       "name": "Juan Esteva",
       "institution": "TUMO Uruguay",
       "role": "",
@@ -3663,7 +3731,7 @@
       "photo": ""
     },
     {
-      "id": "p-169",
+      "id": "p-172",
       "name": "Nicolás Garcia",
       "institution": "Ceibal",
       "role": "Coord. Plataformas IA",
@@ -3684,7 +3752,7 @@
       "photo": ""
     },
     {
-      "id": "p-170",
+      "id": "p-173",
       "name": "Paula García Comas",
       "institution": "Slate Science",
       "role": "",
@@ -3706,7 +3774,7 @@
       "photo": ""
     },
     {
-      "id": "p-171",
+      "id": "p-174",
       "name": "Lucía Garín",
       "institution": "Ceibal",
       "role": "Coord. de proyectos",
@@ -3727,7 +3795,7 @@
       "photo": ""
     },
     {
-      "id": "p-172",
+      "id": "p-175",
       "name": "Irene González",
       "institution": "Ceibal",
       "role": "Gerenta ejecutiva",
@@ -3749,7 +3817,7 @@
       "photo": ""
     },
     {
-      "id": "p-173",
+      "id": "p-176",
       "name": "Mariana González",
       "institution": "Ceibal",
       "role": "Jefa de Investigación, Monitoreo y Evaluación",
@@ -3771,7 +3839,7 @@
       "photo": ""
     },
     {
-      "id": "p-174",
+      "id": "p-177",
       "name": "Gabriel Gric",
       "institution": "UNOPS",
       "role": "ICT Specialist",
@@ -3788,7 +3856,7 @@
       "photo": ""
     },
     {
-      "id": "p-175",
+      "id": "p-178",
       "name": "Ignacio Gründel",
       "institution": "Ceibal",
       "role": "Gerente de planificación, compras y logística",
@@ -3810,7 +3878,7 @@
       "photo": ""
     },
     {
-      "id": "p-176",
+      "id": "p-179",
       "name": "Soledad Gutiérrez",
       "institution": "Ceibal",
       "role": "Coord. Formación IA",
@@ -3832,7 +3900,7 @@
       "photo": ""
     },
     {
-      "id": "p-177",
+      "id": "p-180",
       "name": "Marcia Hernández",
       "institution": "Ceibal",
       "role": "M&E",
@@ -3854,12 +3922,12 @@
       "photo": ""
     },
     {
-      "id": "p-178",
+      "id": "p-181",
       "name": "Laura Huarte",
       "institution": "Intel",
       "role": "Business Development Manager, Gobierno y Educación, Intel (Argentina y Uruguay)",
       "role_en": "Business Development Manager, Government and Education, Intel (Argentina and Uruguay)",
-      "role_pt": "Gerente de Desenvolvimento de Negócios para os setores Governamental e Educacional da Intel (Argentina e Uruguai)",
+      "role_pt": "Gerente de Desenvolvimento de Negócios para Governo e Educação, Intel (Argentina e Uruguai)",
       "country": "Uruguay",
       "summary": "Laura Huarte es Business Development Manager del área de Gobierno y Educación de Intel para Argentina y Uruguay. Impulsa alianzas público-privadas orientadas al desarrollo de habilidades digitales, entre ellas el programa de formación docente Intel Skills for Innovation y una iniciativa de capacitación en inteligencia artificial para jóvenes y trabajadores desarrollada junto con gobiernos de la región. En 2023 participó como una de las especialistas consultadas sobre el impacto de la inteligencia artificial en la educación y el mercado laboral, donde defendió el diálogo entre sociedad civil, industria, gobierno y academia para desmitificar las nuevas tecnologías. Sostiene que la tecnología debe fomentar creatividad, innovación, trabajo en equipo y pensamiento crítico, y ubica a la IA generativa, la robótica y la impresión 3D entre los terrenos donde Intel acompaña a los sistemas educativos.",
       "summary_en": "Laura Huarte is Business Development Manager for the Government and Education area at Intel for Argentina and Uruguay. She promotes public-private partnerships focused on developing digital skills, including the Intel Skills for Innovation teacher training program and an artificial intelligence training initiative for young people and workers developed in conjunction with governments in the region. In 2023, she participated as one of the experts consulted on the impact of artificial intelligence on education and the labor market, where she advocated for dialogue between civil society, industry, government, and academia to demystify new technologies. She maintains that technology should foster creativity, innovation, teamwork, and critical thinking, and identifies generative AI, robotics, and 3D printing as areas where Intel supports education systems.",
@@ -3876,7 +3944,7 @@
       "photo": ""
     },
     {
-      "id": "p-179",
+      "id": "p-182",
       "name": "Gabriela Kaplan",
       "institution": "Ceibal",
       "role": "Jefa de Ceibal en Inglés",
@@ -3898,7 +3966,7 @@
       "photo": ""
     },
     {
-      "id": "p-180",
+      "id": "p-183",
       "name": "Enrique Lev",
       "institution": "Ceibal",
       "role": "Gerente de telecomunicaciones",
@@ -3920,7 +3988,7 @@
       "photo": ""
     },
     {
-      "id": "p-181",
+      "id": "p-184",
       "name": "Nadia Martignone",
       "institution": "Ceibal",
       "role": "Pedagógico",
@@ -3942,7 +4010,7 @@
       "photo": ""
     },
     {
-      "id": "p-182",
+      "id": "p-185",
       "name": "Nadia Mateo",
       "institution": "Ceibal",
       "role": "Coordinadora",
@@ -3963,7 +4031,7 @@
       "photo": ""
     },
     {
-      "id": "p-183",
+      "id": "p-186",
       "name": "Diego Migues",
       "institution": "Ceibal",
       "role": "Jefe del Laboratorio de proyectos",
@@ -3984,7 +4052,7 @@
       "photo": ""
     },
     {
-      "id": "p-184",
+      "id": "p-187",
       "name": "Santiago Paolillo",
       "institution": "Ceibal",
       "role": "Investigador",
@@ -4005,7 +4073,7 @@
       "photo": ""
     },
     {
-      "id": "p-185",
+      "id": "p-188",
       "name": "Ana Laura Pérez",
       "institution": "Ceibal",
       "role": "Jefa de Acompañamiento en Tecnologías Educativas",
@@ -4026,7 +4094,7 @@
       "photo": ""
     },
     {
-      "id": "p-186",
+      "id": "p-189",
       "name": "Julia Pérez",
       "institution": "Ceibal",
       "role": "Jefa Estudios Educativos",
@@ -4034,8 +4102,8 @@
       "role_pt": "Chefe de Estudos Educacionais",
       "country": "Uruguay",
       "summary": "Jefa de Estudios Educativos de Ceibal, unidad de la Gerencia de Inteligencia Artificial y Educación. Sus temas declarados —evaluación de aprendizajes e integridad académica, analítica de datos educativos, política educativa y diseño curricular— señalan una agenda que está en el centro del debate del evento: cómo evaluar aprendizajes cuando los estudiantes tienen inteligencia artificial generativa a mano, y qué evidencia se necesita para decidir si un programa sigue, cambia o se discontinúa. Su recorrido anterior a Ceibal no aparece en fuentes públicas.",
-      "summary_en": "Head of Educational Studies at Ceibal, a unit within the Artificial Intelligence and Education Management. Her stated areas of expertise—learning assessment and academic integrity, educational data analytics, educational policy, and curriculum design—point to an agenda that is central to the event's debate: how to assess learning when students have generative artificial intelligence at their fingertips, and what evidence is needed to decide whether a program continues, changes, or is discontinued. Her career path prior to Ceibal is not listed in public sources.",
-      "summary_pt": "Chefe de Estudos Educacionais no Ceibal, uma unidade dentro da área de Inteligência Artificial e Gestão da Educação. Suas áreas de especialização declaradas — avaliação da aprendizagem e integridade acadêmica, análise de dados educacionais, políticas educacionais e desenvolvimento curricular — apontam para uma agenda central no debate do evento: como avaliar a aprendizagem quando os alunos têm inteligência artificial generativa ao seu alcance e quais evidências são necessárias para decidir se um programa continua, muda ou é descontinuado. Sua trajetória profissional anterior ao Ceibal não consta em fontes públicas.",
+      "summary_en": "Head of Educational Studies at Ceibal, a unit within the Artificial Intelligence and Education Management. Her stated areas of expertise—learning assessment and academic integrity, educational data analytics, educational policy, and curriculum design—point to an agenda that is central to the event's debate: how to assess learning when students have generative artificial intelligence at their fingertips, and what evidence is needed to decide whether a program should continue, change, or be discontinued. Her career path prior to Ceibal is not available in public records.",
+      "summary_pt": "Chefe de Estudos Educacionais no Ceibal, uma unidade dentro da área de Inteligência Artificial e Gestão da Educação. Suas áreas de especialização declaradas — avaliação da aprendizagem e integridade acadêmica, análise de dados educacionais, políticas educacionais e desenvolvimento curricular — apontam para uma agenda central no debate do evento: como avaliar a aprendizagem quando os alunos têm inteligência artificial generativa ao seu alcance e quais evidências são necessárias para decidir se um programa deve continuar, ser alterado ou descontinuado. Sua trajetória profissional anterior ao Ceibal não está disponível em registros públicos.",
       "interests": [
         "Evaluación de aprendizajes e integridad académica",
         "Analítica de datos educativos",
@@ -4048,7 +4116,7 @@
       "photo": ""
     },
     {
-      "id": "p-187",
+      "id": "p-190",
       "name": "Lucía Pérez",
       "institution": "Fundación Ceibal",
       "role": "",
@@ -4069,7 +4137,7 @@
       "photo": ""
     },
     {
-      "id": "p-188",
+      "id": "p-191",
       "name": "Sergio Pérez",
       "institution": "Ceibal",
       "role": "Jefe de Ciencias de la Computación",
@@ -4091,7 +4159,7 @@
       "photo": ""
     },
     {
-      "id": "p-189",
+      "id": "p-192",
       "name": "Romina Pons",
       "institution": "Ceibal",
       "role": "Coord. Plataformas",
@@ -4112,7 +4180,7 @@
       "photo": ""
     },
     {
-      "id": "p-190",
+      "id": "p-193",
       "name": "Enzo Puñales",
       "institution": "Ceibal",
       "role": "Jefe Plataformas Educativas",
@@ -4133,7 +4201,7 @@
       "photo": ""
     },
     {
-      "id": "p-191",
+      "id": "p-194",
       "name": "Eleana Reyes",
       "institution": "Ceibal",
       "role": "Gerenta de servicio técnico",
@@ -4154,7 +4222,7 @@
       "photo": ""
     },
     {
-      "id": "p-192",
+      "id": "p-195",
       "name": "Valentina Ronqui",
       "institution": "Ceibal",
       "role": "Equipo Lengua",
@@ -4175,7 +4243,7 @@
       "photo": ""
     },
     {
-      "id": "p-193",
+      "id": "p-196",
       "name": "Lucía Saldombide",
       "institution": "Ceibal",
       "role": "Coord. Instancias formativas",
@@ -4196,7 +4264,7 @@
       "photo": ""
     },
     {
-      "id": "p-194",
+      "id": "p-197",
       "name": "Lucero Schandy",
       "institution": "Ceibal",
       "role": "Jefa de calidad y atención al usuario",
@@ -4217,7 +4285,7 @@
       "photo": ""
     },
     {
-      "id": "p-195",
+      "id": "p-198",
       "name": "Maria del Rosario Schunk",
       "institution": "Ceibal",
       "role": "Pedagógico",
@@ -4238,7 +4306,7 @@
       "photo": ""
     },
     {
-      "id": "p-196",
+      "id": "p-199",
       "name": "Enzo Sguillaro",
       "institution": "Ceibal",
       "role": "Pedagógico",
@@ -4259,7 +4327,7 @@
       "photo": ""
     },
     {
-      "id": "p-197",
+      "id": "p-200",
       "name": "Javier Valente",
       "institution": "Ceibal",
       "role": "Investigador",
@@ -4280,7 +4348,7 @@
       "photo": ""
     },
     {
-      "id": "p-198",
+      "id": "p-201",
       "name": "Constanza Valentini Barrios",
       "institution": "Ceibal",
       "role": "M&E",
@@ -4302,7 +4370,7 @@
       "photo": ""
     },
     {
-      "id": "p-199",
+      "id": "p-202",
       "name": "Alejandro Vásquez Echeverría",
       "institution": "CICEA",
       "role": "Responsable de la línea Evaluación del Desarrollo",
@@ -4325,7 +4393,7 @@
       "photo": "https://psico.edu.uy/sites/default/files/styles/foto_docente_grande/public/2017-01/alejandro-vazquez_2_0.jpg?itok=P4tazl6K"
     },
     {
-      "id": "p-200",
+      "id": "p-203",
       "name": "Carla Vega",
       "institution": "Ceibal",
       "role": "Apoyo a la administración",
@@ -4346,7 +4414,7 @@
       "photo": ""
     },
     {
-      "id": "p-201",
+      "id": "p-204",
       "name": "Fernando Viera",
       "institution": "Ceibal",
       "role": "Jefe de ingeniería",
@@ -4367,7 +4435,7 @@
       "photo": ""
     },
     {
-      "id": "p-202",
+      "id": "p-205",
       "name": "Silvana —",
       "institution": "Metroveinte",
       "role": "",
@@ -4384,7 +4452,7 @@
       "photo": ""
     },
     {
-      "id": "p-203",
+      "id": "p-206",
       "name": "Gimena Castelao",
       "institution": "Ceibal",
       "role": "Investigadora",
@@ -4405,7 +4473,7 @@
       "photo": ""
     },
     {
-      "id": "p-204",
+      "id": "p-207",
       "name": "José Luis Maya",
       "institution": "Logicalis",
       "role": "Account Manager",
@@ -4426,7 +4494,29 @@
       "photo": ""
     },
     {
-      "id": "p-205",
+      "id": "p-208",
+      "name": "Paula Palabe",
+      "institution": "Ceibal",
+      "role": "Pedagógico",
+      "role_en": "Pedagogical",
+      "role_pt": "Pedagógico",
+      "country": "Uruguay",
+      "summary": "Cumple un rol pedagógico dentro de Ceibal, es decir, del lado del contenido y de las prácticas de enseñanza más que del de la infraestructura. Los temas que declara para la conferencia —formación y desarrollo profesional docente, diseño curricular, evaluación de aprendizajes e integridad académica, y educación media y trayectorias educativas— arman una agenda coherente alrededor del tramo de secundaria, y en particular alrededor del uso de inteligencia artificial por parte de los estudiantes de ese nivel. El listado no precisa el equipo ni el cargo exacto.",
+      "summary_en": "She fulfills a pedagogical role within Ceibal, focusing more on content and teaching practices than on infrastructure. The topics she has announced for the conference—teacher training and professional development, curriculum design, learning assessment and academic integrity, and secondary education and educational pathways—form a coherent agenda centered on secondary school, and particularly on the use of artificial intelligence by students at that level. The list does not specify the team or the exact position.",
+      "summary_pt": "Ela desempenha um papel pedagógico na Ceibal, focando-se mais no conteúdo e nas práticas de ensino do que na infraestrutura. Os temas que ela anunciou para a conferência — formação e desenvolvimento profissional de professores, elaboração de currículos, avaliação da aprendizagem e integridade acadêmica, e ensino secundário e percursos educacionais — formam uma agenda coerente centrada no ensino secundário, e particularmente no uso da inteligência artificial por estudantes desse nível. A lista não especifica a equipe nem o cargo exato.",
+      "interests": [
+        "Formación y desarrollo profesional docente",
+        "Diseño curricular",
+        "Evaluación de aprendizajes e integridad académica",
+        "Educación media y trayectorias educativas"
+      ],
+      "detail": "trabajo pedagógico, acompañamiento docente, contenidos educativos, prácticas de enseñanza",
+      "detail_en": "pedagogical work, teacher support, educational content, teaching practices",
+      "detail_pt": "trabalho pedagógico, apoio ao professor, conteúdo educacional, práticas de ensino",
+      "photo": ""
+    },
+    {
+      "id": "p-209",
       "name": "Marcela Schenk",
       "institution": "Ceibal",
       "role": "Asesora de Ceibal",
@@ -4448,7 +4538,7 @@
       "photo": ""
     },
     {
-      "id": "p-206",
+      "id": "p-210",
       "name": "Jimena Souteras",
       "institution": "Ceibal",
       "role": "Jefa de Planificación Estratégica y Gestión de Riesgo",
@@ -4470,7 +4560,7 @@
       "photo": ""
     },
     {
-      "id": "p-207",
+      "id": "p-211",
       "name": "Dario Zarauza",
       "institution": "Ceibal",
       "role": "Jefe",
@@ -4492,7 +4582,7 @@
       "photo": ""
     },
     {
-      "id": "p-208",
+      "id": "p-212",
       "name": "Verónica Zorrilla de San Martín",
       "institution": "Ceibal",
       "role": "Doctora en Educación; Instituto de Educación, Universidad ORT Uruguay (no se confirmó un cargo específico dentro de Ceibal)",
@@ -4511,6 +4601,234 @@
       "detail": "tecnología educativa, aprendizaje en línea, videojuegos en el aula, desarrollo profesional docente, desigualdad educativa en américa latina, investigación educativa",
       "detail_en": "Educational technology, online learning, video games in the classroom, teacher professional development, educational inequality in Latin America, educational research",
       "detail_pt": "Tecnologia educacional, aprendizagem online, videogames em sala de aula, desenvolvimento profissional de professores, desigualdade educacional na América Latina, pesquisa educacional",
+      "photo": ""
+    },
+    {
+      "id": "p-213",
+      "name": "Soledad Félix",
+      "institution": "Ceibal",
+      "role": "Gerenta de Ciencia y tecnología",
+      "role_en": "Science and Technology Manager",
+      "role_pt": "Gerente de Ciência e Tecnologia",
+      "country": "Uruguay",
+      "summary": "Gerenta de Ciencia y tecnología, unidad de la gerencia de Inteligencia Artificial y Educación de Ceibal. El área que dirige agrupa las líneas de Pensamiento computacional e inteligencia artificial, Matemática, Ciencias de la Computación, Laboratorios digitales, Acompañamiento en Tecnologías Educativas y Plataformas Educativas, es decir la propuesta curricular en áreas científico-tecnológicas junto con las plataformas que la sostienen. Con anterioridad se desempeñó como jefa de Plataformas de Ceibal, cargo con el que figura en entrevistas públicas. Sin registro público de su formación.",
+      "summary_en": "Manager of Science and Technology, a unit within the Artificial Intelligence and Education Management division of Ceibal. The area she leads encompasses the lines of Computational Thinking and Artificial Intelligence, Mathematics, Computer Science, Digital Laboratories, Educational Technology Support, and Educational Platforms—that is, the curriculum in science and technology areas along with the platforms that support it. Previously, she served as Head of Platforms at Ceibal, a position she holds in public interviews. There is no publicly available record of her academic qualifications.",
+      "summary_pt": "Gerente de Ciência e Tecnologia, uma unidade dentro da divisão de Inteligência Artificial e Gestão Educacional da Ceibal. A área que ela lidera abrange os ramos de Pensamento Computacional e Inteligência Artificial, Matemática, Ciência da Computação, Laboratórios Digitais, Suporte à Tecnologia Educacional e Plataformas Educacionais — ou seja, o currículo nas áreas de ciência e tecnologia, juntamente com as plataformas que o suportam. Anteriormente, ela atuou como Chefe de Plataformas na Ceibal, cargo que mantém em entrevistas públicas. Não há registro público disponível de suas qualificações acadêmicas.",
+      "interests": [
+        "Pensamiento computacional y programación",
+        "Plataformas y aprendizaje en línea",
+        "Educación STEM y científica",
+        "Alfabetización en IA"
+      ],
+      "detail": "pensamiento computacional e inteligencia artificial en el currículo, enseñanza de matemática y ciencias de la computación, laboratorios digitales y cultura maker, plataformas educativas, acompañamiento docente en tecnologías educativas, educación stem",
+      "detail_en": "Computational thinking and artificial intelligence in the curriculum, teaching mathematics and computer science, digital laboratories and maker culture, educational platforms, teacher support in educational technologies, STEM education",
+      "detail_pt": "Pensamento computacional e inteligência artificial no currículo, ensino de matemática e ciência da computação, laboratórios digitais e cultura maker, plataformas educacionais, apoio ao professor em tecnologias educacionais, educação STEM",
+      "photo": ""
+    },
+    {
+      "id": "p-214",
+      "name": "Manuel Barca",
+      "institution": "Ceibal",
+      "role": "Equipo Lab. de Medios",
+      "role_en": "Media Lab Team",
+      "role_pt": "Equipe do Media Lab",
+      "country": "Uruguay",
+      "summary": "Integra el equipo de Ceibal y el listado lo asigna al «Equipo Lab. de Medios». No existe en el organigrama institucional ninguna unidad con esa denominación, y no se encontró documentación pública de Ceibal que describa ese equipo, sus cometidos o su ubicación en la estructura. Tampoco se halló información profesional pública verificable que pueda atribuirse con certeza a esta persona: los perfiles localizados con ese nombre no permiten descartar homónimos. La ficha se deja sin desarrollar antes que completarla con suposiciones.",
+      "summary_en": "This person is part of the Ceibal team, and the list assigns them to the \"Media Lab Team.\" No unit with that name exists in the institutional organizational chart, and no public documentation from Ceibal was found describing this team, its responsibilities, or its place within the structure. Furthermore, no verifiable public professional information was found that could be definitively attributed to this individual: the profiles found with that name do not allow for ruling out homonyms. The entry should be left undeveloped rather than filled with assumptions.",
+      "summary_pt": "Essa pessoa faz parte da equipe do Ceibal e a lista a classifica como pertencente à \"Equipe do Laboratório de Mídia\". Não existe nenhuma unidade com esse nome no organograma institucional, e não foi encontrada nenhuma documentação pública do Ceibal que descreva essa equipe, suas responsabilidades ou sua posição na estrutura. Além disso, não foram encontradas informações profissionais públicas verificáveis ​​que pudessem ser atribuídas definitivamente a esse indivíduo: os perfis encontrados com esse nome não permitem descartar homônimos. A entrada deve permanecer incompleta, em vez de ser preenchida com suposições.",
+      "interests": [],
+      "detail": "",
+      "detail_en": "",
+      "detail_pt": "",
+      "photo": ""
+    },
+    {
+      "id": "p-215",
+      "name": "Nerey Long",
+      "institution": "Ceibal",
+      "role": "Equipo Ciudadanía Digital",
+      "role_en": "Digital Citizenship Team",
+      "role_pt": "Equipe de Cidadania Digital",
+      "country": "Uruguay",
+      "summary": "Integra el equipo de Ciudadanía y bienestar digital de Ceibal, unidad de la gerencia de Territorio y Bienestar Digital, dentro de Inteligencia Artificial y Educación. Esa unidad produce las propuestas y los materiales de ciudadanía digital que Ceibal publica para docentes y estudiantes, entre ellos la cartografía de ciudadanía digital para docentes y los cuadernillos de aula sobre derechos en entornos digitales y sobre convivencia en espacios digitales y ciberbullying. Su cargo puntual y su trayectoria no constan en fuentes públicas.",
+      "summary_en": "She is part of the Digital Citizenship and Wellbeing team at Ceibal, a unit within the Digital Territory and Wellbeing Management division, under Artificial Intelligence and Education. This unit produces the digital citizenship proposals and materials that Ceibal publishes for teachers and students, including the digital citizenship map for teachers and classroom booklets on rights in digital environments and on coexistence in digital spaces and cyberbullying. Her specific position and career path are not publicly available.",
+      "summary_pt": "Ela faz parte da equipe de Cidadania Digital e Bem-Estar do Ceibal, uma unidade dentro da divisão de Gestão de Território Digital e Bem-Estar, vinculada à área de Inteligência Artificial e Educação. Essa unidade produz as propostas e os materiais sobre cidadania digital que o Ceibal publica para professores e alunos, incluindo o mapa de cidadania digital para professores e livretos para sala de aula sobre direitos em ambientes digitais, convivência em espaços digitais e cyberbullying. Seu cargo específico e trajetória profissional não são de domínio público.",
+      "interests": [
+        "Ciudadanía digital y bienestar",
+        "Alfabetización mediática y desinformación",
+        "Equidad educativa y brecha digital",
+        "Formación y desarrollo profesional docente"
+      ],
+      "detail": "ciudadanía digital, convivencia en entornos digitales y ciberbullying, derechos en entornos digitales, huella digital y privacidad, materiales de aula para primaria y media, acompañamiento a docentes",
+      "detail_en": "Digital citizenship, coexistence in digital environments and cyberbullying, rights in digital environments, digital footprint and privacy, classroom materials for primary and secondary education, support for teachers",
+      "detail_pt": "Cidadania digital, coexistência em ambientes digitais e cyberbullying, direitos em ambientes digitais, pegada digital e privacidade, materiais didáticos para o ensino fundamental e médio, apoio a professores.",
+      "photo": ""
+    },
+    {
+      "id": "p-216",
+      "name": "Guillermina Suárez",
+      "institution": "Ceibal",
+      "role": "Jefa del Laboratorio de ciencias comportamentales",
+      "role_en": "Head of the Behavioral Science Laboratory",
+      "role_pt": "Chefe do Laboratório de Ciências Comportamentais",
+      "country": "Uruguay",
+      "summary": "Jefa del Laboratorio de ciencias comportamentales de Ceibal, unidad de la gerencia de Datos y Ciencias Comportamentales. El laboratorio diseña y evalúa intervenciones comportamentales aplicadas a los programas de Ceibal. Entre los estudios indexados con ese origen figuran uno sobre el efecto de recordatorios de asistencia en la participación docente en la Escuela de Verano de Ceibal y otro sobre intervenciones para reducir brechas de género en pruebas de competencia académica del programa Jóvenes a Programar, y trabajo sobre una intervención conductual para aumentar la asistencia a educación inicial en Uruguay. No se pudo confirmar su autoría individual en cada publicación.",
+      "summary_en": "Head of the Behavioral Science Laboratory at Ceibal, a unit within the Data and Behavioral Science Management. The laboratory designs and evaluates behavioral interventions applied to Ceibal programs. Among the indexed studies originating from this laboratory are one on the effect of attendance reminders on teacher participation in the Ceibal Summer School, another on interventions to reduce gender gaps in academic proficiency tests for the Jóvenes a Programar (Youth to Program) program, and a study on a behavioral intervention to increase early childhood education attendance in Uruguay. Her individual authorship of each publication could not be confirmed.",
+      "summary_pt": "Chefe do Laboratório de Ciências Comportamentais do Ceibal, uma unidade da Gestão de Dados e Ciências Comportamentais. O laboratório desenvolve e avalia intervenções comportamentais aplicadas aos programas do Ceibal. Entre os estudos indexados originados deste laboratório, destacam-se um sobre o efeito de lembretes de presença na participação de professores na Escola de Verão do Ceibal, outro sobre intervenções para reduzir as disparidades de gênero em testes de proficiência acadêmica para o programa Jóvenes a Programar (Jovens a Programar) e um estudo sobre uma intervenção comportamental para aumentar a frequência à educação infantil no Uruguai. Não foi possível confirmar sua autoria individual em cada publicação.",
+      "interests": [
+        "Ciencias cognitivas y del comportamiento",
+        "Evaluación de impacto y ensayos aleatorizados",
+        "Equidad de género en STEM",
+        "Formación y desarrollo profesional docente"
+      ],
+      "detail": "ciencias del comportamiento aplicadas a políticas educativas, diseño y evaluación de intervenciones conductuales, asistencia y participación en programas educativos, brechas de género en pruebas de competencia, evaluación experimental, asistencia a educación inicial",
+      "detail_en": "behavioral sciences applied to educational policies, design and evaluation of behavioral interventions, attendance and participation in educational programs, gender gaps in competency tests, experimental evaluation, attendance in early childhood education",
+      "detail_pt": "Ciências comportamentais aplicadas a políticas educacionais, planejamento e avaliação de intervenções comportamentais, frequência e participação em programas educacionais, disparidades de gênero em testes de competência, avaliação experimental, frequência na educação infantil.",
+      "photo": ""
+    },
+    {
+      "id": "p-217",
+      "name": "Martín Rebour",
+      "institution": "Ceibal",
+      "role": "Gerente de Desarrollo Profesional Docente",
+      "role_en": "Manager of Teacher Professional Development",
+      "role_pt": "Gerente de Desenvolvimento Profissional de Professores",
+      "country": "Uruguay",
+      "summary": "Figura públicamente como gerente de Desarrollo Profesional Docente de Ceibal en la difusión oficial de la séptima edición de la Escuela de Verano de Ceibal, de febrero de 2025, una instancia nacional de talleres y conferencias dirigida a docentes y a estudiantes de formación docente. En registros anteriores aparece como gerente de Formación de Plan Ceibal y vinculado a propuestas para estudiantes del Consejo de Formación en Educación. El organigrama vigente no lo registra como responsable de ninguna unidad, por lo que su cargo actual no puede confirmarse. Su formación no figura en fuentes públicas.",
+      "summary_en": "He is publicly listed as the Professional Development Manager for Teachers at Ceibal in the official promotional materials for the seventh edition of the Ceibal Summer School, held in February 2025, a national series of workshops and conferences for teachers and teacher trainees. Previous records show him as the Training Manager for Plan Ceibal and linked to proposals for students of the Council for Teacher Training. The current organizational chart does not list him as head of any unit, so his current position cannot be confirmed. His qualifications are not listed in public sources.",
+      "summary_pt": "Ele consta publicamente como Gerente de Desenvolvimento Profissional para Professores no Ceibal nos materiais promocionais oficiais da sétima edição da Escola de Verão do Ceibal, realizada em fevereiro de 2025, uma série nacional de workshops e conferências para professores e futuros professores. Registros anteriores o mostram como Gerente de Formação do Plano Ceibal e vinculado a propostas para estudantes do Conselho de Formação de Professores. O organograma atual não o lista como chefe de nenhuma unidade, portanto, sua posição atual não pode ser confirmada. Suas qualificações não constam em fontes públicas.",
+      "interests": [
+        "Formación y desarrollo profesional docente",
+        "Plataformas y aprendizaje en línea",
+        "Educación superior"
+      ],
+      "detail": "desarrollo profesional docente, formación en servicio y escuela de verano, propuestas para estudiantes de formación docente, uso pedagógico de plataformas, acompañamiento a centros educativos",
+      "detail_en": "Teacher professional development, in-service training and summer school, proposals for teacher training students, pedagogical use of platforms, support for educational centers",
+      "detail_pt": "Desenvolvimento profissional de professores, formação contínua e cursos de verão, propostas para estudantes de formação docente, uso pedagógico de plataformas, apoio a centros educativos.",
+      "photo": ""
+    },
+    {
+      "id": "p-218",
+      "name": "Martín Artola",
+      "institution": "Ministerio de Relaciones Exteriores (Cancillería)",
+      "role": "",
+      "role_en": "",
+      "role_pt": "",
+      "country": "Uruguay",
+      "summary": "No se encontró información pública verificable sobre Martín Artola. El listado lo ubica en el Ministerio de Relaciones Exteriores de Uruguay sin rol declarado, y las búsquedas en gub.uy, en la página de estructura del organismo de la Cancillería y en prensa uruguaya no devolvieron ninguna persona de ese nombre asociada al ministerio. Los únicos resultados coincidentes corresponden a perfiles de redes profesionales de posibles homónimos, que no son fuente admitida ni permiten confirmar identidad ni cargo. La ficha queda sin desarrollar hasta contar con el rol confirmado.",
+      "summary_en": "No verifiable public information was found regarding Martín Artola. The listing places him within the Uruguayan Ministry of Foreign Affairs without a declared role, and searches on gub.uy, the Ministry's organizational structure page, and in the Uruguayan press yielded no results for individuals with that name associated with the ministry. The only matching results are professional network profiles of possible namesakes, which are not considered reliable sources and do not allow for confirmation of identity or position. The profile remains undeveloped until the role is confirmed.",
+      "summary_pt": "Não foram encontradas informações públicas verificáveis ​​sobre Martín Artola. O cadastro o coloca no Ministério das Relações Exteriores do Uruguai sem uma função declarada, e buscas no gub.uy, na página da estrutura organizacional do Ministério e na imprensa uruguaia não apresentaram resultados para indivíduos com esse nome associados ao ministério. Os únicos resultados correspondentes são perfis em redes profissionais de possíveis homônimos, que não são considerados fontes confiáveis ​​e não permitem a confirmação da identidade ou da função. O perfil permanece incompleto até que a função seja confirmada.",
+      "interests": [],
+      "detail": "",
+      "detail_en": "",
+      "detail_pt": "",
+      "photo": ""
+    },
+    {
+      "id": "p-219",
+      "name": "Cristina Mansilla",
+      "institution": "MRREE",
+      "role": "Directora DDHH",
+      "role_en": "Director of Human Rights",
+      "role_pt": "Diretor de Direitos Humanos",
+      "country": "Uruguay",
+      "summary": "Directora de Derechos Humanos y Derecho Humanitario del Ministerio de Relaciones Exteriores de Uruguay. Integra la Reunión de Altas Autoridades sobre Derechos Humanos del MERCOSUR, donde en 2026 planteó el lugar de la sociedad civil como espacio cívico y la preservación de la institucionalidad del bloque. Su dirección conduce el Grupo de Trabajo de Documentación en Derechos Humanos de la Cancillería, que reúne y difunde documentación sobre violaciones ocurridas entre 1972 y 1986; en 2026, a cincuenta años del Plan Cóndor, se digitalizaron y liberaron diez casos emblemáticos. Tiene formación jurídica en la Universidad de la República y publicaciones sobre la tradición de asilo y el exilio.",
+      "summary_en": "Director of Human Rights and Humanitarian Law at the Ministry of Foreign Affairs of Uruguay. She is a member of the MERCOSUR High-Level Meeting on Human Rights, where in 2026 she addressed the role of civil society as a civic space and the preservation of the bloc's institutional framework. She leads the Ministry's Human Rights Documentation Working Group, which compiles and disseminates documentation on violations that occurred between 1972 and 1986; in 2026, the fiftieth anniversary of Operation Condor, ten emblematic cases were digitized and made available. She holds a law degree from the University of the Republic and has published works on the tradition of asylum and exile.",
+      "summary_pt": "Diretora de Direitos Humanos e Direito Humanitário do Ministério das Relações Exteriores do Uruguai. É membro da Reunião de Alto Nível do MERCOSUL sobre Direitos Humanos, onde, em 2026, abordou o papel da sociedade civil como espaço cívico e a preservação do arcabouço institucional do bloco. Lidera o Grupo de Trabalho de Documentação de Direitos Humanos do Ministério, que compila e divulga documentação sobre violações ocorridas entre 1972 e 1986; em 2026, no quinquagésimo aniversário da Operação Condor, dez casos emblemáticos foram digitalizados e disponibilizados. É formada em Direito pela Universidade da República e publicou trabalhos sobre a tradição de asilo e exílio.",
+      "interests": [
+        "Ética y regulación de la IA",
+        "Cooperación internacional y multilateral",
+        "Gobernanza de datos y ciberseguridad",
+        "Ciudadanía digital y bienestar"
+      ],
+      "detail": "derechos humanos y derecho internacional humanitario, tradición de asilo y refugio, archivos y memoria, justicia transicional, agenda de derechos humanos del mercosur, participación de la sociedad civil, resguardo de datos sensibles de víctimas",
+      "detail_en": "human rights and international humanitarian law, tradition of asylum and refuge, archives and memory, transitional justice, Mercosur human rights agenda, participation of civil society, protection of sensitive data of victims",
+      "detail_pt": "Direitos humanos e direito internacional humanitário, tradição de asilo e refúgio, arquivos e memória, justiça de transição, agenda de direitos humanos do Mercosul, participação da sociedade civil, proteção de dados sensíveis de vítimas.",
+      "photo": ""
+    },
+    {
+      "id": "p-220",
+      "name": "Luciana Krasnansky",
+      "institution": "Slate Science",
+      "role": "Head Customer Success para LATAM",
+      "role_en": "Head Customer Success para LATAM",
+      "role_pt": "Líder de Sucesso do Cliente para a América Latina",
+      "country": "Argentina",
+      "summary": "Responsable de Customer Success para América Latina en Matific, la plataforma de matemáticas desarrollada por Slate Science. Su trabajo es el acompañamiento de la implementación de la plataforma en sistemas educativos de la región —Argentina, Brasil, Colombia y Uruguay, entre otros— y la relación con los equipos que la operan. Matific organiza el contenido en episodios lúdicos de cinco a quince minutos con dificultad progresiva. En Uruguay, Ceibal incorporó la plataforma en 2019 para el tramo de inicial a 6.º de escuela y en 2026 la extendió a 7.º, 8.º y 9.º de educación media básica, con funcionalidades de inteligencia artificial. Expuso en Virtual Educa Medellín 2022.",
+      "summary_en": "Customer Success Manager for Latin America at Matific, the mathematics platform developed by Slate Science. Her role involves supporting the platform's implementation in educational systems across the region—including Argentina, Brazil, Colombia, and Uruguay—and liaising with the teams that operate it. Matific organizes content into engaging five- to fifteen-minute episodes with progressively increasing difficulty. In Uruguay, Ceibal incorporated the platform in 2019 for students from preschool through sixth grade, and in 2026 extended it to seventh, eighth, and ninth grades of lower secondary education, incorporating artificial intelligence features. She presented at Virtual Educa Medellín 2022.",
+      "summary_pt": "Gerente de Sucesso do Cliente para a América Latina na Matific, a plataforma de matemática desenvolvida pela Slate Science. Sua função envolve apoiar a implementação da plataforma em sistemas educacionais em toda a região — incluindo Argentina, Brasil, Colômbia e Uruguai — e atuar como elo de ligação com as equipes que a operam. A Matific organiza o conteúdo em episódios envolventes de cinco a quinze minutos, com dificuldade progressivamente crescente. No Uruguai, a Ceibal incorporou a plataforma em 2019 para alunos da pré-escola ao sexto ano do ensino fundamental e, em 2026, a estendeu para o sétimo, oitavo e nono anos do ensino fundamental II, incorporando recursos de inteligência artificial. Ela fez uma apresentação na Virtual Educa Medellín 2022.",
+      "interests": [
+        "Plataformas y aprendizaje en línea",
+        "Educación STEM y científica",
+        "Primera infancia y aprendizajes fundacionales",
+        "Escalamiento de innovaciones educativas",
+        "Alianzas público-privadas y financiamiento"
+      ],
+      "detail": "implementación de plataformas de matemática en sistemas públicos, adopción y uso docente, gamificación del aprendizaje matemático, aprendizaje adaptativo, soporte y acompañamiento a escuelas, expansión regional en américa latina, primeros años de escolaridad",
+      "detail_en": "Implementation of mathematics platforms in public systems, adoption and use by teachers, gamification of mathematics learning, adaptive learning, support and guidance for schools, regional expansion in Latin America, early years of schooling",
+      "detail_pt": "Implementação de plataformas de matemática em sistemas públicos, adoção e uso por professores, gamificação do ensino da matemática, aprendizagem adaptativa, apoio e orientação para escolas, expansão regional na América Latina, educação infantil.",
+      "photo": "https://encuentros.virtualeduca.red/storage/protagonistas/October2022/hUNYezOMty9RSxKeASxw.jpg"
+    },
+    {
+      "id": "p-221",
+      "name": "Aram Gugusian",
+      "institution": "TalkingPoints",
+      "role": "Head Of Engineering",
+      "role_en": "Head Of Engineering",
+      "role_pt": "Chefe de Engenharia",
+      "country": "Uruguay",
+      "summary": "Figura en el listado como Head of Engineering de TalkingPoints, radicado en Uruguay; no se localizó información pública sobre él en fuentes admitidas. TalkingPoints es una organización sin fines de lucro 501(c)(3) de San Francisco, fundada por Heejae Lim, que opera una plataforma de comunicación entre docentes y familias por mensajería de texto, sin aplicación ni conexión wifi, con traducción en más de 150 idiomas. Combina modelos de aprendizaje automático propios, entrenados con conversaciones del ámbito educativo, con revisión humana; simplifica mensajes por encima de cierto nivel de lectura y sugiere temas de conversación. Fue la primera organización sin fines de lucro en licenciar GPT-3.",
+      "summary_en": "He is listed as Head of Engineering at TalkingPoints, based in Uruguay; no public information about him was found in accepted sources. TalkingPoints is a San Francisco-based 501(c)(3) nonprofit organization, founded by Heejae Lim, that operates a text-based communication platform for teachers and families. It requires no app or Wi-Fi connection and offers translation in over 150 languages. It combines proprietary machine learning models, trained on conversations in the education sector, with human review; it simplifies messages beyond a certain reading level and suggests conversation topics. It was the first nonprofit organization to license GPT-3.",
+      "summary_pt": "Ele consta como Chefe de Engenharia da TalkingPoints, com sede no Uruguai; nenhuma informação pública sobre ele foi encontrada em fontes confiáveis. A TalkingPoints é uma organização sem fins lucrativos 501(c)(3) sediada em São Francisco, fundada por Heejae Lim, que opera uma plataforma de comunicação baseada em texto para professores e famílias. Não requer aplicativo ou conexão Wi-Fi e oferece tradução em mais de 150 idiomas. Combina modelos proprietários de aprendizado de máquina, treinados em conversas no setor educacional, com revisão humana; simplifica mensagens além de um certo nível de leitura e sugere tópicos de conversa. Foi a primeira organização sem fins lucrativos a licenciar o GPT-3.",
+      "interests": [
+        "Plataformas y aprendizaje en línea",
+        "Equidad educativa y brecha digital",
+        "Analítica de datos educativos",
+        "Emprendedurismo y ecosistema EdTech"
+      ],
+      "detail": "arquitectura de plataformas de mensajería a escala, traducción automática aplicada a educación, modelos de lenguaje afinados a dominio educativo, comunicación entre escuela y familias, accesibilidad sin aplicación ni conectividad, analítica de asistencia escolar, equipos de ingeniería distribuidos",
+      "detail_en": "messaging platform architecture at scale, machine translation applied to education, language models tuned to the educational domain, communication between schools and families, accessibility without apps or connectivity, school attendance analytics, distributed engineering teams",
+      "detail_pt": "Arquitetura de plataforma de mensagens em escala, tradução automática aplicada à educação, modelos de linguagem adaptados ao domínio educacional, comunicação entre escolas e famílias, acessibilidade sem aplicativos ou conectividade, análise de frequência escolar, equipes de engenharia distribuídas",
+      "photo": ""
+    },
+    {
+      "id": "p-222",
+      "name": "Andrea Mourigan",
+      "institution": "—",
+      "role": "Docente",
+      "role_en": "Teaching",
+      "role_pt": "Ensino",
+      "country": "Uruguay",
+      "summary": "Figura en el listado de EduIA Conf 2026 como docente de Uruguay, sin institución consignada. Las búsquedas en fuentes públicas —prensa, repositorios académicos y sitios institucionales del sistema educativo uruguayo— no devolvieron ningún perfil profesional que pueda atribuirse con certeza a esta persona: los resultados corresponden a homónimas y homónimos del apellido Mourigan sin vínculo con la educación, o a agregadores de datos personales que no son fuente admisible para esta ficha. Resta confirmar el centro educativo, el nivel y la asignatura en que trabaja.",
+      "summary_en": "This person appears on the EduIA Conf 2026 list as a teacher from Uruguay, with no institution listed. Searches in public sources—press, academic repositories, and institutional websites of the Uruguayan education system—yielded no professional profile that can be definitively attributed to this individual: the results correspond to people with the same name as Mourigan, with no connection to education, or to personal data aggregators, which are not admissible sources for this record. The educational institution, grade level, and subject taught remain to be confirmed.",
+      "summary_pt": "Essa pessoa consta na lista da EduIA Conf 2026 como professora do Uruguai, sem nenhuma instituição especificada. Buscas em fontes públicas — imprensa, repositórios acadêmicos e sites institucionais do sistema educacional uruguaio — não revelaram nenhum perfil profissional que possa ser definitivamente atribuído a esse indivíduo: os resultados correspondem a pessoas com o mesmo nome de Mourigan, sem qualquer ligação com a área da educação, ou a agregadores de dados pessoais, que não são fontes admissíveis para este registro. A instituição de ensino, o nível de ensino e a disciplina lecionada ainda precisam ser confirmados.",
+      "interests": [],
+      "detail": "",
+      "detail_en": "",
+      "detail_pt": "",
+      "photo": ""
+    },
+    {
+      "id": "p-223",
+      "name": "Alessandro Leal Santos",
+      "institution": "Google",
+      "role": "Head de Google for Education para América Latina",
+      "role_en": "Head of Google for Education for Latin America",
+      "role_pt": "Head de Google for Education para América Latina",
+      "country": "Brasil",
+      "summary": "Dirige Google for Education para América Latina. En 2023 firmó, como Head de Google for Education para América del Sur, un artículo del blog de Google sobre personalización del aprendizaje con tecnología e inteligencia artificial, y ese mismo año fue citado como director de Google para América Latina en presentaciones del programa ante gobiernos municipales de Brasil. En una entrevista de 2025 con la publicación del SINEPE-RS expuso las líneas del área en la región: Classroom como plataforma de colaboración, Chromebooks como dispositivo de aula, integración de Gemini para adaptar materiales y formación docente mediante el Teacher Training Center y las certificaciones de Google for Education.",
+      "summary_en": "He leads Google for Education for Latin America. In 2023, as Head of Google for Education for South America, he authored a Google blog post about personalized learning with technology and artificial intelligence, and that same year he was cited as Google's director for Latin America in program presentations to municipal governments in Brazil. In a 2025 interview with the SINEPE-RS publication, he outlined the area's priorities in the region: Classroom as a collaboration platform, Chromebooks as classroom devices, Gemini integration for adapting materials, and teacher training through the Teacher Training Center and Google for Education certifications.",
+      "summary_pt": "Ele lidera o Google for Education para a América Latina. Em 2023, como chefe do Google for Education para a América do Sul, escreveu uma publicação no blog do Google sobre aprendizagem personalizada com tecnologia e inteligência artificial, e, no mesmo ano, foi citado como diretor do Google para a América Latina em apresentações de programas para governos municipais no Brasil. Em uma entrevista de 2025 para a publicação SINEPE-RS, ele delineou as prioridades da área na região: a sala de aula como plataforma de colaboração, Chromebooks como dispositivos em sala de aula, integração com o Gemini para adaptação de materiais e formação de professores por meio do Centro de Formação de Professores e das certificações do Google for Education.",
+      "interests": [
+        "Plataformas y aprendizaje en línea",
+        "IA generativa en el aula",
+        "Formación y desarrollo profesional docente",
+        "Conectividad y dispositivos",
+        "Alianzas público-privadas y financiamiento"
+      ],
+      "detail": "plataformas de gestión de aula, despliegue de chromebooks en escuelas, integración de ia generativa en herramientas educativas, certificación y formación de docentes, comunidades de educadores, vínculo con ministerios y sistemas educativos de la región, escalamiento regional de programas edtech",
+      "detail_en": "Classroom management platforms, deployment of Chromebooks in schools, integration of generative AI into educational tools, teacher certification and training, educator communities, links with ministries and education systems in the region, regional scaling of edtech programs",
+      "detail_pt": "Plataformas de gestão de sala de aula, implementação de Chromebooks nas escolas, integração de IA generativa em ferramentas educacionais, certificação e formação de professores, comunidades de educadores, articulação com ministérios e sistemas educacionais da região, expansão regional de programas de tecnologia educacional.",
       "photo": ""
     }
   ]
