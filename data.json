@@ -252,8 +252,8 @@
       "role_pt": "Associado de TIC e Inovação e Líder Técnico Regional",
       "country": "Uruguay",
       "summary": "Asociado de Tecnologías de la Información y la Comunicación (ICT) de UNICEF Uruguay, ubicado en el área de Operaciones de la oficina de país según el equipo de trabajo publicado por el organismo. No hay información pública adicional sobre su formación, publicaciones ni proyectos que lidere. La oficina uruguaya de UNICEF sí trabaja en innovación educativa junto a Ceibal y ANEP —por ejemplo el piloto de 2025 de libros escolares accesibles generados con inteligencia artificial, con UNICEF Innocenti y OpenAI—, pero las coberturas de esas iniciativas no lo mencionan personalmente.",
-      "summary_en": "He is an Information and Communication Technologies (ICT) Associate at UNICEF Uruguay, working in the country office's Operations area, according to the organization's published team information. There is no additional publicly available information about his education, publications, or projects he leads. While UNICEF Uruguay does work on educational innovation with Ceibal and ANEP—for example, the 2025 pilot program for accessible school textbooks generated with artificial intelligence, in partnership with UNICEF Innocenti and OpenAI—he is not personally mentioned in reports about these initiatives.",
-      "summary_pt": "Ele é um Associado de Tecnologias da Informação e Comunicação (TIC) no UNICEF Uruguai, trabalhando na área de Operações do escritório do país, de acordo com as informações da equipe publicadas pela organização. Não há informações adicionais disponíveis publicamente sobre sua formação acadêmica, publicações ou projetos que lidera. Embora o UNICEF Uruguai trabalhe com inovação educacional em parceria com a Ceibal e a ANEP — por exemplo, o programa piloto de 2025 para livros didáticos acessíveis gerados com inteligência artificial, em parceria com o UNICEF Innocenti e a OpenAI — ele não é mencionado pessoalmente em relatórios sobre essas iniciativas.",
+      "summary_en": "He is an Information and Communication Technology (ICT) Associate at UNICEF Uruguay, working in the country office's Operations area, according to the organization's published team. There is no additional publicly available information about his education, publications, or projects he leads. While UNICEF Uruguay does work on educational innovation with Ceibal and ANEP—for example, the 2025 pilot program for accessible school textbooks generated with artificial intelligence, in partnership with UNICEF Innocenti and OpenAI—he is not personally mentioned in reports about these initiatives.",
+      "summary_pt": "Ele é um Associado de Tecnologia da Informação e Comunicação (TIC) no UNICEF Uruguai, trabalhando na área de Operações do escritório do país, de acordo com a equipe divulgada pela organização. Não há informações adicionais disponíveis publicamente sobre sua formação acadêmica, publicações ou projetos que lidera. Embora o UNICEF Uruguai trabalhe com inovação educacional em parceria com a Ceibal e a ANEP — por exemplo, o programa piloto de 2025 para livros didáticos acessíveis gerados com inteligência artificial, em parceria com o UNICEF Innocenti e a OpenAI — ele não é mencionado pessoalmente em relatórios sobre essas iniciativas.",
       "interests": [
         "Conectividad y dispositivos",
         "Equidad educativa y brecha digital",
@@ -293,7 +293,7 @@
       "name": "Luciano Bermudez",
       "institution": "Alianza Cultural Uruguay Estados Unidos",
       "role": "Director General, Alianza Cultural Uruguay–Estados Unidos",
-      "role_en": "Director General, Uruguay-United States Cultural Alliance",
+      "role_en": "General Director, Uruguay-United States Cultural Alliance",
       "role_pt": "Diretor-Geral da Aliança Cultural Uruguai-Estados Unidos",
       "country": "Uruguay",
       "summary": "Director General Adjunto de la Alianza Cultural Uruguay-Estados Unidos, institución binacional dedicada a la enseñanza de inglés que además sostiene un centro cultural con teatro y biblioteca y una unidad de formación de docentes de inglés (AlianzaPro). En declaraciones públicas plantea que hoy es imposible separar educación de innovación y describe la investigación y el aprovechamiento de nuevas tecnologías para enriquecer el proceso de aprendizaje como una línea permanente de la institución, a la que concibe como una comunidad que integra docentes, estudiantes, artistas y socios. No se hallaron publicaciones académicas ni ponencias a su nombre.",
@@ -603,7 +603,7 @@
       "institution": "Maestro Virtual",
       "role": "Desarrollador Edtech",
       "role_en": "Edtech Developer",
-      "role_pt": "Desenvolvedor de Edtech",
+      "role_pt": "Desenvolvedor de tecnologia educacional",
       "country": "Uruguay",
       "summary": "Ingeniero en Sistemas por la Universidad ORT Uruguay. Es CEO y cofundador, junto a Sebastián Peralta, de Maestro Virtual, plataforma web uruguaya que aplica IA para reducir la carga administrativa docente: genera planificaciones alineadas al currículo oficial de ANEP, boletines, carnés y descripciones de evaluación, con opciones de Diseño Universal para el Aprendizaje, aulas multigrado y segundas lenguas, y un equipo docente que mantiene los programas actualizados. El emprendimiento, desarrollado desde 2022 y lanzado comercialmente en 2025, está incubado en el Centro de Innovación y Emprendimientos de ORT y lo usan miles de docentes uruguayos y colegios privados.",
       "summary_en": "A Systems Engineer from ORT University Uruguay, he is the CEO and co-founder, along with Sebastián Peralta, of Maestro Virtual, a Uruguayan web platform that uses AI to reduce teachers' administrative workload. It generates lesson plans aligned with the official ANEP curriculum, report cards, student IDs, and assessment descriptions, with options for Universal Design for Learning, multi-grade classrooms, and second languages, and a team of teachers who keep the programs updated. The venture, developed since 2022 and commercially launched in 2025, is incubated at ORT's Center for Innovation and Entrepreneurship and is used by thousands of Uruguayan teachers and private schools.",
@@ -638,7 +638,7 @@
       ],
       "detail": "gobierno digital, políticas de ciudadanía digital, gobernanza de datos, educación y tecnología (todos inferidos del ámbito e institución declarados, sin evidencia de la persona)",
       "detail_en": "digital government, digital citizenship policies, data governance, education and technology (all inferred from the stated scope and institution, without evidence of the person)",
-      "detail_pt": "Governo digital, políticas de cidadania digital, governança de dados, educação e tecnologia (tudo inferido do escopo e da instituição declarados, sem evidências da pessoa).",
+      "detail_pt": "governo digital, políticas de cidadania digital, governança de dados, educação e tecnologia (tudo inferido do escopo e da instituição declarados, sem evidências da pessoa).",
       "photo": ""
     },
     {
@@ -1603,7 +1603,7 @@
       "role_pt": "Educador e pesquisador",
       "country": "Barbados",
       "summary": "Investigadora canadiense radicada en Barbados. Es Research Fellow del Caribbean Educational Research Centre de la University of the West Indies (Cave Hill). Tiene un BA honours en Psicología (Trent University, Ontario), una maestría en Psicología del Asesoramiento por la UWI y un doctorado en Educación cuya tesis analizó la participación de las familias en la educación especial en Barbados. Trabajó más de una década como tutora y jefa de los departamentos de Inglés y de apoyo en un centro para estudiantes con necesidades educativas especiales, y dicta Educación Inclusiva y Psicología en la UWI. Presentó en la conferencia RISE Caribbean.",
-      "summary_en": "A Canadian researcher based in Barbados, she is a Research Fellow at the Caribbean Educational Research Centre of the University of the West Indies (Cave Hill). She holds a BA with honors in Psychology (Trent University, Ontario), a Master's degree in Counseling Psychology from UWI, and a PhD in Education, the dissertation of which analyzed family involvement in special education in Barbados. She worked for over a decade as a tutor and head of the English and support departments at a center for students with special educational needs, and teaches Inclusive Education and Psychology at UWI. She presented at the RISE Caribbean conference.",
+      "summary_en": "A Canadian researcher based in Barbados, she is a Research Fellow at the Caribbean Educational Research Centre of the University of the West Indies (Cave Hill). She holds a BA honors in Psychology (Trent University, Ontario), a MA in Counseling Psychology from UWI, and a PhD in Education, the dissertation of which analyzed family involvement in special education in Barbados. She worked for over a decade as a tutor and head of the English and support departments at a center for students with special educational needs and teaches Inclusive Education and Psychology at UWI. She presented at the RISE Caribbean conference.",
       "summary_pt": "Pesquisadora canadense radicada em Barbados, ela é pesquisadora associada do Centro de Pesquisa Educacional Caribenha da Universidade das Índias Ocidentais (Cave Hill). Possui bacharelado com honras em Psicologia (Universidade Trent, Ontário), mestrado em Psicologia Clínica pela UWI e doutorado em Educação, cuja dissertação analisou o envolvimento familiar na educação especial em Barbados. Trabalhou por mais de uma década como tutora e chefe dos departamentos de inglês e apoio em um centro para alunos com necessidades educacionais especiais e leciona Educação Inclusiva e Psicologia na UWI. Apresentou um trabalho na conferência RISE Caribbean.",
       "interests": [
         "Educación inclusiva y discapacidad",
@@ -2513,7 +2513,7 @@
       ],
       "detail": "desinformación y desórdenes informativos, alfabetización mediática e informacional en niños, métodos cualitativos y participativos, inclusión digital y discapacidad, privacidad de datos de comunidades marginadas, evaluación de impacto social",
       "detail_en": "disinformation and information disorders, media and information literacy in children, qualitative and participatory methods, digital inclusion and disability, data privacy of marginalized communities, social impact assessment",
-      "detail_pt": "Desinformação e distúrbios de informação, alfabetização midiática e informacional em crianças, métodos qualitativos e participativos, inclusão digital e deficiência, privacidade de dados de comunidades marginalizadas, avaliação de impacto social",
+      "detail_pt": "desinformação e distúrbios de informação, alfabetização midiática e informacional em crianças, métodos qualitativos e participativos, inclusão digital e deficiência, privacidade de dados de comunidades marginalizadas, avaliação de impacto social",
       "photo": "https://lirneasia.net/wp-content/uploads/2019/01/Isuru-Samaratunga-LIRNEasia-scaled.jpg"
     },
     {
@@ -3271,8 +3271,8 @@
       "role_pt": "Ensino",
       "country": "Uruguay",
       "summary": "Docente de UTEC, la Universidad Tecnológica: universidad pública uruguaya especializada en formación técnica y tecnológica de nivel terciario, con sedes distribuidas en el interior del país. El terreno común con Ceibal está en la continuidad entre la educación media y la formación técnica superior, y en cómo llegan a ese tramo las competencias digitales y de programación que se trabajan antes en el aula. Su disciplina específica y sus proyectos no figuran en el sitio institucional de UTEC ni en otras fuentes públicas consultadas.",
-      "summary_en": "A professor at UTEC, the Technological University: a Uruguayan public university specializing in tertiary-level technical and technological training, with campuses throughout the country. The common ground with Ceibal lies in the continuity between secondary education and higher technical training, and in how digital and programming skills, developed earlier in the classroom, are applied at that level. His specific discipline and projects are not listed on UTEC's institutional website or in other public sources consulted.",
-      "summary_pt": "Professor da UTEC, a Universidade Tecnológica: uma universidade pública uruguaia especializada em formação técnica e tecnológica de nível superior, com campi em todo o país. O ponto em comum com Ceibal reside na continuidade entre o ensino secundário e a formação técnica superior, e em como as competências digitais e de programação, desenvolvidas anteriormente em sala de aula, são aplicadas nesse nível. Sua área de atuação e projetos específicos não constam no site institucional da UTEC nem em outras fontes públicas consultadas.",
+      "summary_en": "A professor at UTEC, the Technological University: a Uruguayan public university specializing in tertiary-level technical and technological training, with campuses throughout the country. The common ground with Ceibal lies in the continuity between secondary education and higher technical training, and in how digital and programming skills, developed earlier in the classroom, are applied at that level. Her specific discipline and projects are not listed on UTEC's institutional website or in other public sources consulted.",
+      "summary_pt": "Professora da UTEC, a Universidade Tecnológica: uma universidade pública uruguaia especializada em formação técnica e tecnológica de nível superior, com campi em todo o país. O ponto em comum com Ceibal reside na continuidade entre o ensino secundário e a formação técnica superior, e em como as competências digitais e de programação, desenvolvidas anteriormente em sala de aula, são aplicadas nesse nível. Sua área de atuação e projetos específicos não constam no site institucional da UTEC nem em outras fontes públicas consultadas.",
       "interests": [
         "Educación superior",
         "Educación técnico-profesional",
@@ -3621,7 +3621,7 @@
       ],
       "detail": "coordinación de programas educativos, implementación de iniciativas de ceibal, seguimiento territorial de proyectos, articulación con centros educativos",
       "detail_en": "Coordination of educational programs, implementation of Ceibal initiatives, territorial monitoring of projects, and collaboration with educational centers",
-      "detail_pt": "Coordenação de programas educacionais, implementação de iniciativas da Ceibal, acompanhamento territorial de projetos e colaboração com centros educacionais.",
+      "detail_pt": "Coordenação de programas educacionais, implementação de iniciativas Ceibal, acompanhamento territorial de projetos e colaboração com centros educacionais.",
       "photo": ""
     },
     {
@@ -3663,7 +3663,7 @@
       ],
       "detail": "coordinación de programas educativos, implementación de iniciativas de ceibal, seguimiento territorial de proyectos, articulación con centros educativos",
       "detail_en": "Coordination of educational programs, implementation of Ceibal initiatives, territorial monitoring of projects, and collaboration with educational centers",
-      "detail_pt": "Coordenação de programas educacionais, implementação de iniciativas da Ceibal, acompanhamento territorial de projetos e colaboração com centros educacionais.",
+      "detail_pt": "Coordenação de programas educacionais, implementação de iniciativas Ceibal, acompanhamento territorial de projetos e colaboração com centros educacionais.",
       "photo": ""
     },
     {
@@ -3927,7 +3927,7 @@
       "institution": "Intel",
       "role": "Business Development Manager, Gobierno y Educación, Intel (Argentina y Uruguay)",
       "role_en": "Business Development Manager, Government and Education, Intel (Argentina and Uruguay)",
-      "role_pt": "Gerente de Desenvolvimento de Negócios para os setores Governamental e Educacional da Intel (Argentina e Uruguai)",
+      "role_pt": "Gerente de Desenvolvimento de Negócios para Governo e Educação, Intel (Argentina e Uruguai)",
       "country": "Uruguay",
       "summary": "Laura Huarte es Business Development Manager del área de Gobierno y Educación de Intel para Argentina y Uruguay. Impulsa alianzas público-privadas orientadas al desarrollo de habilidades digitales, entre ellas el programa de formación docente Intel Skills for Innovation y una iniciativa de capacitación en inteligencia artificial para jóvenes y trabajadores desarrollada junto con gobiernos de la región. En 2023 participó como una de las especialistas consultadas sobre el impacto de la inteligencia artificial en la educación y el mercado laboral, donde defendió el diálogo entre sociedad civil, industria, gobierno y academia para desmitificar las nuevas tecnologías. Sostiene que la tecnología debe fomentar creatividad, innovación, trabajo en equipo y pensamiento crítico, y ubica a la IA generativa, la robótica y la impresión 3D entre los terrenos donde Intel acompaña a los sistemas educativos.",
       "summary_en": "Laura Huarte is Business Development Manager for the Government and Education area at Intel for Argentina and Uruguay. She promotes public-private partnerships focused on developing digital skills, including the Intel Skills for Innovation teacher training program and an artificial intelligence training initiative for young people and workers developed in conjunction with governments in the region. In 2023, she participated as one of the experts consulted on the impact of artificial intelligence on education and the labor market, where she advocated for dialogue between civil society, industry, government, and academia to demystify new technologies. She maintains that technology should foster creativity, innovation, teamwork, and critical thinking, and identifies generative AI, robotics, and 3D printing as areas where Intel supports education systems.",
@@ -3949,7 +3949,7 @@
       "institution": "Ceibal",
       "role": "Jefa de Ceibal en Inglés",
       "role_en": "Head of Ceibal in English",
-      "role_pt": "Chefe da Ceibal em inglês",
+      "role_pt": "Chefe do Ceibal em inglês",
       "country": "Uruguay",
       "summary": "Jefa de Ceibal en Inglés, el programa que enseña inglés en escuelas públicas uruguayas combinando clases a distancia dictadas por profesores remotos con el acompañamiento de un maestro dinamizador en el aula. En 2020 el programa alcanzó a 95.000 niños y jóvenes y recibió, junto al British Council, un premio en los British Expertise International Awards por esa propuesta de enseñanza de inglés a distancia. Es una interlocutora directa para una pregunta que atraviesa la conferencia: qué cambia en un esquema así con la llegada de tutores y traductores basados en inteligencia artificial.",
       "summary_en": "Head of Ceibal en Inglés, the program that teaches English in Uruguayan public schools by combining distance learning classes taught remotely with in-classroom support from a facilitator. In 2020, the program reached 95,000 children and young people and, together with the British Council, received an award at the British Expertise International Awards for its approach to distance English teaching. She is a key figure in addressing a question that runs through the conference: what changes in such a system with the arrival of AI-powered tutors and translators?",
@@ -4280,8 +4280,8 @@
         "Escalamiento de innovaciones educativas"
       ],
       "detail": "gestión de la calidad de servicios, atención al usuario, mejora de procesos internos, experiencia del usuario en los servicios de ceibal",
-      "detail_en": "quality management of services, user support, improvement of internal processes, user experience in Ceibal services",
-      "detail_pt": "Gestão da qualidade dos serviços, suporte ao usuário, melhoria dos processos internos, experiência do usuário nos serviços da Ceibal",
+      "detail_en": "quality management of services, customer service, improvement of internal processes, user experience in Ceibal services",
+      "detail_pt": "Gestão da qualidade dos serviços, atendimento ao cliente, melhoria dos processos internos, experiência do usuário nos serviços da Ceibal",
       "photo": ""
     },
     {
@@ -4375,7 +4375,7 @@
       "institution": "CICEA",
       "role": "Responsable de la línea Evaluación del Desarrollo",
       "role_en": "Responsible for the Development Evaluation line",
-      "role_pt": "Responsável pela linha de Avaliação de Desenvolvimento",
+      "role_pt": "Responsável pela linha de Avaliação de Desenvolvimento.",
       "country": "Uruguay",
       "summary": "Alejandro Vásquez Echeverría es profesor titular (grado 5) del Instituto de Fundamentos y Métodos en Psicología de la Facultad de Psicología (Udelar), licenciado en Psicología por la Udelar (2006), magíster por la Universidad del País Vasco y doctor en Psicología por la Universidade do Porto. Coordina el programa de Cognición de su instituto, es investigador principal del Centro de Investigación Básica en Psicología (CIBPsi) y encabeza en el CICEA (Centro Interdisciplinario en Cognición para la Enseñanza y el Aprendizaje) las líneas de Reproducibilidad en Psicología y de Evaluación del Desarrollo y Temporalidad. Desarrolló instrumentos de uso público como el Inventario de Desarrollo Infantil (INDI) y el Inventario de Caracterización de Ambientes para Educación Inicial (INCA-EI), orientados a evaluar sistemáticamente el desarrollo infantil en contextos educativos. En abril de 2026 publicó en la revista Child Development, junto con Meliza González y Giuliana Tórtora, un estudio longitudinal con 3.760 niños uruguayos que vincula las pérdidas de preparación escolar asociadas a la pandemia de covid-19 con el desempeño académico en tercer año de escuela.",
       "summary_en": "Alejandro Vásquez Echeverría is a tenured professor (Grade 5) at the Institute of Foundations and Methods in Psychology, Faculty of Psychology (University of the Republic - Udelar). He holds a degree in Psychology from Udelar (2006), a Master's degree from the University of the Basque Country, and a PhD in Psychology from the University of Porto. He coordinates the Cognition program at his institute, is a principal investigator at the Center for Basic Research in Psychology (CIBPsi), and leads the research lines of Reproducibility in Psychology and Developmental and Temporal Assessment at CICEA (Interdisciplinary Center for Cognition for Teaching and Learning). He developed publicly available instruments such as the Child Development Inventory (INDI) and the Inventory for Characterizing Environments for Early Childhood Education (INCA-EI), designed to systematically assess child development in educational contexts. In April 2026, she published in the journal Child Development, together with Meliza González and Giuliana Tórtora, a longitudinal study with 3,760 Uruguayan children that links school readiness losses associated with the Covid-19 pandemic with academic performance in the third year of school.",
