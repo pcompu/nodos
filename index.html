@@ -88,7 +88,7 @@ button,input{font:inherit}
   transition:box-shadow .15s ease,border-color .15s ease
 }
 .search:focus-within{border-color:var(--accent-2);box-shadow:0 6px 20px rgba(11,37,69,.09)}
-.search input{flex:1;border:0;outline:0;background:transparent;color:var(--ink);font-size:1rem;min-width:0}
+.search input{flex:1;border:0;outline:0;background:transparent;color:var(--ink);font-size:1rem;min-width:0;padding:8px 0;min-height:24px}
 .search input::placeholder{color:var(--faint)}
 .clear-btn{border:0;background:transparent;color:var(--muted);cursor:pointer;padding:6px 8px;min-height:24px;font-size:.875rem;visibility:hidden}
 .filter-chip{display:none;flex-wrap:wrap;gap:7px;margin-top:12px}
@@ -112,7 +112,7 @@ button,input{font:inherit}
 }
 .person:hover{transform:translateY(-2px);border-color:var(--accent-2);background:var(--surface-2);box-shadow:0 10px 24px rgba(11,37,69,.12)}
 .person:active{transform:translateY(0) scale(.99)}
-.avatar{width:48px;height:48px;border-radius:15px;object-fit:cover;border:1px solid var(--line);background:var(--surface-3);opacity:0;transition:opacity .3s ease}
+.avatar{width:48px;height:48px;border-radius:15px;object-fit:cover;border:1px solid var(--line);background:var(--surface-3);opacity:.55;transition:opacity .3s ease}
 .avatar.loaded{opacity:1}
 .avatar-fallback{
   width:48px;height:48px;border-radius:15px;display:grid;place-items:center;border:1px solid var(--line);
@@ -476,7 +476,8 @@ function applyLanguage(lang, opts = {}) {
   document.getElementById('resultCount').textContent = T.loading;
   document.getElementById('peopleList').innerHTML = skeletonHTML(T.loadingPeople);
 
-  if (opts.refresh) {
+  if (opts.refresh && dataLoaded) {
+    lastChipSignature = ''; // fuerza repintar los chips: cambian de idioma aunque el conjunto de filtros no cambie
     renderTagCloud();
     renderList(document.getElementById('searchInput').value);
     if (currentProfileId) openProfile(currentProfileId);
@@ -518,6 +519,8 @@ let searchable = [];
 let AREAS = [];
 let COUNTS = {};
 let selectedInterests = new Set();
+let dataLoaded = false;
+let lastChipSignature = '';
 
 function avatarHTML(p) {
   if (p.photo) return `<img class="avatar" src="${esc(p.photo)}" alt="${esc(p.name)}" loading="lazy" decoding="async">`;
@@ -538,10 +541,15 @@ function renderList(query = '') {
     .sort((a, b) => a.name.localeCompare(b.name, 'es'));
 
   const chip = document.getElementById('filterChip');
-  chip.classList.toggle('show', selectedInterests.size > 0);
-  chip.innerHTML = [...selectedInterests].map(area => `
-    <span class="chip" data-area="${esc(area)}">${esc(translateArea(area))}<button type="button" aria-label="${esc(T.removeFilter(translateArea(area)))}">×</button></span>
-  `).join('');
+  const chipAreas = [...selectedInterests];
+  const chipSig = chipAreas.join('|');
+  if (chipSig !== lastChipSignature) {
+    lastChipSignature = chipSig;
+    chip.classList.toggle('show', chipAreas.length > 0);
+    chip.innerHTML = chipAreas.map(area => `
+      <span class="chip" data-area="${esc(area)}">${esc(translateArea(area))}<button type="button" aria-label="${esc(T.removeFilter(translateArea(area)))}">×</button></span>
+    `).join('');
+  }
 
   document.getElementById('resultCount').textContent = q ? T.results(rows.length) : T.participants(rows.length);
   document.getElementById('clearBtn').style.visibility = q ? 'visible' : 'hidden';
@@ -654,7 +662,7 @@ function renderTagCloud() {
     const t = (Math.sqrt(COUNTS[area]) - Math.sqrt(minCount)) / range;
     const remSize = (0.75 + t * 0.8125).toFixed(3); // 12px a 25px, en rem sobre una base de 16px
     const active = selectedInterests.has(area);
-    const dim = q && !active && !norm(area).includes(q);
+    const dim = q && !active && !norm(translateArea(area)).includes(q);
     return `<button type="button" class="tag-pill${active ? ' active' : ''}${dim ? ' dim' : ''}" data-area="${esc(area)}" style="font-size:${remSize}rem;--d:${i}" aria-pressed="${active}">${esc(translateArea(area))}<span class="tag-count">${COUNTS[area]}</span></button>`;
   }).join('');
 
@@ -738,7 +746,7 @@ search.addEventListener('keydown', e => {
   if (e.key !== 'Enter') return;
   const q = norm(search.value);
   if (!q) return;
-  const matches = AREAS.filter(a => norm(a).includes(q));
+  const matches = AREAS.filter(a => norm(translateArea(a)).includes(q));
   if (!matches.length) return;
   selectedInterests = new Set([...selectedInterests, ...matches]);
   search.value = '';
@@ -754,7 +762,12 @@ document.getElementById('clearBtn').addEventListener('click', () => {
 });
 document.getElementById('closeDrawer').addEventListener('click', closeProfile);
 document.getElementById('backdrop').addEventListener('click', closeProfile);
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeProfile(); });
+document.addEventListener('keydown', e => {
+  if (e.key !== 'Escape') return;
+  closeProfile();
+  infoPop.style.display = 'none';
+  infoBtn.setAttribute('aria-expanded', 'false');
+});
 
 const infoBtn = document.getElementById('infoBtn');
 const infoPop = document.getElementById('infoPop');
@@ -795,10 +808,18 @@ async function init() {
   byId = Object.fromEntries(enriched.map(p => [p.id, p]));
   searchable = enriched.map(p => ({
     ...p,
-    haystack: norm([p.name, p.institution, p.role, p.country, p.interests.join(' '), p.detail].join(' '))
+    haystack: norm([
+      p.name, p.institution, p.country,
+      p.role, p.role_en, p.role_pt,
+      p.summary, p.summary_en, p.summary_pt,
+      p.detail, p.detail_en, p.detail_pt,
+      p.interests.join(' '),
+      p.interests.flatMap(i => [AREA_TRANSLATIONS[i]?.en, AREA_TRANSLATIONS[i]?.pt]).filter(Boolean).join(' ')
+    ].join(' '))
   }));
   AREAS = [...new Set(enriched.flatMap(p => p.interests))];
   COUNTS = buildCounts(enriched);
+  dataLoaded = true;
 
   countUpTo('areaCount', AREAS.length);
   countUpTo('confirmedCount', enriched.length);
