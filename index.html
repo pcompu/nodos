@@ -3,6 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Política de seguridad de contenido. GitHub Pages no permite enviar
+     cabeceras HTTP propias, así que se declara acá como meta. Restringe de
+     dónde puede cargarse cada tipo de recurso: si algún día se colara
+     contenido malicioso en los datos, el navegador igual bloquearía la
+     ejecución de scripts externos o el envío de datos a otro servidor.
+     - script-src 'self': solo el JS de esta misma página, ningún script externo.
+     - img-src https:: fotos de perfil desde cualquier sitio, pero solo por HTTPS.
+     - connect-src 'self': el único fetch permitido es a data.json, del mismo origen.
+     NOTA: frame-ancestors (controlar quién puede embeber la página en un
+     iframe) NO se incluye acá a propósito: los navegadores lo ignoran
+     cuando viene en un <meta>, solo funciona como cabecera HTTP. Ponerlo
+     daría una falsa sensación de protección. Ver "Limitaciones" en README. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src https: data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
 <title>EduIA Conf 2026 · Networking</title>
 <link rel="stylesheet" href="theme.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -522,8 +535,24 @@ let selectedInterests = new Set();
 let dataLoaded = false;
 let lastChipSignature = '';
 
+// Solo se aceptan URLs http(s) para las fotos. Si la columna "Foto" de la
+// Sheet trajera algo raro (javascript:, data:, una ruta relativa), se
+// descarta y se muestran las iniciales — escapar el texto evita romper el
+// atributo, pero no impide un esquema peligroso, así que se valida aparte.
+function fotoSegura(url) {
+  const s = String(url || '').trim();
+  if (!s) return '';
+  try {
+    const u = new URL(s);
+    return (u.protocol === 'https:' || u.protocol === 'http:') ? u.href : '';
+  } catch {
+    return '';
+  }
+}
+
 function avatarHTML(p) {
-  if (p.photo) return `<img class="avatar" src="${esc(p.photo)}" alt="${esc(p.name)}" loading="lazy" decoding="async">`;
+  const foto = fotoSegura(p.photo);
+  if (foto) return `<img class="avatar" src="${esc(foto)}" alt="${esc(p.name)}" loading="lazy" decoding="async" referrerpolicy="no-referrer">`;
   return `<div class="avatar-fallback">${esc(initials(p.name))}</div>`;
 }
 
@@ -561,7 +590,7 @@ function renderList(query = '') {
   }
 
   root.innerHTML = rows.map((p, i) => `
-    <article class="person" data-id="${p.id}" role="button" tabindex="0" style="animation-delay:${Math.min(i, 14) * 22}ms">
+    <article class="person" data-id="${esc(p.id)}" role="button" tabindex="0" style="animation-delay:${Math.min(i, 14) * 22}ms">
       ${avatarHTML(p)}
       <div>
         <div class="person-name">${esc(p.name)}</div>
@@ -609,7 +638,7 @@ function openProfile(id, { push = false, reset = false } = {}) {
     <div class="section">
       <h3 class="section-title">${esc(T.similarTitle)}</h3>
       ${related.length ? related.map((r, i) => `
-        <div class="connection" data-related-id="${r.person.id}" style="animation-delay:${i * 25}ms">
+        <div class="connection" data-related-id="${esc(r.person.id)}" style="animation-delay:${i * 25}ms">
           <div class="connection-name">${esc(r.person.name)}</div>
           <div class="connection-meta">${esc(r.person.institution || '')}</div>
           <div class="shared">${T.shared(r.shared.length)} · ${r.shared.map(x => esc(translateArea(x))).join(' · ')}</div>
@@ -741,19 +770,28 @@ document.addEventListener('load', e => {
 }, true);
 
 const search = document.getElementById('searchInput');
-search.addEventListener('input', () => { renderList(search.value); renderTagCloud(); });
+// El buscador vuelve a dibujar las 233 tarjetas y las 30 etiquetas en cada
+// tecla (~150 ms medidos), lo que se siente como tirones al escribir. Con un
+// pequeño retardo se redibuja una sola vez cuando la persona deja de teclear.
+let searchTimer;
+search.addEventListener('input', () => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => { renderList(search.value); renderTagCloud(); }, 130);
+});
 search.addEventListener('keydown', e => {
   if (e.key !== 'Enter') return;
   const q = norm(search.value);
   if (!q) return;
   const matches = AREAS.filter(a => norm(translateArea(a)).includes(q));
   if (!matches.length) return;
+  clearTimeout(searchTimer);
   selectedInterests = new Set([...selectedInterests, ...matches]);
   search.value = '';
   renderTagCloud();
   renderList('');
 });
 document.getElementById('clearBtn').addEventListener('click', () => {
+  clearTimeout(searchTimer);
   search.value = '';
   selectedInterests = new Set();
   renderTagCloud();
