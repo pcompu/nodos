@@ -7010,6 +7010,128 @@
       "detail_en": "",
       "detail_pt": "",
       "photo": ""
+    },
+    {
+      "id": "p-330",
+      "name": "Denise Camou",
+      "institution": "Ceibal",
+      "role": "Jefa de experiencia de usuario",
+      "role_en": "Head of User Experience",
+      "role_pt": "Chefe de Experiência do Usuário",
+      "country": "Uruguay",
+      "summary": "Jefa de Experiencia de usuario en Ceibal, unidad que depende de la gerencia de Datos y Ciencias Comportamentales.",
+      "summary_en": "Head of User Experience at Ceibal, a unit that reports to the Data and Behavioral Sciences management.",
+      "summary_pt": "Chefe de Experiência do Usuário na Ceibal, uma unidade que se reporta à gestão de Dados e Ciências Comportamentais.",
+      "interests": [
+        "Plataformas y aprendizaje en línea",
+        "Ciencias cognitivas y del comportamiento"
+      ],
+      "detail": "experiencia de usuario, diseño de producto, investigación con usuarios",
+      "detail_en": "user experience, product design, user research",
+      "detail_pt": "experiência do usuário, design de produto, pesquisa de usuários",
+      "photo": ""
+    },
+    {
+      "id": "p-331",
+      "name": "Ana Carrero",
+      "institution": "Senadora (sup)",
+      "role": "",
+      "role_en": "",
+      "role_pt": "",
+      "country": "Uruguay",
+      "summary": "Senadora suplente de la República Oriental del Uruguay. El registro no indica la lista ni el sector político por el que accede a la banca.",
+      "summary_en": "Alternate Senator of the Eastern Republic of Uruguay. The record does not indicate the list or political sector through which she obtained her seat.",
+      "summary_pt": "Senadora suplente da República Oriental do Uruguai. O registro não indica a lista ou o setor político pelo qual ela obteve sua vaga.",
+      "interests": [
+        "Política educativa y reforma de sistemas"
+      ],
+      "detail": "parlamento, política nacional",
+      "detail_en": "parliament, national politics",
+      "detail_pt": "parlamento, política nacional",
+      "photo": ""
+    },
+    {
+      "id": "p-332",
+      "name": "Valeria Eguzquiza",
+      "institution": "Grupo Scotiabank",
+      "role": "Gerenta transformación digital",
+      "role_en": "Digital Transformation Manager",
+      "role_pt": "Gerente de Transformação Digital",
+      "country": "Uruguay",
+      "summary": "Ejecutiva del Grupo Scotiabank en Uruguay, especializada en transformación digital del sector financiero. Empezó su carrera como senior manager de Talento en Scotiabank y, tras más de cinco años en recursos humanos, se reconvirtió hacia la tecnología: estudió metodologías ágiles y transformación digital, cursó un MBA y asumió como gerenta de Transformación Digital en Creditel. Hoy conduce Rápido y Fácil y Prestable, las marcas de financiamiento al consumo del grupo, donde cerca del 30% de las originaciones ya arranca en un canal digital. Es una voz activa sobre la brecha de mujeres en tecnología: sostiene que la reconversión de perfiles es un acelerador para cerrarla.",
+      "summary_en": "A Scotiabank Group executive in Uruguay, specializing in the digital transformation of the financial sector. She began her career as a senior talent manager at Scotiabank and, after more than five years in human resources, transitioned to technology: she studied agile methodologies and digital transformation, earned an MBA, and became Digital Transformation Manager at Creditel. Today, she leads Rápido y Fácil and Prestable, the group's consumer finance brands, where nearly 30% of loan originations now begin through a digital channel. She is an active voice on the gender gap in technology, arguing that retraining professionals is a key step toward closing it.",
+      "summary_pt": "Executiva do Grupo Scotiabank no Uruguai, especializada na transformação digital do setor financeiro. Ela iniciou sua carreira como gerente sênior de talentos no Scotiabank e, após mais de cinco anos em recursos humanos, migrou para a área de tecnologia: estudou metodologias ágeis e transformação digital, obteve um MBA e tornou-se Gerente de Transformação Digital na Creditel. Atualmente, lidera a Rápido y Fácil e a Prestable, marcas de financiamento ao consumidor do grupo, onde quase 30% das concessões de crédito agora se iniciam por meio de um canal digital. Ela é uma voz ativa no debate sobre a desigualdade de gênero na área de tecnologia, argumentando que o requalificação profissional é um passo fundamental para reduzi-la.",
+      "interests": [
+        "Equidad de género en STEM",
+        "Alianzas público-privadas y financiamiento",
+        "Escalamiento de innovaciones educativas"
+      ],
+      "detail": "transformación digital, metodologías ágiles, reconversión de perfiles profesionales, mujeres en tecnología, servicios financieros digitales",
+      "detail_en": "digital transformation, agile methodologies, retraining of professional profiles, women in technology, digital financial services",
+      "detail_pt": "transformação digital, metodologias ágeis, requalificação profissional, mulheres na tecnologia, serviços financeiros digitais",
+      "photo": ""
+    },
+    {
+      "id": "p-333",
+      "name": "Isabel Fernández",
+      "institution": "Ceibal",
+      "role": "Jefa de asuntos legales",
+      "role_en": "Head of legal affairs",
+      "role_pt": "Chefe de assuntos jurídicos",
+      "country": "Uruguay",
+      "summary": "Jefa de Asuntos Legales de Ceibal. La unidad coordina y controla los asuntos legales de la organización para asegurar el cumplimiento del marco normativo.",
+      "summary_en": "Head of Legal Affairs at Ceibal. The unit coordinates and controls the organization's legal affairs to ensure compliance with the regulatory framework.",
+      "summary_pt": "Chefe do Departamento Jurídico da Ceibal. A unidade coordena e controla os assuntos jurídicos da organização para garantir a conformidade com o quadro regulamentar.",
+      "interests": [
+        "Gobernanza de datos y ciberseguridad",
+        "Ética y regulación de la IA"
+      ],
+      "detail": "asuntos legales, cumplimiento normativo, contratación pública, protección de datos",
+      "detail_en": "legal matters, regulatory compliance, public procurement, data protection",
+      "detail_pt": "questões legais, conformidade regulatória, licitações públicas, proteção de dados",
+      "photo": ""
+    },
+    {
+      "id": "p-334",
+      "name": "Oriana Galland",
+      "institution": "Ceibal",
+      "role": "Jefa de la unidad de datos",
+      "role_en": "Head of the data unit",
+      "role_pt": "Chefe da unidade de dados",
+      "country": "Uruguay",
+      "summary": "Jefa de la Unidad de datos de Ceibal. La unidad lidera el equipo de analistas que provee información para la toma de decisiones, con una estrategia integral de gestión de datos.",
+      "summary_en": "Head of the Ceibal Data Unit. The unit leads the team of analysts who provide information for decision-making, with a comprehensive data management strategy.",
+      "summary_pt": "Chefe da Unidade de Dados da Ceibal. A unidade lidera a equipe de analistas que fornece informações para a tomada de decisões, com uma estratégia abrangente de gestão de dados.",
+      "interests": [
+        "Analítica de datos educativos",
+        "Gobernanza de datos y ciberseguridad",
+        "Evaluación de impacto y ensayos aleatorizados"
+      ],
+      "detail": "analítica de datos, gestión de datos, información para la toma de decisiones",
+      "detail_en": "data analytics, data management, information for decision making",
+      "detail_pt": "Análise de dados, gestão de dados, informação para tomada de decisões",
+      "photo": ""
+    },
+    {
+      "id": "p-335",
+      "name": "Juan Pablo Pignataro",
+      "institution": "ANTEL",
+      "role": "Gerente de División Desarrollo Digital Empresarial",
+      "role_en": "Manager of the Business Digital Development Division",
+      "role_pt": "Gerente da Divisão de Desenvolvimento Digital de Negócios",
+      "country": "Uruguay",
+      "summary": "Gerente de la División Desarrollo Digital Empresarial de ANTEL. Representó a la compañía en el panel sobre transformación del sector en Telco Transformation LATAM 2026 y expuso en el Antel Summit una visión amplia de la soberanía digital: no sólo dónde se procesan los datos, sino también la conectividad, la continuidad operativa, la seguridad y el desarrollo de conocimiento local.",
+      "summary_en": "Manager of the Business Digital Development Division at ANTEL. He represented the company on the panel about sector transformation at Telco Transformation LATAM 2026 and presented a broad vision of digital sovereignty at the Antel Summit: not only where data is processed, but also connectivity, operational continuity, security, and the development of local knowledge.",
+      "summary_pt": "Gerente da Divisão de Desenvolvimento Digital de Negócios da ANTEL. Ele representou a empresa no painel sobre transformação do setor na Telco Transformation LATAM 2026 e apresentou uma visão abrangente de soberania digital no Antel Summit: não apenas onde os dados são processados, mas também conectividade, continuidade operacional, segurança e desenvolvimento de conhecimento local.",
+      "interests": [
+        "Conectividad y dispositivos",
+        "Gobernanza de datos y ciberseguridad",
+        "Alianzas público-privadas y financiamiento"
+      ],
+      "detail": "soberanía digital, servicios digitales empresariales, conectividad, continuidad operativa, telecomunicaciones",
+      "detail_en": "digital sovereignty, digital business services, connectivity, business continuity, telecommunications",
+      "detail_pt": "soberania digital, serviços empresariais digitais, conectividade, continuidade de negócios, telecomunicações",
+      "photo": ""
     }
   ]
 }
